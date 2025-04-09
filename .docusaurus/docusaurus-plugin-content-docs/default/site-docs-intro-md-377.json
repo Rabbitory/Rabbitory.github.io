@@ -1,0 +1,24 @@
+{
+  "id": "Intro",
+  "title": "Intro",
+  "description": "Intro!",
+  "source": "@site/docs/Intro.md",
+  "sourceDirName": ".",
+  "slug": "/Intro",
+  "permalink": "/docs/Intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_label": "Intro",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Problem Domain",
+    "permalink": "/docs/Problem-Domain"
+  }
+}
