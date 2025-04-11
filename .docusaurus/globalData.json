@@ -1,0 +1,58 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "Intro",
+          "docs": [
+            {
+              "id": "ArchitectureOverview",
+              "path": "/docs/ArchitectureOverview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Conclusion",
+              "path": "/docs/Conclusion",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FutureWork",
+              "path": "/docs/FutureWork",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Intro",
+              "path": "/docs/Intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Rabbitory",
+              "path": "/docs/Rabbitory",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "TechnicalDecisionsTradeoffs",
+              "path": "/docs/TechnicalDecisionsTradeoffs",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/Intro",
+                "label": "Intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}
