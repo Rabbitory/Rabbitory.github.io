@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Introducing Rabbitory"
+sidebar_label: "Meet Rabbitory"
 sidebar_position: 2
 ---
 
@@ -7,23 +7,22 @@ sidebar_position: 2
 
 ## What is Rabbitory
 
-- Mission & Vision
+- How Rabbitory fills the gaps of ^ existing solution limitations
+- open source, self-hosted, automated cloud integration, secured control panel, etc.
 - Target Audience
 - Key value proposition
 
 ## Core Features of Rabbitory
 
-- Self-Hosted
-- Web-based Control Panel
-- Plugin Manager
-- Firewall Rule Editor
-- IAM-style Permissions
-- Health Checks & Monitoring
+- Custom Cli for deployment
+- Self-Hosted App
+- AWS Cloud Integration
+- Easy (automated) Rabbitmq creation, configuration, and monitoring through a web-based Control Panel
+- Transparent Pricing - only pay for AWS services with clear costs
+- Choice for hardware and storage
 
-## Key Features
+## Features Not Offered
 
-- #Full Control
-- Developer-First Design
-- Transparent Pricing
-- Extensibility
-- Security
+- Support for issues → biggest cost savings comes from not providing support
+- Multiple Cloud Platforsm → only AWS for now
+- Clustering support

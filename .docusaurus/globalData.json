@@ -8,7 +8,7 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "Intro",
+          "mainDocId": "Introduction",
           "docs": [
             {
               "id": "ArchitectureOverview",
@@ -26,8 +26,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Intro",
-              "path": "/docs/Intro",
+              "id": "Introduction",
+              "path": "/docs/Introduction",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -45,8 +45,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/Intro",
-                "label": "Intro"
+                "path": "/docs/Introduction",
+                "label": "Introduction"
               }
             }
           }

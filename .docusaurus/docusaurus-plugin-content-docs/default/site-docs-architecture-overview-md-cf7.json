@@ -18,11 +18,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Introducing Rabbitory",
+    "title": "Meet Rabbitory",
     "permalink": "/docs/Rabbitory"
   },
   "next": {
-    "title": "Technical Decisions & Tradeoffs",
+    "title": "Technical Decisions",
     "permalink": "/docs/TechnicalDecisionsTradeoffs"
   }
 }

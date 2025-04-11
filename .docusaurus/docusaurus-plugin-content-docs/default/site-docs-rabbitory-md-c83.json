@@ -12,13 +12,13 @@
   "version": "current",
   "sidebarPosition": 2,
   "frontMatter": {
-    "sidebar_label": "Introducing Rabbitory",
+    "sidebar_label": "Meet Rabbitory",
     "sidebar_position": 2
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Intro",
-    "permalink": "/docs/Intro"
+    "title": "Introduction",
+    "permalink": "/docs/Introduction"
   },
   "next": {
     "title": "Architecture Overview",
