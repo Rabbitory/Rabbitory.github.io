@@ -1,0 +1,27 @@
+{
+  "id": "Rabbitory",
+  "title": "Rabbitory",
+  "description": "What is Rabbitory",
+  "source": "@site/docs/Rabbitory.md",
+  "sourceDirName": ".",
+  "slug": "/Rabbitory",
+  "permalink": "/docs/Rabbitory",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_label": "Introducing Rabbitory",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Intro",
+    "permalink": "/docs/Intro"
+  },
+  "next": {
+    "title": "Architecture Overview",
+    "permalink": "/docs/ArchitectureOverview"
+  }
+}

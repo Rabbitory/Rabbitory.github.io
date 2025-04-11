@@ -9,8 +9,8 @@ export default {
   "favicon": "img/favicon.ico",
   "url": "https://your-docusaurus-site.example.com",
   "baseUrl": "/",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "organizationName": "Black Fries",
+  "projectName": "Rabbitory",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {
@@ -26,8 +26,7 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "./sidebars.js",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "sidebarPath": "./sidebars.js"
         },
         "theme": {
           "customCss": "./src/css/custom.css"
@@ -42,8 +41,8 @@ export default {
         {
           "type": "docSidebar",
           "sidebarId": "tutorialSidebar",
-          "position": "left",
-          "label": "Case Study!!!!!"
+          "position": "right",
+          "label": "Case Study"
         },
         {
           "href": "https://github.com/Rabbitory",

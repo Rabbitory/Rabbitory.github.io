@@ -49,26 +49,42 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-bca": {
+  "/docs-5bd": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-943": {
+  "/docs-685": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-fbc": {
+  "/docs-a37": {
     "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/ArchitectureOverview-889": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-architecture-overviewcf-7-bb8"
+  },
+  "/docs/Conclusion-915": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-conclusion-302-514"
+  },
+  "/docs/FutureWork-0e7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-future-work-75-f-44e"
   },
   "/docs/Intro-51f": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-intro-377-335"
   },
-  "/docs/Problem-Domain-0e6": {
+  "/docs/Rabbitory-13e": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-problem-domaine-1-c-da0"
+    "content": "content---docs-rabbitoryc-83-8a7"
+  },
+  "/docs/TechnicalDecisionsTradeoffs-db7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-technical-decisions-tradeoffs-13-c-344"
   },
   "/-2e1": {
     "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",

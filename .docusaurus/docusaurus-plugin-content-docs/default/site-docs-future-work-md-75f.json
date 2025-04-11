@@ -1,0 +1,28 @@
+{
+  "id": "FutureWork",
+  "title": "Future Work",
+  "description": "Future Work",
+  "source": "@site/docs/FutureWork.md",
+  "sourceDirName": ".",
+  "slug": "/FutureWork",
+  "permalink": "/docs/FutureWork",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_label": "Future Work",
+    "description": "Future Work",
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Technical Decisions & Tradeoffs",
+    "permalink": "/docs/TechnicalDecisionsTradeoffs"
+  },
+  "next": {
+    "title": "Conclusion",
+    "permalink": "/docs/Conclusion"
+  }
+}

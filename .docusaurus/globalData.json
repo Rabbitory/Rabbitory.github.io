@@ -8,16 +8,36 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "Problem-Domain",
+          "mainDocId": "Intro",
           "docs": [
+            {
+              "id": "ArchitectureOverview",
+              "path": "/docs/ArchitectureOverview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Conclusion",
+              "path": "/docs/Conclusion",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "FutureWork",
+              "path": "/docs/FutureWork",
+              "sidebar": "tutorialSidebar"
+            },
             {
               "id": "Intro",
               "path": "/docs/Intro",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Problem-Domain",
-              "path": "/docs/Problem-Domain",
+              "id": "Rabbitory",
+              "path": "/docs/Rabbitory",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "TechnicalDecisionsTradeoffs",
+              "path": "/docs/TechnicalDecisionsTradeoffs",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -25,8 +45,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/Problem-Domain",
-                "label": "Problem Domain"
+                "path": "/docs/Intro",
+                "label": "Intro"
               }
             }
           }

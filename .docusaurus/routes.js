@@ -44,16 +44,34 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'bca'),
+    component: ComponentCreator('/docs', '5bd'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '943'),
+        component: ComponentCreator('/docs', '685'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'fbc'),
+            component: ComponentCreator('/docs', 'a37'),
             routes: [
+              {
+                path: '/docs/ArchitectureOverview',
+                component: ComponentCreator('/docs/ArchitectureOverview', '889'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/Conclusion',
+                component: ComponentCreator('/docs/Conclusion', '915'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/FutureWork',
+                component: ComponentCreator('/docs/FutureWork', '0e7'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
               {
                 path: '/docs/Intro',
                 component: ComponentCreator('/docs/Intro', '51f'),
@@ -61,8 +79,14 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Problem-Domain',
-                component: ComponentCreator('/docs/Problem-Domain', '0e6'),
+                path: '/docs/Rabbitory',
+                component: ComponentCreator('/docs/Rabbitory', '13e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/TechnicalDecisionsTradeoffs',
+                component: ComponentCreator('/docs/TechnicalDecisionsTradeoffs', 'db7'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }

@@ -1,0 +1,28 @@
+{
+  "id": "TechnicalDecisionsTradeoffs",
+  "title": "Technical Decisions & Tradeoffs",
+  "description": "Technical Decisions & Tradeoffs",
+  "source": "@site/docs/TechnicalDecisionsTradeoffs.md",
+  "sourceDirName": ".",
+  "slug": "/TechnicalDecisionsTradeoffs",
+  "permalink": "/docs/TechnicalDecisionsTradeoffs",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_label": "Technical Decisions & Tradeoffs",
+    "description": "Technical Decisions & Tradeoffs",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Architecture Overview",
+    "permalink": "/docs/ArchitectureOverview"
+  },
+  "next": {
+    "title": "Future Work",
+    "permalink": "/docs/FutureWork"
+  }
+}
