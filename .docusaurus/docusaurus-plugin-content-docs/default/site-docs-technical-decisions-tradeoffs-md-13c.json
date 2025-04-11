@@ -1,7 +1,7 @@
 {
   "id": "TechnicalDecisionsTradeoffs",
-  "title": "Technical Decisions & Tradeoffs",
-  "description": "Technical Decisions & Tradeoffs",
+  "title": "Technical Decisions",
+  "description": "Technical Decisions",
   "source": "@site/docs/TechnicalDecisionsTradeoffs.md",
   "sourceDirName": ".",
   "slug": "/TechnicalDecisionsTradeoffs",
@@ -12,8 +12,8 @@
   "version": "current",
   "sidebarPosition": 4,
   "frontMatter": {
-    "sidebar_label": "Technical Decisions & Tradeoffs",
-    "description": "Technical Decisions & Tradeoffs",
+    "sidebar_label": "Technical Decisions",
+    "description": "Technical Decisions",
     "sidebar_position": 4
   },
   "sidebar": "tutorialSidebar",

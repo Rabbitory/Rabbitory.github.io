@@ -8,6 +8,6 @@ sidebar_position: 5
 
 - Clustering
 - Multiple Cloud Platforms
-- Plugins Heroku
+- Plugins like Heroku
 - Login authentication
-- More monitoring
+- More monitoring with Prometheus + Grafana

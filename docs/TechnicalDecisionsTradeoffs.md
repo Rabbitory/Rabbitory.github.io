@@ -1,27 +1,32 @@
 ---
-sidebar_label: "Technical Decisions & Tradeoffs"
-description: "Technical Decisions & Tradeoffs"
+sidebar_label: "Technical Decisions"
+description: "Technical Decisions"
 sidebar_position: 4
 ---
 
-# Technical Decisions & Tradeoffs
+# Technical Decisions
 
-- AWS SDK vs Cloudformation ⇒ Future
+## AWS Integration and Resources
+
 - AWS EC2 vs Docker
+- AWS SDK vs Cloudformation ⇒ Future
+- Using SSM vs Custom API for interactions with Rabbitmq server
+
+## Control Panel Features (3 paragraphs)
+
 - Giving users more options - less lock in
 - What Config Features we offer
   - we chose the most important
-- Security Model:
-  - What we do and don’t do
-  - https
-  - no login
-  - firewall control for rabbitmq instance
-  - no easy firewall control for control panel
 - UI/UX for Control Panel
   - user centric design
   - using next
     - having one server for front and backend
     - we didnt have to use s3
     - simplified development and deployment
-- SSM vs Custom API:
-  - Interactions with Rabbitmq server
+
+## Security Model
+
+- Offering semi-automated https for control panel website
+- Firewall for Rabbitmq instances: Ease of configuration, automated rabbitmq port opening
+- No login for Control Panel Website
+- No automated firewall customization for control panel
