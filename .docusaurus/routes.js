@@ -44,15 +44,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '02d'),
+    component: ComponentCreator('/docs', '734'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '6fc'),
+        component: ComponentCreator('/docs', 'aeb'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '33c'),
+            component: ComponentCreator('/docs', '8e9'),
             routes: [
               {
                 path: '/docs/ArchitectureOverview',
@@ -67,8 +67,8 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/FutureWork',
-                component: ComponentCreator('/docs/FutureWork', '0e7'),
+                path: '/docs/ControlPanel',
+                component: ComponentCreator('/docs/ControlPanel', 'a57'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -79,14 +79,14 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Rabbitory',
-                component: ComponentCreator('/docs/Rabbitory', '13e'),
+                path: '/docs/MeetRabbitory',
+                component: ComponentCreator('/docs/MeetRabbitory', '038'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/TechnicalDecisionsTradeoffs',
-                component: ComponentCreator('/docs/TechnicalDecisionsTradeoffs', 'db7'),
+                path: '/docs/Technical',
+                component: ComponentCreator('/docs/Technical', 'bb4'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }

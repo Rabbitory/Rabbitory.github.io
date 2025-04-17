@@ -21,8 +21,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "FutureWork",
-              "path": "/docs/FutureWork",
+              "id": "ControlPanel",
+              "path": "/docs/ControlPanel",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -31,13 +31,13 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Rabbitory",
-              "path": "/docs/Rabbitory",
+              "id": "MeetRabbitory",
+              "path": "/docs/MeetRabbitory",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "TechnicalDecisionsTradeoffs",
-              "path": "/docs/TechnicalDecisionsTradeoffs",
+              "id": "Technical",
+              "path": "/docs/Technical",
               "sidebar": "tutorialSidebar"
             }
           ],
