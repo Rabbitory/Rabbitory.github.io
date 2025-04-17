@@ -1,7 +1,7 @@
 {
   "id": "TechnicalDecisionsTradeoffs",
-  "title": "Technical Decisions",
-  "description": "Technical Decisions",
+  "title": "Technical Decisions & Challenges",
+  "description": "Technical Decisions & Challenges",
   "source": "@site/docs/TechnicalDecisionsTradeoffs.md",
   "sourceDirName": ".",
   "slug": "/TechnicalDecisionsTradeoffs",
@@ -10,11 +10,11 @@
   "unlisted": false,
   "tags": [],
   "version": "current",
-  "sidebarPosition": 4,
+  "sidebarPosition": 5,
   "frontMatter": {
-    "sidebar_label": "Technical Decisions",
-    "description": "Technical Decisions",
-    "sidebar_position": 4
+    "sidebar_label": "Technical Decisions & Challenges",
+    "description": "Technical Decisions & Challenges",
+    "sidebar_position": 5
   },
   "sidebar": "tutorialSidebar",
   "previous": {
@@ -22,7 +22,7 @@
     "permalink": "/docs/ArchitectureOverview"
   },
   "next": {
-    "title": "Future Work",
-    "permalink": "/docs/FutureWork"
+    "title": "Conclusion",
+    "permalink": "/docs/Conclusion"
   }
 }
