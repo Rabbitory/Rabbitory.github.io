@@ -39,7 +39,6 @@ export default {
   "themeConfig": {
     "navbar": {
       "style": "dark",
-      "title": "RABBITORY",
       "logo": {
         "alt": "Rabbitory Logo",
         "src": "img/rabbitory-logo.png"

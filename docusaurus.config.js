@@ -78,7 +78,6 @@ const config = {
       // image: "img/docusaurus-social-card.jpg",
       navbar: {
         style: "dark",
-        title: "RABBITORY",
         logo: {
           alt: "Rabbitory Logo",
           src: "img/rabbitory-logo.png",
