@@ -18,11 +18,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "The Control Panel",
-    "permalink": "/docs/ControlPanel"
+    "title": "Introduction",
+    "permalink": "/docs/Introduction"
   },
   "next": {
-    "title": "Technical Decisions & Challenges",
-    "permalink": "/docs/Technical"
+    "title": "Conclusion",
+    "permalink": "/docs/Conclusion"
   }
 }

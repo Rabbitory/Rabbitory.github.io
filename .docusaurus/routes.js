@@ -44,15 +44,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '734'),
+    component: ComponentCreator('/docs', '732'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'aeb'),
+        component: ComponentCreator('/docs', '4f1'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '8e9'),
+            component: ComponentCreator('/docs', '562'),
             routes: [
               {
                 path: '/docs/ArchitectureOverview',
@@ -67,26 +67,8 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ControlPanel',
-                component: ComponentCreator('/docs/ControlPanel', 'a57'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
                 path: '/docs/Introduction',
                 component: ComponentCreator('/docs/Introduction', '7bf'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/MeetRabbitory',
-                component: ComponentCreator('/docs/MeetRabbitory', '038'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/Technical',
-                component: ComponentCreator('/docs/Technical', 'bb4'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }

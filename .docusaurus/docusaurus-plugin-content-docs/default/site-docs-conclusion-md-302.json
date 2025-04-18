@@ -18,7 +18,7 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Technical Decisions & Challenges",
-    "permalink": "/docs/Technical"
+    "title": "Architecture Overview",
+    "permalink": "/docs/ArchitectureOverview"
   }
 }

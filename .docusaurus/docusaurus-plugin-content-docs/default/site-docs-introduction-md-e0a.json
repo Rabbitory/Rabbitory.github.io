@@ -17,7 +17,7 @@
   },
   "sidebar": "tutorialSidebar",
   "next": {
-    "title": "Meet Rabbitory",
-    "permalink": "/docs/MeetRabbitory"
+    "title": "Architecture Overview",
+    "permalink": "/docs/ArchitectureOverview"
   }
 }
