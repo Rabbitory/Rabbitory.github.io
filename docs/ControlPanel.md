@@ -3,6 +3,8 @@ sidebar_label: "The Control Panel"
 sidebar_position: 3
 ---
 
+import AnimatedSvgEmbed from '@site/src/components/AnimatedSvgEmbed';
+
 # The Control Panel
 
 The Rabbitory Control Panel enables Rabbitory to function as a RabbitMQ-as-a-Service solution. It provides a centralized interface for provisioning, configuring, and managing RabbitMQ instances, as well as the underlying EC2 infrastructure of each instance. Designed for flexibility and ease of use, the Control Panel streamlines complex server management tasks into a smooth and accessible user experience. Here are the key features:
@@ -34,6 +36,8 @@ Rabbitory allows users to configure the hardware of the RabbitMQ instances, incl
 ## Firewall Settings
 
 To protect RabbitMQ instances from unwanted network access, each one is secured behind a dedicated firewall. In AWS, this is implemented using security groups, which act as virtual firewalls. Rabbitory creates a unique security group for each RabbitMQ instance with a name that corresponds to the instance’s name. This provides users with precise control over the inbound and outbound traffic of each RabbitMQ broker instance. Additionally, RabbitMQ uses ports to manage a variety of features, including its Management UI and the different message queue protocols it offers. RabbitMQ offers the following message queuing protocols: AMQP, MQTT, STOMP, and STREAM. By default, RabbitMQ uses plugins to enable these protocols. Since these protocols require dedicated ports, it’s crucial to not only enable the corresponding protocol plugins but also to open up the corresponding ports on the instance’s security group. Rabbitory’s Firewall page, available for each instance, allows developers to configure both AWS security group rules and RabbitMQ ports in one place.
+
+<AnimatedSvgEmbed svgName="firewall.svg" altText="Firewall Demonstration" />
 
 ## Monitoring with Alarms and Logs
 
