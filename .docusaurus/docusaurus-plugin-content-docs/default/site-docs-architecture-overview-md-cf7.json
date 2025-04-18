@@ -1,0 +1,28 @@
+{
+  "id": "ArchitectureOverview",
+  "title": "Architecture Overview",
+  "description": "Architecture Overview",
+  "source": "@site/docs/ArchitectureOverview.md",
+  "sourceDirName": ".",
+  "slug": "/ArchitectureOverview",
+  "permalink": "/rabbitory_webpage/docs/ArchitectureOverview",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_label": "Architecture Overview",
+    "sidebar_position": 4,
+    "description": "Architecture Overview"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "The Control Panel",
+    "permalink": "/rabbitory_webpage/docs/ControlPanel"
+  },
+  "next": {
+    "title": "Technical Decisions & Challenges",
+    "permalink": "/rabbitory_webpage/docs/Technical"
+  }
+}

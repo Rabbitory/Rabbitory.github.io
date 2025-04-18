@@ -1,0 +1,27 @@
+{
+  "id": "ControlPanel",
+  "title": "The Control Panel",
+  "description": "The Rabbitory Control Panel enables Rabbitory to function as a RabbitMQ-as-a-Service solution. It provides a centralized interface for provisioning, configuring, and managing RabbitMQ instances, as well as the underlying EC2 infrastructure of each instance. Designed for flexibility and ease of use, the Control Panel streamlines complex server management tasks into a smooth and accessible user experience. Here are the key features:",
+  "source": "@site/docs/ControlPanel.md",
+  "sourceDirName": ".",
+  "slug": "/ControlPanel",
+  "permalink": "/rabbitory_webpage/docs/ControlPanel",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_label": "The Control Panel",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Meet Rabbitory",
+    "permalink": "/rabbitory_webpage/docs/MeetRabbitory"
+  },
+  "next": {
+    "title": "Architecture Overview",
+    "permalink": "/rabbitory_webpage/docs/ArchitectureOverview"
+  }
+}

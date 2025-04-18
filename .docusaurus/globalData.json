@@ -1,0 +1,58 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/rabbitory_webpage/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/rabbitory_webpage/docs",
+          "mainDocId": "Introduction",
+          "docs": [
+            {
+              "id": "ArchitectureOverview",
+              "path": "/rabbitory_webpage/docs/ArchitectureOverview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Conclusion",
+              "path": "/rabbitory_webpage/docs/Conclusion",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ControlPanel",
+              "path": "/rabbitory_webpage/docs/ControlPanel",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Introduction",
+              "path": "/rabbitory_webpage/docs/Introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "MeetRabbitory",
+              "path": "/rabbitory_webpage/docs/MeetRabbitory",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical",
+              "path": "/rabbitory_webpage/docs/Technical",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/rabbitory_webpage/docs/Introduction",
+                "label": "Introduction"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

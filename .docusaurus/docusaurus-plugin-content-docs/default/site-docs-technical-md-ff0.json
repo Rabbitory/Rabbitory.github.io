@@ -1,0 +1,27 @@
+{
+  "id": "Technical",
+  "title": "Technical Decisions & Challenges",
+  "description": "Automating the AWS Cloud infrastructure and designing the Control Panel for Rabbitory came with its own set of unique considerations and challenges. Below is a summary of the most salient decisions we made as a team and what challenges we encountered in building this tool.",
+  "source": "@site/docs/Technical.md",
+  "sourceDirName": ".",
+  "slug": "/Technical",
+  "permalink": "/rabbitory_webpage/docs/Technical",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_label": "Technical Decisions & Challenges",
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Architecture Overview",
+    "permalink": "/rabbitory_webpage/docs/ArchitectureOverview"
+  },
+  "next": {
+    "title": "Conclusion",
+    "permalink": "/rabbitory_webpage/docs/Conclusion"
+  }
+}
