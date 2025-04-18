@@ -40,13 +40,12 @@ export default {
     "image": "img/docusaurus-social-card.jpg",
     "navbar": {
       "style": "dark",
+      "title": "Rabbitory",
+      "logo": {
+        "alt": "My Site Logo",
+        "src": "img/rabbitory-logo.png"
+      },
       "items": [
-        {
-          "type": "docSidebar",
-          "sidebarId": "tutorialSidebar",
-          "position": "left",
-          "label": "Rabbitory"
-        },
         {
           "type": "docSidebar",
           "sidebarId": "tutorialSidebar",
