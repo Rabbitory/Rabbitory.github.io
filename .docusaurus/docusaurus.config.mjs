@@ -4,8 +4,8 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "Rabbitory",
-  "tagline": "A self-hosted, open-source RabbitMQ-as-a-Service solution",
+  "title": "RABBITORY",
+  "tagline": "A self-hosted, open-source RabbitMQ-as-a-Service platform",
   "favicon": "img/favicon.ico",
   "url": "https://Rabbitory.github.io",
   "baseUrl": "/rabbitory_webpage/",
@@ -37,12 +37,11 @@ export default {
     ]
   ],
   "themeConfig": {
-    "image": "img/docusaurus-social-card.jpg",
     "navbar": {
       "style": "dark",
-      "title": "Rabbitory",
+      "title": "RABBITORY",
       "logo": {
-        "alt": "My Site Logo",
+        "alt": "Rabbitory Logo",
         "src": "img/rabbitory-logo.png"
       },
       "items": [
@@ -53,10 +52,9 @@ export default {
           "label": "Case Study"
         },
         {
-          "type": "docSidebar",
-          "sidebarId": "tutorialSidebar",
+          "label": "Team",
           "position": "right",
-          "label": "Team"
+          "to": "/team"
         },
         {
           "href": "https://github.com/Rabbitory",
