@@ -38,8 +38,8 @@ export default [
     exact: true
   },
   {
-    path: '/rabbitory_webpage/markdown-page',
-    component: ComponentCreator('/rabbitory_webpage/markdown-page', '098'),
+    path: '/rabbitory_webpage/team',
+    component: ComponentCreator('/rabbitory_webpage/team', 'd05'),
     exact: true
   },
   {

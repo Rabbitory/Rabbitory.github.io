@@ -42,12 +42,12 @@
       "plugin": "plugin---rabbitory-webpage-docusaurus-debugb-38-328"
     }
   },
-  "/rabbitory_webpage/markdown-page-098": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+  "/rabbitory_webpage/team-d05": {
+    "__comp": "__comp---site-src-pages-team-js-859-9b3",
     "__context": {
-      "plugin": "plugin---rabbitory-webpage-markdown-pagea-74-1fc"
+      "plugin": "plugin---rabbitory-webpage-teama-74-8d1"
     },
-    "content": "content---rabbitory-webpage-markdown-page-393-d1c"
+    "config": "config---rabbitory-webpage-team-5-e-9-5fb"
   },
   "/rabbitory_webpage/docs-499": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
@@ -89,8 +89,8 @@
   "/rabbitory_webpage/-85d": {
     "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
     "__context": {
-      "plugin": "plugin---rabbitory-webpage-markdown-pagea-74-1fc"
+      "plugin": "plugin---rabbitory-webpage-teama-74-8d1"
     },
-    "config": "config---rabbitory-webpage-5-e-9-af4"
+    "config": "config---rabbitory-webpage-team-5-e-9-5fb"
   }
 }

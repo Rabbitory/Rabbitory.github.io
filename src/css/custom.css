@@ -1,18 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
-html, body, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
 }
 
 /* .navbar {} */
+.navbar {
+  height: 72px;
+  padding-left: 1rem;
+}
 
-.navbar__items a b { 
+*/ .navbar__items a b {
   font-size: 20px;
-  color:#f5fcfb;
+  color: #f5fcfb;
 }
 
 .navbar__items a b:hover {
-  color:#2af7ac;
+  color: #2af7ac;
 }
 
 .navbar__items a {
@@ -21,7 +32,7 @@ html, body, h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar__items a:hover {
- color:#2af7ac;
+  color: #2af7ac;
 }
 
 main {
@@ -69,7 +80,7 @@ main {
 
 .header-button-wrapper:hover .button:hover {
   border-color: #2af7ac;
-  color:#2af7ac;
+  color: #2af7ac;
 }
 
 .features-row {
@@ -190,9 +201,8 @@ main {
 }
 
 .menu__link--active {
-  color:#2af7ac;
+  color: #2af7ac;
 }
-
 
 :root {
   /* Navbar */
