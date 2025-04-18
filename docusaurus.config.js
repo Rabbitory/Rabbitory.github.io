@@ -76,6 +76,7 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
+        style: "dark",
         // title: "Case Study",
         // logo: {
         //   alt: "My Site Logo",
@@ -139,7 +140,7 @@ const config = {
             // ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Rabbitory.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Rabbitory`,
       },
       prism: {
         theme: prismThemes.github,

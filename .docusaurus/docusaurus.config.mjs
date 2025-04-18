@@ -37,6 +37,7 @@ export default {
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
     "navbar": {
+      "style": "dark",
       "items": [
         {
           "type": "docSidebar",
@@ -68,7 +69,7 @@ export default {
           "items": []
         }
       ],
-      "copyright": "Copyright © 2025 My Project, Inc. Built with Rabbitory."
+      "copyright": "Copyright © 2025 Rabbitory"
     },
     "prism": {
       "theme": {
