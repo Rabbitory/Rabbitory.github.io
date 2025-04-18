@@ -24,6 +24,11 @@
               "id": "Introduction",
               "path": "/docs/Introduction",
               "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "MeetRabbitory",
+              "path": "/docs/MeetRabbitory",
+              "sidebar": "tutorialSidebar"
             }
           ],
           "draftIds": [],

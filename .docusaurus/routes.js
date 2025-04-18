@@ -44,15 +44,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '732'),
+    component: ComponentCreator('/docs', 'fe1'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '4f1'),
+        component: ComponentCreator('/docs', '35f'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '562'),
+            component: ComponentCreator('/docs', 'd1f'),
             routes: [
               {
                 path: '/docs/ArchitectureOverview',
@@ -69,6 +69,12 @@ export default [
               {
                 path: '/docs/Introduction',
                 component: ComponentCreator('/docs/Introduction', '7bf'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/MeetRabbitory',
+                component: ComponentCreator('/docs/MeetRabbitory', '038'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
