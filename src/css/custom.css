@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
   /* Text */
   --ifm-font-color-base: #9ca3af; /* gray-400 */
   --ifm-heading-color: #f5fcfb; /* icy white */
-  --ifm-link-color: #4651b8; /* blue */
+  --ifm-link-color: #87d9da; /* blue */
   --ifm-link-hover-color: #2af7ac; /* green */
 
   /* Borders (tables, code fences, hr, etc.) */
@@ -55,5 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 
   --ifm-font-color-base: #9ca3af;
   --ifm-heading-color: #f5fcfb;
+  --ifm-link-color: #87d9da; /* blue */
+  --ifm-link-hover-color: #2af7ac; /* green */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }

@@ -11,7 +11,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Rabbitory",
-  tagline: "little demo site",
+  tagline: "A self-hosted, open-source RabbitMQ-as-a-Service solution",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -83,6 +83,12 @@ const config = {
         //   src: "img/logo.svg",
         // },
         items: [
+          {
+            type: "docSidebar",
+            sidebarId: "tutorialSidebar",
+            position: "left",
+            label: "Rabbitory",
+          },
           {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",

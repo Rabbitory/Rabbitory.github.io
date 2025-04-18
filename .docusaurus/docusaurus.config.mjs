@@ -5,7 +5,7 @@
  */
 export default {
   "title": "Rabbitory",
-  "tagline": "little demo site",
+  "tagline": "A self-hosted, open-source RabbitMQ-as-a-Service solution",
   "favicon": "img/favicon.ico",
   "url": "https://your-docusaurus-site.example.com",
   "baseUrl": "/",
@@ -39,6 +39,12 @@ export default {
     "navbar": {
       "style": "dark",
       "items": [
+        {
+          "type": "docSidebar",
+          "sidebarId": "tutorialSidebar",
+          "position": "left",
+          "label": "Rabbitory"
+        },
         {
           "type": "docSidebar",
           "sidebarId": "tutorialSidebar",

@@ -20,9 +20,9 @@ Rabbitory follows a modular, self-hosted architecture deployed entirely within t
 
 Below, we’ll explore each of these architectural components in depth to showcase how Rabbitory is structured and how each part contributes to its overall functionality.
 
-## Rabbitory Command-Line Interface (CLI)
+## Command-Line Tool
 
-The Rabbitory CLI is a globally installed npm package that serves as the entry point to the entire Rabbitory system. After installation, users can run a single command to deploy or destroy all the AWS infrastructure needed to run the Control Panel and manage RabbitMQ instances. Deployment requires only an AWS region and, optionally, a custom domain for HTTPS. If a custom domain is provided, the CLI also configures DNS and automatically sets up an SSL certificate using Let's Encrypt, enabling secure HTTPS access.
+The Rabbitory command-line interface (CLI) is a globally installed npm package that serves as the entry point to the entire Rabbitory system. After installation, users can run a single command to deploy or destroy all the AWS infrastructure needed to run the Control Panel and manage RabbitMQ instances. Deployment requires only an AWS region and, optionally, a custom domain for HTTPS. If a custom domain is provided, the CLI also configures DNS and automatically sets up an SSL certificate using Let's Encrypt, enabling secure HTTPS access.
 
 Running `rabbitory deploy` provisions the following core infrastructure:
 
@@ -34,7 +34,7 @@ IAM roles follow the principle of least privilege, granting only the necessary p
 
 While users can choose instance size and storage for RabbitMQ brokers, the Control Panel instance is fixed. We've selected a t3.small instance for cost-efficiency without sacrificing performance. When users no longer need the infrastructure, the `rabbitory destroy` command cleanly tears down all resources provisioned during deployment, including the DynamoDB table, the Control Panel instance, all managed RabbitMQ broker instances, and supporting AWS resources.
 
-## Rabbitory Control Panel
+## The Control Panel
 
 The Rabbitory Control Panel communicates directly with all RabbitMQ instances to handle creating new instances, making configuration changes, and performing deletions. Rabbitory is hosted on a t3.small EC2 instance, chosen to give developers more control over their infrastructure at a lower price point. Hosting the Control Panel on an EC2 allows for custom IAM roles, security groups, and cohesive communication with other RabbitMQ EC2s in the Rabbitory environment.
 
