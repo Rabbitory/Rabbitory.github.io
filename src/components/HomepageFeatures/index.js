@@ -1,14 +1,14 @@
 import Heading from "@theme/Heading";
-
+import useBaseUrl from "@docusaurus/useBaseUrl";
 const FeatureList = [
   {
     title: "Automated Deployment",
-    Svg: require("@site/static/img/cli-graphic.svg").default,
+    image: "/img/cli-graphic.svg",
     description: <>via the Rabbitroy CLI</>,
   },
   {
     title: "RabbitMQ-as-a-Service",
-    Svg: require("@site/static/img/rabbitmq-graphic.svg").default,
+    image: "/img/rabbitmq-graphic.svg",
     description: (
       <>
         First-class support for RabbitMQ, one of the most widely used message
@@ -18,16 +18,16 @@ const FeatureList = [
   },
   {
     title: "Powered by Amazon EC2",
-    Svg: require("@site/static/img/EC2.svg").default,
+    image: "/img/EC2.svg",
     description: <>Something here</>,
   },
 ];
 
-function Feature({ Svg, title, description, className }) {
+function Feature({ image, title, description }) {
   return (
     <div className="feature-item">
       <div className="text--center">
-        <Svg className="feature-svg" role="img" />
+        <img className="feature-svg" src={useBaseUrl(image)} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -43,6 +43,7 @@ export default function HomepageFeatures() {
       <div className="container">
         <div className="features-row">
           <Feature {...FeatureList[0]} />
+
           <Feature {...FeatureList[1]} />
         </div>
         <div className="features-row center-single">

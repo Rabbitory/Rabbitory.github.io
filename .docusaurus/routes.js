@@ -3,41 +3,6 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/rabbitory_webpage/__docusaurus/debug',
-    component: ComponentCreator('/rabbitory_webpage/__docusaurus/debug', '083'),
-    exact: true
-  },
-  {
-    path: '/rabbitory_webpage/__docusaurus/debug/config',
-    component: ComponentCreator('/rabbitory_webpage/__docusaurus/debug/config', 'd6f'),
-    exact: true
-  },
-  {
-    path: '/rabbitory_webpage/__docusaurus/debug/content',
-    component: ComponentCreator('/rabbitory_webpage/__docusaurus/debug/content', '46a'),
-    exact: true
-  },
-  {
-    path: '/rabbitory_webpage/__docusaurus/debug/globalData',
-    component: ComponentCreator('/rabbitory_webpage/__docusaurus/debug/globalData', '090'),
-    exact: true
-  },
-  {
-    path: '/rabbitory_webpage/__docusaurus/debug/metadata',
-    component: ComponentCreator('/rabbitory_webpage/__docusaurus/debug/metadata', 'ca6'),
-    exact: true
-  },
-  {
-    path: '/rabbitory_webpage/__docusaurus/debug/registry',
-    component: ComponentCreator('/rabbitory_webpage/__docusaurus/debug/registry', '6cd'),
-    exact: true
-  },
-  {
-    path: '/rabbitory_webpage/__docusaurus/debug/routes',
-    component: ComponentCreator('/rabbitory_webpage/__docusaurus/debug/routes', '1b4'),
-    exact: true
-  },
-  {
     path: '/rabbitory_webpage/markdown-page',
     component: ComponentCreator('/rabbitory_webpage/markdown-page', '098'),
     exact: true
