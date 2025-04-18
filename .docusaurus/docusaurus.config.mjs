@@ -38,8 +38,8 @@ export default {
   ],
   "themeConfig": {
     "colorMode": {
+      "defaultMode": "dark",
       "disableSwitch": true,
-      "defaultMode": "light",
       "respectPrefersColorScheme": false
     },
     "image": "img/docusaurus-social-card.jpg",

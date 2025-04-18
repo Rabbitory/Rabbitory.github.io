@@ -42,13 +42,6 @@
       "plugin": "plugin---rabbitory-webpage-docusaurus-debugb-38-328"
     }
   },
-  "/rabbitory_webpage/markdown-page-098": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
-    "__context": {
-      "plugin": "plugin---rabbitory-webpage-markdown-pagea-74-1fc"
-    },
-    "content": "content---rabbitory-webpage-markdown-page-393-d1c"
-  },
   "/rabbitory_webpage/docs-499": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
@@ -89,7 +82,7 @@
   "/rabbitory_webpage/-85d": {
     "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
     "__context": {
-      "plugin": "plugin---rabbitory-webpage-markdown-pagea-74-1fc"
+      "plugin": "plugin---rabbitory-webpage-a-74-c4b"
     },
     "config": "config---rabbitory-webpage-5-e-9-af4"
   }
