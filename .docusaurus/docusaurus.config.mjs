@@ -53,6 +53,12 @@ export default {
           "label": "Case Study"
         },
         {
+          "type": "docSidebar",
+          "sidebarId": "tutorialSidebar",
+          "position": "right",
+          "label": "Team"
+        },
+        {
           "href": "https://github.com/Rabbitory",
           "label": "GitHub",
           "position": "right"

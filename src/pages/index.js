@@ -1,4 +1,3 @@
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageHeader from "@site/src/components/HomepageHeader";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
@@ -7,7 +6,6 @@ import ControlPanelPreview from "../components/ControlPanelPreview";
 import AMPQEndpointPreview from "../components/AMQPEndpointPreview";
 
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={"Home"}

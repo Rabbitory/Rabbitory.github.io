@@ -11,7 +11,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Rabbitory",
-  tagline: "A self-hosted, open-source RabbitMQ-as-a-Service solution",
+  tagline: "A self-hosted, open-source RabbitMQ-as-a-Service platform",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -75,7 +75,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      // image: "img/docusaurus-social-card.jpg",
       navbar: {
         style: "dark",
         title: "Rabbitory",
@@ -84,19 +84,16 @@ const config = {
           src: "img/rabbitory-logo.png",
         },
         items: [
-          // {
-          //   type: "docSidebar",
-          //   sidebarId: "tutorialSidebar",
-          //   position: "left",
-          //   label: "Rabbitory",
-          // },
           {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "right",
             label: "Case Study",
           },
-          // { to: "/casestudy", label: "Case Study", position: "right" },
+          {
+            position: "right",
+            label: "Team",
+          },
           {
             href: "https://github.com/Rabbitory",
             label: "GitHub",
