@@ -1,4 +1,9 @@
+main {
+  background-color: #191919;
+}
+
 .heroBanner {
+  background-color: #191919;
   padding: 15rem 0;
   text-align: center;
   position: relative;

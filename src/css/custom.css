@@ -8,6 +8,76 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
+.features-row {
+  display: flex;
+  justify-content: center;
+  gap: 3rem; /* Increased spacing between items */
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.feature-item {
+  flex: 1 1 300px;
+  max-width: 400px;
+  padding: 1rem; /* Optional internal spacing */
+}
+
+.center-single {
+  justify-content: center;
+}
+
+.feature-svg {
+  width: 250px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.cli-preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.cli-video-box {
+  flex: 2;
+  min-width: 300px;
+  max-width: 640px;
+}
+
+.video-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #333;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  font-size: 1.2rem;
+  font-family: monospace;
+}
+
+.cli-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  color: var(--ifm-font-color-base);
+}
+
+.cli-text h3 {
+  color: var(--ifm-heading-color);
+  margin-bottom: 1rem;
+}
+
+.cli-text ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  line-height: 1.6;
+}
+
 
 :root {
   /* Navbar */
@@ -45,7 +115,13 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Status / icons */
   --ifm-color-success: #4651b8; /* your “checkmark” blue */
+
+    --ifm-background-color: #202124;
+  --ifm-background-lighter: #232526;
+  --ifm-secondary-background-color: #191919;
+  --ifm-code-background: #191919;
 }
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
   --ifm-background-color: #202124;

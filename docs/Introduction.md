@@ -28,7 +28,7 @@ Just as a post office routes letters to mailboxes, RabbitMQ routes messages to e
 
 Although RabbitMQ is a powerful choice for a message queue, running it in a production environment can be complex. RabbiMQ places much of the operational burden on the developer. This includes provisioning, configuring, securing, networking, persisting, scaling, and monitoring RabbitMQ servers. When a message queue is just one of many parts of your software ecosystem, the effort of managing these operational tasks can quickly become tedious and inefficient.
 
-## Moving Towards a Managed Message Broker – RabbitMQ as a Service
+## RabbitMQ as a Service
 
 In response to the challenges of managing RabbitMQ instances in production, services began emerging to simplify the experience. These services are known as managed message brokers. Managed message broker services allow developers to treat RabbitMQ instances more like a Software-as-a-Service. In this way, we can even say they offer RabbitMQ-as-a-Service. Managed message broker services are popular because they abstract away operational overhead, allowing developers to focus on using the RabbitMQ broker in their applications.
 
@@ -42,7 +42,8 @@ They frequently include the following helpful features:
 - Automatic upgrading
 - Geographic deployment
 - Autoscaling
-- Monitoring + Dashboard
+- Management Interface
+- Monitoring
 
 The two most notable competitors in this space are CloudAMQP and AmazonMQ. Other popular managed message brokers for RabbitMQ include A2 Hosting, Stackhero, Elestio, ScaleGrid, and Northflank.
 
