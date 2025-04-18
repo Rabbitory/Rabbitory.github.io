@@ -1,6 +1,4 @@
-import clsx from "clsx";
 import Heading from "@theme/Heading";
-// import styles from "./styles.module.css";
 
 const FeatureList = [
   {
@@ -19,7 +17,7 @@ const FeatureList = [
     ),
   },
   {
-    title: "Powered by Amazon EC2}",
+    title: "Powered by Amazon EC2",
     Svg: require("@site/static/img/EC2.svg").default,
     description: <>Something here</>,
   },
@@ -27,9 +25,9 @@ const FeatureList = [
 
 function Feature({ Svg, title, description }) {
   return (
-    <div className="">
+    <div className="feature-item">
       <div className="text--center">
-        <Svg className="" role="img" />
+        <Svg className="feature-svg" role="img" />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -41,12 +39,14 @@ function Feature({ Svg, title, description }) {
 
 export default function HomepageFeatures() {
   return (
-    <section className="">
+    <section className="features-section">
       <div className="container">
-        <div className="">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
+        <div className="features-row">
+          <Feature {...FeatureList[0]} />
+          <Feature {...FeatureList[1]} />
+        </div>
+        <div className="features-row center-single">
+          <Feature {...FeatureList[2]} />
         </div>
       </div>
     </section>
