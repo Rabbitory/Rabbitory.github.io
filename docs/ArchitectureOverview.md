@@ -16,7 +16,7 @@ Rabbitory follows a modular, self-hosted architecture deployed entirely within t
 
 4. Metadata Store (DynamoDB)
 
-**[ Architecture Diagram Here ]**
+![Architecture Diagram](../static/img/rabbitory-overall.png)
 
 Below, we’ll explore each of these architectural components in depth to showcase how Rabbitory is structured and how each part contributes to its overall functionality.
 
@@ -29,6 +29,8 @@ Running `rabbitory deploy` provisions the following core infrastructure:
 - A t3.small EC2 instance running Ubuntu to host the Control Panel
 - A DynamoDB table to store metadata about RabbitMQ instances
 - All required IAM roles, instance profiles, and security groups
+
+![CLI Deployment](../static/img/cli-deployment.png)
 
 IAM roles follow the principle of least privilege, granting only the necessary permissions for each instance. Security groups define inbound and outbound rules to ensure each instance communicates only with trusted sources on required ports.
 

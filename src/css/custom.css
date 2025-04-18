@@ -1,11 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-html, body {
+html, body, h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+/* .navbar {} */
+
+.navbar__items a b { 
+  font-size: 20px;
+  color:#f5fcfb;
+}
+
+.navbar__items a b:hover {
+  color:#2af7ac;
+}
+
+.navbar__items a {
+  color: #f5fcfb;
+  font-size: 20px;
+}
+
+.navbar__items a:hover {
+ color:#2af7ac;
+}
+
+main {
+  background-color: #191919;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-title {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-heading-color);
+}
+
+.header-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--ifm-font-color-base);
+}
+
+.header-button-wrapper {
+  margin-top: 5.5rem;
+}
+
+.header-button-wrapper .button {
+  font-size: 1.2rem;
+  padding: 0.75rem 2rem;
+  border-color: #f5fcfb;
+  border-width: 3px;
+  background-color: #191919;
+  color: #f5fcfb;
+}
+
+.header-button-wrapper:hover .button:hover {
+  border-color: #2af7ac;
+  color:#2af7ac;
 }
 
 .features-row {
@@ -37,11 +101,26 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: rem;
+  padding: 8rem 0;
+}
+
+.amqp-endpoint-preview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   gap: 2rem;
-  padding: 2rem 0;
+  padding: 8rem 0;
 }
 
 .cli-video-box {
+  flex: 2;
+  min-width: 300px;
+  max-width: 640px;
+}
+
+.amqp-video-box {
   flex: 2;
   min-width: 300px;
   max-width: 640px;
@@ -78,6 +157,42 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
 }
 
+.amqp-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  color: var(--ifm-font-color-base);
+}
+
+.amqp-text h3 {
+  color: var(--ifm-heading-color);
+  margin-bottom: 1rem;
+}
+
+.amqp-text ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  line-height: 1.6;
+}
+
+.control-panel-preview {
+  padding: 8rem 0;
+}
+
+.control-panel-carousel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.menu__link {
+  line-height: 3rem;
+  font-size: 16px;
+}
+
+.menu__link--active {
+  color:#2af7ac;
+}
+
 
 :root {
   /* Navbar */
@@ -86,7 +201,7 @@ h1, h2, h3, h4, h5, h6 {
   --ifm-navbar-link-hover-color: #2af7ac;
 
   /* Page background */
-  --ifm-background-color: #202124;
+  --ifm-background-color: #191919;
   --ifm-background-lighter: #232526;
   --ifm-background-dark: #191919;
 
@@ -115,8 +230,7 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Status / icons */
   --ifm-color-success: #4651b8; /* your “checkmark” blue */
-
-    --ifm-background-color: #202124;
+  --ifm-background-color: #202124;
   --ifm-background-lighter: #232526;
   --ifm-secondary-background-color: #191919;
   --ifm-code-background: #191919;
@@ -124,7 +238,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-background-color: #202124;
+  --ifm-background-color: #191919;
   --ifm-background-lighter: #232526;
   --ifm-secondary-background-color: #191919;
   --ifm-code-background: #191919;

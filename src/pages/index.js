@@ -1,11 +1,11 @@
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageHeader from "@site/src/components/HomepageHeader";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import CliPreview from "../components/CliPreview";
+import ControlPanelPreview from "../components/ControlPanelPreview";
+import AMPQEndpointPreview from "../components/AMQPEndpointPreview";
 
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={"Home"}
@@ -15,6 +15,8 @@ export default function Home() {
         <HomepageHeader />
         <HomepageFeatures />
         <CliPreview />
+        <ControlPanelPreview />
+        <AMPQEndpointPreview />
       </main>
     </Layout>
   );
