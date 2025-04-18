@@ -91,8 +91,9 @@ const config = {
             label: "Case Study",
           },
           {
-            position: "right",
             label: "Team",
+            position: "right",
+            to: "/team",
           },
           {
             href: "https://github.com/Rabbitory",
