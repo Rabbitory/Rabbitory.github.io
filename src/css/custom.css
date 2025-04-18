@@ -37,11 +37,26 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: rem;
+  padding: 8rem 0;
+}
+
+.amqp-endpoint-preview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   gap: 2rem;
-  padding: 2rem 0;
+  padding: 8rem 0;
 }
 
 .cli-video-box {
+  flex: 2;
+  min-width: 300px;
+  max-width: 640px;
+}
+
+.amqp-video-box {
   flex: 2;
   min-width: 300px;
   max-width: 640px;
@@ -77,6 +92,35 @@ h1, h2, h3, h4, h5, h6 {
   list-style-type: disc;
   line-height: 1.6;
 }
+
+.amqp-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  color: var(--ifm-font-color-base);
+}
+
+.amqp-text h3 {
+  color: var(--ifm-heading-color);
+  margin-bottom: 1rem;
+}
+
+.amqp-text ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  line-height: 1.6;
+}
+
+.control-panel-preview {
+  padding: 8rem 0;
+}
+
+.control-panel-carousel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
 
 
 :root {
