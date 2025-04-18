@@ -195,8 +195,7 @@ main {
 
   /* Status / icons */
   --ifm-color-success: #4651b8; /* your “checkmark” blue */
-
-    --ifm-background-color: #202124;
+  --ifm-background-color: #202124;
   --ifm-background-lighter: #232526;
   --ifm-secondary-background-color: #191919;
   --ifm-code-background: #191919;
