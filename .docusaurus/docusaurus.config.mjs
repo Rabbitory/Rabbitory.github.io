@@ -37,6 +37,11 @@ export default {
     ]
   ],
   "themeConfig": {
+    "colorMode": {
+      "disableSwitch": true,
+      "defaultMode": "light",
+      "respectPrefersColorScheme": false
+    },
     "image": "img/docusaurus-social-card.jpg",
     "navbar": {
       "style": "dark",
@@ -281,11 +286,6 @@ export default {
           }
         }
       ]
-    },
-    "colorMode": {
-      "defaultMode": "light",
-      "disableSwitch": false,
-      "respectPrefersColorScheme": false
     },
     "docs": {
       "versionPersistence": "localStorage",
