@@ -18,11 +18,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Meet Rabbitory",
-    "permalink": "/docs/MeetRabbitory"
+    "title": "The Control Panel",
+    "permalink": "/docs/ControlPanel"
   },
   "next": {
-    "title": "Conclusion",
-    "permalink": "/docs/Conclusion"
+    "title": "Technical Decisions & Challenges",
+    "permalink": "/docs/Technical"
   }
 }

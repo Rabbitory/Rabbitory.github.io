@@ -21,6 +21,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "ControlPanel",
+              "path": "/docs/ControlPanel",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Introduction",
               "path": "/docs/Introduction",
               "sidebar": "tutorialSidebar"
@@ -28,6 +33,11 @@
             {
               "id": "MeetRabbitory",
               "path": "/docs/MeetRabbitory",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Technical",
+              "path": "/docs/Technical",
               "sidebar": "tutorialSidebar"
             }
           ],
