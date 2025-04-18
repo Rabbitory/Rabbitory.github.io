@@ -3,6 +3,8 @@ sidebar_label: "Introduction"
 sidebar_position: 1
 ---
 
+import AnimatedSvgEmbed from '@site/src/components/AnimatedSvgEmbed';
+
 # Introduction
 
 Rabbitory is an open-source, self-hosted message queue management tool built specifically for RabbitMQ, one of the most widely used message brokers in modern software systems. Rabbitory simplifies the deployment and configuration of RabbitMQ instances on AWS while maintaining visibility into cost and infrastructure setup. To understand why a tool like Rabbitory matters, let’s first explore what message queues are, how RabbitMQ fits into that domain, and why these tools are so valuable in modern distributed systems.
@@ -15,7 +17,7 @@ Yet, there are scenarios where synchronous communication can fall short. Imagine
 
 Instead of using the synchronous request-response cycle, in this scenario, we can leverage a pattern of asynchronous communication. With an asynchronous pattern, you, as the customer, receive a quick confirmation while the rest of the work can happen quietly in the background. A widely used tool for implementing asynchronous communication is a message queue.
 
-**[ Message Queue Diagram Here]**
+<AnimatedSvgEmbed svgName="message-queue.svg" altText="Message Queue Demonstration" />
 
 A message queue is like a mailbox, where senders can place letters in the mailbox without waiting for recipients to receive the mail. In our example, our e-commerce site wants to send a letter to a third-party payment processor. Our e-commerce site places this “letter”, a request to process a payment, into a message queue for safekeeping. When the payment processor is available, it checks the “mailbox” for any pending payment requests. In this way, the sender (our e-commerce site) no longer needs to wait or worry about when or whether the message is received. The sender of a message is often called the producer, and the receiver is called the consumer. In essence, a message queue allows software systems to decouple the actions of the producer from those of the consumer. This results in a snappier user experience and more fault-tolerant systems.
 

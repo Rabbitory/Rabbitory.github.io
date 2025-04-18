@@ -23,7 +23,7 @@ When deploying and interacting with AWS cloud resources, developers have the fol
 - AWS CDK- Cloud Development Kit
 - Terraform
 
-[ Chart here if possible]
+![AWS APIs](../static/img/aws-apis.png)
 
 All of these options can call the AWS API to deploy resources, while the CLI and SDK can be used for AWS resource interactions. Because we wanted to automate AWS provisioning, our team considered the following two paths:
 
@@ -41,6 +41,8 @@ One straightforward solution would be to create a custom API on each RabbitMQ in
 Another possible solution was to download RabbitMQ’s CLI tools onto the Control Panel EC2 instance to communicate with the RabbitMQ instances. This would allow the Control Panel to perform remote operations on each RabbitMQ instance without compromising the RabbitMQ instances’ system performance. However, this solution would shift the system resource burden onto the Control Panel EC2 and introduce additional dependencies. This method also creates redundancy, as the CLI tools already exist on each RabbitMQ broker instance.
 
 Instead, we wanted a solution that enables remote access to these tools without duplicating infrastructure. AWS SSM Session Manager addressed this need by allowing users to initiate secure, remote shell sessions directly to EC2 instances. Using IAM permissions, users can safely run bash commands on remote instances without the need for persistent APIs or additional dependencies, preserving both performance and system simplicity. In Rabbitory, we utilize AWS SSM to change RabbitMQ configurations, enable plugins, and open protocol ports for individual RabbitMQ instances.
+
+![SSM Communication](../static/img/ssm-communication.png)
 
 ## Control Panel Decisions & Challenges
 

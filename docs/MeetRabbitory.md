@@ -7,7 +7,7 @@ sidebar_position: 2
 
 Concerns around cost inflation and limited transparency are common in the managed message broker space. This is where Rabbitory steps in. Rabbitory is a self-hosted RabbitMQ-as-a-Service platform that offers the streamlined experience of a managed message broker without the cost or complexity of existing services. Rabbitory is built for developers on small to mid-sized teams who want the convenience of a managed RabbitMQ without giving up cost control or infrastructure ownership.
 
-**[ Competitor Comparison Chart Here ]**
+![Competition Comparison](../static/img/comparison.png)
 
 ## RabbitMQ-as-a-Service
 
