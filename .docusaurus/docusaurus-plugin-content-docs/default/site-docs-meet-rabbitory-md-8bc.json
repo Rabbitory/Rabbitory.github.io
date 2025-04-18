@@ -5,7 +5,7 @@
   "source": "@site/docs/MeetRabbitory.md",
   "sourceDirName": ".",
   "slug": "/MeetRabbitory",
-  "permalink": "/docs/MeetRabbitory",
+  "permalink": "/rabbitory_webpage/docs/MeetRabbitory",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Introduction",
-    "permalink": "/docs/Introduction"
+    "permalink": "/rabbitory_webpage/docs/Introduction"
   },
   "next": {
     "title": "The Control Panel",
-    "permalink": "/docs/ControlPanel"
+    "permalink": "/rabbitory_webpage/docs/ControlPanel"
   }
 }

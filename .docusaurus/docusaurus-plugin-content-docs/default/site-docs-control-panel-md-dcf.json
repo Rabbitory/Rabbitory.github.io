@@ -5,7 +5,7 @@
   "source": "@site/docs/ControlPanel.md",
   "sourceDirName": ".",
   "slug": "/ControlPanel",
-  "permalink": "/docs/ControlPanel",
+  "permalink": "/rabbitory_webpage/docs/ControlPanel",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -18,10 +18,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Meet Rabbitory",
-    "permalink": "/docs/MeetRabbitory"
+    "permalink": "/rabbitory_webpage/docs/MeetRabbitory"
   },
   "next": {
     "title": "Architecture Overview",
-    "permalink": "/docs/ArchitectureOverview"
+    "permalink": "/rabbitory_webpage/docs/ArchitectureOverview"
   }
 }

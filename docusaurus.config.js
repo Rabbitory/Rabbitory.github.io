@@ -15,16 +15,17 @@ const config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://Rabbitory.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: "/rabbitory_webpage/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "Black Fries", // Usually your GitHub org/user name.
-  projectName: "Rabbitory", // Usually your repo name.
-
+  organizationName: "Rabbitory", // Usually your GitHub org/user name.
+  projectName: "rabbitory_webpage", // Usually your repo name.
+  trailingSlash: false,
+  deploymentBranch: "deploy",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 

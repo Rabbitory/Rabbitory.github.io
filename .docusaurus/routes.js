@@ -3,90 +3,55 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', '5ff'),
+    path: '/rabbitory_webpage/markdown-page',
+    component: ComponentCreator('/rabbitory_webpage/markdown-page', '098'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
-    exact: true
-  },
-  {
-    path: '/markdown-page',
-    component: ComponentCreator('/markdown-page', '3d7'),
-    exact: true
-  },
-  {
-    path: '/docs',
-    component: ComponentCreator('/docs', '734'),
+    path: '/rabbitory_webpage/docs',
+    component: ComponentCreator('/rabbitory_webpage/docs', '499'),
     routes: [
       {
-        path: '/docs',
-        component: ComponentCreator('/docs', 'aeb'),
+        path: '/rabbitory_webpage/docs',
+        component: ComponentCreator('/rabbitory_webpage/docs', 'b7e'),
         routes: [
           {
-            path: '/docs',
-            component: ComponentCreator('/docs', '8e9'),
+            path: '/rabbitory_webpage/docs',
+            component: ComponentCreator('/rabbitory_webpage/docs', '52e'),
             routes: [
               {
-                path: '/docs/ArchitectureOverview',
-                component: ComponentCreator('/docs/ArchitectureOverview', '889'),
+                path: '/rabbitory_webpage/docs/ArchitectureOverview',
+                component: ComponentCreator('/rabbitory_webpage/docs/ArchitectureOverview', '2dd'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Conclusion',
-                component: ComponentCreator('/docs/Conclusion', '915'),
+                path: '/rabbitory_webpage/docs/Conclusion',
+                component: ComponentCreator('/rabbitory_webpage/docs/Conclusion', 'f66'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/ControlPanel',
-                component: ComponentCreator('/docs/ControlPanel', 'a57'),
+                path: '/rabbitory_webpage/docs/ControlPanel',
+                component: ComponentCreator('/rabbitory_webpage/docs/ControlPanel', '037'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Introduction',
-                component: ComponentCreator('/docs/Introduction', '7bf'),
+                path: '/rabbitory_webpage/docs/Introduction',
+                component: ComponentCreator('/rabbitory_webpage/docs/Introduction', '0da'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/MeetRabbitory',
-                component: ComponentCreator('/docs/MeetRabbitory', '038'),
+                path: '/rabbitory_webpage/docs/MeetRabbitory',
+                component: ComponentCreator('/rabbitory_webpage/docs/MeetRabbitory', '367'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Technical',
-                component: ComponentCreator('/docs/Technical', 'bb4'),
+                path: '/rabbitory_webpage/docs/Technical',
+                component: ComponentCreator('/rabbitory_webpage/docs/Technical', '1d1'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -97,8 +62,8 @@ export default [
     ]
   },
   {
-    path: '/',
-    component: ComponentCreator('/', '2e1'),
+    path: '/rabbitory_webpage/',
+    component: ComponentCreator('/rabbitory_webpage/', '85d'),
     exact: true
   },
   {
