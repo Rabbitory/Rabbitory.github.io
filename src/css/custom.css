@@ -41,8 +41,16 @@ main {
 .header-button-wrapper .button {
   font-size: 1.2rem;
   padding: 0.75rem 2rem;
+  border-color: #87d9da;
+  border-width: 3px;
+  background-color: #191919;
+  color: #87d9da;
 }
 
+.header-button-wrapper:hover .button:hover {
+  border-color: #2af7ac;
+  color:#2af7ac;
+}
 
 .features-row {
   display: flex;
