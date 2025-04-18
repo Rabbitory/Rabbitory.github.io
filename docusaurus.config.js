@@ -25,7 +25,7 @@ const config = {
   organizationName: "Rabbitory", // Usually your GitHub org/user name.
   projectName: "rabbitory_webpage", // Usually your repo name.
   trailingSlash: false,
-  deploymentBranch: "gh-pages",
+  deploymentBranch: "deploy",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
