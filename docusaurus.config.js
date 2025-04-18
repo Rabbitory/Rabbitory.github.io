@@ -10,7 +10,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Rabbitory",
+  title: "RABBITORY",
   tagline: "A self-hosted, open-source RabbitMQ-as-a-Service platform",
   favicon: "img/favicon.ico",
 
@@ -78,9 +78,9 @@ const config = {
       // image: "img/docusaurus-social-card.jpg",
       navbar: {
         style: "dark",
-        title: "Rabbitory",
+        title: "RABBITORY",
         logo: {
-          alt: "My Site Logo",
+          alt: "Rabbitory Logo",
           src: "img/rabbitory-logo.png",
         },
         items: [
