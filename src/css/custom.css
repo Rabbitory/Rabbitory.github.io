@@ -4,6 +4,26 @@ html, body, h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* .navbar {} */
+
+.navbar__items a b { 
+  font-size: 20px;
+  color:#f5fcfb;
+}
+
+.navbar__items a b:hover {
+  color:#2af7ac;
+}
+
+.navbar__items a {
+  color: #f5fcfb;
+  font-size: 20px;
+}
+
+.navbar__items a:hover {
+ color:#2af7ac;
+}
+
 main {
   background-color: #191919;
 }
@@ -23,7 +43,7 @@ main {
 }
 
 .header-title {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
   color: var(--ifm-heading-color);
 }
@@ -41,8 +61,16 @@ main {
 .header-button-wrapper .button {
   font-size: 1.2rem;
   padding: 0.75rem 2rem;
+  border-color: #f5fcfb;
+  border-width: 3px;
+  background-color: #191919;
+  color: #f5fcfb;
 }
 
+.header-button-wrapper:hover .button:hover {
+  border-color: #2af7ac;
+  color:#2af7ac;
+}
 
 .features-row {
   display: flex;
@@ -156,7 +184,14 @@ main {
   margin: 0 auto;
 }
 
+.menu__link {
+  line-height: 3rem;
+  font-size: 16px;
+}
 
+.menu__link--active {
+  color:#2af7ac;
+}
 
 
 :root {
