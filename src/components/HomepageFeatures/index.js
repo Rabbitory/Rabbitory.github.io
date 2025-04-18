@@ -1,43 +1,35 @@
 import clsx from "clsx";
 import Heading from "@theme/Heading";
-import styles from "./styles.module.css";
+// import styles from "./styles.module.css";
 
 const FeatureList = [
   {
     title: "Automated Deployment",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    Svg: require("@site/static/img/cli-graphic.svg").default,
     description: <>via the Rabbitroy CLI</>,
   },
   {
-    title: "Focus on What Matters",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    title: "RabbitMQ-as-a-Service",
+    Svg: require("@site/static/img/rabbitmq-graphic.svg").default,
     description: (
       <>
-        Features a easy to use dashboard that allows you to monitor and manage
-        your RabbitMQ servers with ease.
+        First-class support for RabbitMQ, one of the most widely used message
+        brokers.
       </>
     ),
   },
   {
-    title: "Automated Deployment",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-    description: (
-      <>
-        Rabbitory comes with a CLI tool that allows you to deploy RabbitMQ
-        servers on AWS with just a few simple commands. This makes it easy to
-        get started and deploy your RabbitMQ servers quickly and efficiently. It
-        also automate setting up https, simply provide a domain, we handle the
-        rest.
-      </>
-    ),
+    title: "Powered by Amazon EC2}",
+    Svg: require("@site/static/img/EC2.svg").default,
+    description: <>Something here</>,
   },
 ];
 
 function Feature({ Svg, title, description }) {
   return (
-    <div className={clsx("col col--4")}>
+    <div className="">
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <Svg className="" role="img" />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -49,9 +41,9 @@ function Feature({ Svg, title, description }) {
 
 export default function HomepageFeatures() {
   return (
-    <section className={styles.features}>
+    <section className="">
       <div className="container">
-        <div className="row">
+        <div className="">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}

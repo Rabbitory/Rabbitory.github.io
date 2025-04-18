@@ -45,7 +45,13 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Status / icons */
   --ifm-color-success: #4651b8; /* your “checkmark” blue */
+
+    --ifm-background-color: #202124;
+  --ifm-background-lighter: #232526;
+  --ifm-secondary-background-color: #191919;
+  --ifm-code-background: #191919;
 }
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
   --ifm-background-color: #202124;
@@ -58,4 +64,16 @@ h1, h2, h3, h4, h5, h6 {
   --ifm-link-color: #87d9da; /* blue */
   --ifm-link-hover-color: #2af7ac; /* green */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+main {
+  background-color: #191919;
+}
+
+.heroBanner {
+  background-color: #191919;
+  padding: 15rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
