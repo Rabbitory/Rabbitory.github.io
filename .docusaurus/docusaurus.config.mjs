@@ -12,7 +12,7 @@ export default {
   "organizationName": "Rabbitory",
   "projectName": "rabbitory_webpage",
   "trailingSlash": false,
-  "deploymentBranch": "gh-pages",
+  "deploymentBranch": "deploy",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {
