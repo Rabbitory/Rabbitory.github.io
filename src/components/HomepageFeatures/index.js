@@ -4,15 +4,9 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: "Easy to Use",
+    title: "Automated Deployment",
     Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
-    description: (
-      <>
-        Rabbitory is a simple and easy-to-use self hosted RabbitMQ management
-        tool. It is designed to be user-friendly and intuitive, making it easy
-        for anyone to deploy and manage their RabbitMQ servers on AWS.
-      </>
-    ),
+    description: <>via the Rabbitroy CLI</>,
   },
   {
     title: "Focus on What Matters",

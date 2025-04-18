@@ -5,7 +5,7 @@
  */
 export default {
   "title": "Rabbitory",
-  "tagline": "little demo site",
+  "tagline": "A self-hosted, open-source RabbitMQ-as-a-Service solution",
   "favicon": "img/favicon.ico",
   "url": "https://Rabbitory.github.io",
   "baseUrl": "/rabbitory_webpage/",
@@ -39,7 +39,14 @@ export default {
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
     "navbar": {
+      "style": "dark",
       "items": [
+        {
+          "type": "docSidebar",
+          "sidebarId": "tutorialSidebar",
+          "position": "left",
+          "label": "Rabbitory"
+        },
         {
           "type": "docSidebar",
           "sidebarId": "tutorialSidebar",
@@ -70,7 +77,7 @@ export default {
           "items": []
         }
       ],
-      "copyright": "Copyright © 2025 My Project, Inc. Built with Rabbitory."
+      "copyright": "Copyright © 2025 Rabbitory"
     },
     "prism": {
       "theme": {

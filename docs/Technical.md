@@ -7,13 +7,13 @@ sidebar_position: 5
 
 Automating the AWS Cloud infrastructure and designing the Control Panel for Rabbitory came with its own set of unique considerations and challenges. Below is a summary of the most salient decisions we made as a team and what challenges we encountered in building this tool.
 
-## AWS Elastic Compute Cloud vs Elastic Container Service
+## AWS EC2 vs ECS
 
 The first technical decision our team needed to make was on whether to host RabbitMQ servers in containers managed by ECS (Elastic Container Service) or on EC2 (Elastic Compute Cloud) instances. Choosing the ECS option would make deployments faster and scaling easier by abstracting infrastructure and managing containers for you. However, it would introduce complexity for stateful apps like RabbitMQ, and give developers less direct access to things like storage, networking, and system-level configurations. On the other hand, the EC2 option provides users full control over their servers, making it ideal for managing RabbitMQ’s configuration, plugins, and storage directly. The tradeoff of using EC2 is more manual setup and maintenance, with slower provisioning and scaling as compared to containers.
 
 Rabbitory prioritizes transparency, infrastructure ownership, and simplicity in a single-instance, self-hosted context. EC2 offers the right balance of control and familiarity for users who want to own their setup without diving deep into the complexities of container orchestration. If Rabbitory expands to support RabbitMQ clustering, ECS might become a more compelling option. But for now, the EC2 option best matches Rabbitory’s philosophy and needs.
 
-## AWS Software Development Kit vs. Cloud Development Kit
+## AWS SDK vs. CDK
 
 When deploying and interacting with AWS cloud resources, developers have the following options:
 
@@ -54,7 +54,7 @@ When creating the Alarms Page, we wanted to allow users to integrate memory and 
 
 Currently, alarms are tied to the lifecycle of the Control Panel, as they are managed using node-cron on the Control Panel’s EC2 instance. To support persistence beyond the Control Panel’s uptime, future work for Rabbitory could include integrating with Amazon EventBridge for more robust and decoupled alarm management.
 
-## Providing an HTTPS Option for the Control Panel
+## Providing an HTTPS Option
 
 Our team later decided to give users the option to configure their Control Panel with either HTTP or HTTPS when deploying infrastructure using the Rabbitory CLI. HTTPS, the secure version of HTTP, encrypts communication between the browser and server to protect data and improve web security. Many self-hosted SaaS tools default to HTTP, placing the responsibility of enabling HTTPS on the user. While this simplifies initial deployment, it requires users to manually secure their application later.
 
