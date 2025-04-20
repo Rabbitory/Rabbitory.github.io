@@ -13,9 +13,28 @@ h6 {
 
 /* .navbar {} */
 .navbar {
-  height: 72px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+.navbar__brand {
   padding-left: 1rem;
 }
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar__logo img {
+  height: 50px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+/* .navbar__inner {
+  height: 100%;
+} */
 
 */ .navbar__items a b {
   font-size: 20px;
