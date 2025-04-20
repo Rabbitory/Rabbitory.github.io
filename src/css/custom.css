@@ -11,13 +11,12 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-/* .navbar {} */
 .navbar {
   height: 72px;
   padding-left: 1rem;
 }
 
-*/ .navbar__items a b {
+.navbar__items a b {
   font-size: 20px;
   color: #f5fcfb;
 }
@@ -37,6 +36,10 @@ h6 {
 
 main {
   background-color: #191919;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  color:#2af7ac;
 }
 
 .header-section {
