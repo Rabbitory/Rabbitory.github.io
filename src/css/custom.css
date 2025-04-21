@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
 
 html,
 body,
@@ -11,7 +12,6 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-/* .navbar {} */
 .navbar {
   height: 75px;
   display: flex;
@@ -56,6 +56,14 @@ h6 {
 
 main {
   background-color: #191919;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: #2af7ac;
+}
+
+.pagination-nav__link:hover {
+  border-color: #2af7ac;
 }
 
 .header-section {
@@ -216,7 +224,7 @@ main {
 
 .menu__link {
   line-height: 3rem;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .menu__link--active {
@@ -228,6 +236,23 @@ main {
   max-width: 250px;
   padding: 1rem;
   justify-content: center;
+}
+.menu__link--active:hover {
+  color: #2af7ac;
+}
+
+.table-of-contents__link--active {
+  color: #2af7ac;
+}
+
+.table-of-contents__link:hover {
+  color: #2af7ac;
+}
+
+.markdown p {
+  font-family: "Manrope", sans-serif;
+  font-size: 22px;
+  color: #cdd3d9;
 }
 
 :root {
@@ -249,7 +274,7 @@ main {
   /* Text */
   --ifm-font-color-base: #9ca3af; /* gray-400 */
   --ifm-heading-color: #f5fcfb; /* icy white */
-  --ifm-link-color: #87d9da; /* blue */
+  --ifm-link-color: #606060; /* grey */
   --ifm-link-hover-color: #2af7ac; /* green */
 
   /* Borders (tables, code fences, hr, etc.) */
@@ -278,10 +303,11 @@ main {
   --ifm-background-lighter: #232526;
   --ifm-secondary-background-color: #191919;
   --ifm-code-background: #191919;
+  --ifm-font-color-base: #9ca3af; /* gray-400 */
 
-  --ifm-font-color-base: #9ca3af;
+  --ifm-font-color-base: #f5fcfb;
   --ifm-heading-color: #f5fcfb;
-  --ifm-link-color: #87d9da; /* blue */
+  --ifm-link-color: #9ca3af;
   --ifm-link-hover-color: #2af7ac; /* green */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
