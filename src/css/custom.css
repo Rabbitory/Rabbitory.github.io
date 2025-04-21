@@ -1,21 +1,260 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
 
-/* You can override the default Infima variables here. */
-/* :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+.navbar__brand {
+  padding-left: 1rem;
+}
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar__logo img {
+  height: 50px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+/* .navbar__inner {
+  height: 100%;
 } */
+
+.navbar__items a b {
+  font-size: 20px;
+  color: #f5fcfb;
+}
+
+.navbar__items a b:hover {
+  color: #2af7ac;
+}
+
+.navbar__items a {
+  color: #f5fcfb;
+  font-size: 20px;
+}
+
+.navbar__items a:hover {
+  color: #2af7ac;
+}
+
+main {
+  background-color: #191919;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: #2af7ac;
+}
+
+.pagination-nav__link:hover {
+  border-color: #2af7ac;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-title {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-heading-color);
+}
+
+.header-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--ifm-font-color-base);
+}
+
+.header-button-wrapper {
+  margin-top: 5.5rem;
+}
+
+.header-button-wrapper .button {
+  font-size: 1.2rem;
+  padding: 0.75rem 2rem;
+  border-color: #f5fcfb;
+  border-width: 3px;
+  background-color: #191919;
+  color: #f5fcfb;
+}
+
+.header-button-wrapper:hover .button:hover {
+  border-color: #2af7ac;
+  color: #2af7ac;
+}
+
+.features-row {
+  display: flex;
+  justify-content: center;
+  gap: 3rem; /* Increased spacing between items */
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.feature-item {
+  flex: 1 1 300px;
+  max-width: 400px;
+  padding: 1rem; /* Optional internal spacing */
+}
+
+.center-single {
+  justify-content: center;
+}
+
+.feature-svg {
+  width: 250px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.cli-preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: rem;
+  padding: 8rem 0;
+}
+
+.amqp-endpoint-preview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 8rem 0;
+}
+
+.cli-video-box {
+  flex: 2;
+  min-width: 300px;
+  max-width: 640px;
+}
+
+.amqp-video-box {
+  flex: 2;
+  min-width: 300px;
+  max-width: 640px;
+}
+
+.video-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #333;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  font-size: 1.2rem;
+  font-family: monospace;
+}
+
+.cli-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  color: var(--ifm-font-color-base);
+}
+
+.cli-text h3 {
+  color: var(--ifm-heading-color);
+  margin-bottom: 1rem;
+}
+
+.cli-text ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  line-height: 1.6;
+}
+
+.amqp-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  color: var(--ifm-font-color-base);
+}
+
+.amqp-text h3 {
+  color: var(--ifm-heading-color);
+  margin-bottom: 1rem;
+}
+
+.amqp-text ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  line-height: 1.6;
+}
+
+.control-panel-preview {
+  padding: 8rem 0;
+}
+
+.control-panel-carousel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.menu__link {
+  line-height: 3rem;
+  font-size: 18px;
+}
+
+.menu__link--active {
+  color: #2af7ac;
+}
+
+.team-item {
+  flex: 1 1 250px;
+  max-width: 250px;
+  padding: 1rem;
+  justify-content: center;
+}
+.menu__link--active:hover {
+  color: #2af7ac;
+}
+
+.table-of-contents__link--active {
+  color: #2af7ac;
+}
+
+.table-of-contents__link:hover {
+  color: #2af7ac;
+}
+
+.markdown p {
+  font-family: "Manrope", sans-serif;
+  font-size: 22px;
+  color: #cdd3d9;
+}
+
 :root {
   /* Navbar */
   --ifm-navbar-background: #232526;
@@ -23,7 +262,7 @@
   --ifm-navbar-link-hover-color: #2af7ac;
 
   /* Page background */
-  --ifm-background-color: #202124;
+  --ifm-background-color: #191919;
   --ifm-background-lighter: #232526;
   --ifm-background-dark: #191919;
 
@@ -35,7 +274,7 @@
   /* Text */
   --ifm-font-color-base: #9ca3af; /* gray-400 */
   --ifm-heading-color: #f5fcfb; /* icy white */
-  --ifm-link-color: #4651b8; /* blue */
+  --ifm-link-color: #606060; /* grey */
   --ifm-link-hover-color: #2af7ac; /* green */
 
   /* Borders (tables, code fences, hr, etc.) */
@@ -52,15 +291,23 @@
 
   /* Status / icons */
   --ifm-color-success: #4651b8; /* your “checkmark” blue */
-}
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme="dark"] {
   --ifm-background-color: #202124;
   --ifm-background-lighter: #232526;
   --ifm-secondary-background-color: #191919;
   --ifm-code-background: #191919;
+}
 
-  --ifm-font-color-base: #9ca3af;
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-background-color: #191919;
+  --ifm-background-lighter: #232526;
+  --ifm-secondary-background-color: #191919;
+  --ifm-code-background: #191919;
+  --ifm-font-color-base: #9ca3af; /* gray-400 */
+
+  --ifm-font-color-base: #f5fcfb;
   --ifm-heading-color: #f5fcfb;
+  --ifm-link-color: #9ca3af;
+  --ifm-link-hover-color: #2af7ac; /* green */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }

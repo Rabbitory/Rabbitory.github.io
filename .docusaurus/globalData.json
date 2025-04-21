@@ -16,11 +16,6 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Conclusion",
-              "path": "/rabbitory_webpage/docs/Conclusion",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "ControlPanel",
               "path": "/rabbitory_webpage/docs/ControlPanel",
               "sidebar": "tutorialSidebar"

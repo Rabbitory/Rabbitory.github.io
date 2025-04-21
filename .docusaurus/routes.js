@@ -38,31 +38,25 @@ export default [
     exact: true
   },
   {
-    path: '/rabbitory_webpage/markdown-page',
-    component: ComponentCreator('/rabbitory_webpage/markdown-page', '098'),
+    path: '/rabbitory_webpage/team',
+    component: ComponentCreator('/rabbitory_webpage/team', 'd05'),
     exact: true
   },
   {
     path: '/rabbitory_webpage/docs',
-    component: ComponentCreator('/rabbitory_webpage/docs', '499'),
+    component: ComponentCreator('/rabbitory_webpage/docs', '062'),
     routes: [
       {
         path: '/rabbitory_webpage/docs',
-        component: ComponentCreator('/rabbitory_webpage/docs', 'b7e'),
+        component: ComponentCreator('/rabbitory_webpage/docs', '27c'),
         routes: [
           {
             path: '/rabbitory_webpage/docs',
-            component: ComponentCreator('/rabbitory_webpage/docs', '52e'),
+            component: ComponentCreator('/rabbitory_webpage/docs', '8a0'),
             routes: [
               {
                 path: '/rabbitory_webpage/docs/ArchitectureOverview',
                 component: ComponentCreator('/rabbitory_webpage/docs/ArchitectureOverview', '2dd'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/rabbitory_webpage/docs/Conclusion',
-                component: ComponentCreator('/rabbitory_webpage/docs/Conclusion', 'f66'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

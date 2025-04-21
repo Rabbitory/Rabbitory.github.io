@@ -10,8 +10,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Rabbitory",
-  tagline: "little demo site",
+  title: "RABBITORY",
+  tagline: "A self-hosted, open-source RabbitMQ-as-a-Service platform",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -74,14 +74,18 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: true,
+      },
       // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      // image: "img/docusaurus-social-card.jpg",
       navbar: {
-        // title: "Case Study",
-        // logo: {
-        //   alt: "My Site Logo",
-        //   src: "img/logo.svg",
-        // },
+        style: "dark",
+        logo: {
+          alt: "Rabbitory Logo",
+          src: "img/rabbitory-logo.png",
+        },
         items: [
           {
             type: "docSidebar",
@@ -89,7 +93,11 @@ const config = {
             position: "right",
             label: "Case Study",
           },
-          // { to: "/casestudy", label: "Case Study", position: "right" },
+          {
+            label: "Team",
+            position: "right",
+            to: "/team",
+          },
           {
             href: "https://github.com/Rabbitory",
             label: "GitHub",
@@ -140,7 +148,7 @@ const config = {
             // ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Rabbitory.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Rabbitory`,
       },
       prism: {
         theme: prismThemes.github,

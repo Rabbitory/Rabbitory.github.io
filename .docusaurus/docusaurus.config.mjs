@@ -4,8 +4,8 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "Rabbitory",
-  "tagline": "little demo site",
+  "title": "RABBITORY",
+  "tagline": "A self-hosted, open-source RabbitMQ-as-a-Service platform",
   "favicon": "img/favicon.ico",
   "url": "https://Rabbitory.github.io",
   "baseUrl": "/rabbitory_webpage/",
@@ -37,14 +37,28 @@ export default {
     ]
   ],
   "themeConfig": {
-    "image": "img/docusaurus-social-card.jpg",
+    "colorMode": {
+      "defaultMode": "dark",
+      "disableSwitch": true,
+      "respectPrefersColorScheme": false
+    },
     "navbar": {
+      "style": "dark",
+      "logo": {
+        "alt": "Rabbitory Logo",
+        "src": "img/rabbitory-logo.png"
+      },
       "items": [
         {
           "type": "docSidebar",
           "sidebarId": "tutorialSidebar",
           "position": "right",
           "label": "Case Study"
+        },
+        {
+          "label": "Team",
+          "position": "right",
+          "to": "/team"
         },
         {
           "href": "https://github.com/Rabbitory",
@@ -70,7 +84,7 @@ export default {
           "items": []
         }
       ],
-      "copyright": "Copyright © 2025 My Project, Inc. Built with Rabbitory."
+      "copyright": "Copyright © 2025 Rabbitory"
     },
     "prism": {
       "theme": {
@@ -275,11 +289,6 @@ export default {
           }
         }
       ]
-    },
-    "colorMode": {
-      "defaultMode": "light",
-      "disableSwitch": false,
-      "respectPrefersColorScheme": false
     },
     "docs": {
       "versionPersistence": "localStorage",
