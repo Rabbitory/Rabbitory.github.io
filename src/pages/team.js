@@ -3,165 +3,6 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import Layout from "@theme/Layout";
 import { FaLinkedin, FaGithub, FaGlobe, FaEnvelope } from "react-icons/fa";
 
-const TeamList = [
-  {
-    title: "Jaqueline",
-    image: "/img/cli-graphic.svg",
-    description: (
-      <div
-        style={{
-          display: "flex",
-          gap: "1rem",
-          justifyContent: "center",
-          fontSize: "1.5rem",
-        }}
-      >
-        <a
-          href="https://linkedin.com/in/yourprofile"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href="https://yourwebsite.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGlobe />
-        </a>
-        <a
-          href="https://github.com/yourusername"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub />
-        </a>
-        <a href="mailto:you@example.com">
-          <FaEnvelope />
-        </a>
-      </div>
-    ),
-  },
-  {
-    title: "Mason",
-    image: "/img/rabbitmq-graphic.svg",
-    description: (
-      <div
-        style={{
-          display: "flex",
-          gap: "1rem",
-          justifyContent: "center",
-          fontSize: "1.5rem",
-        }}
-      >
-        <a
-          href="https://linkedin.com/in/yourprofile"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href="https://yourwebsite.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGlobe />
-        </a>
-        <a
-          href="https://github.com/yourusername"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub />
-        </a>
-        <a href="mailto:you@example.com">
-          <FaEnvelope />
-        </a>
-      </div>
-    ),
-  },
-  {
-    title: "Laren",
-    image: "/img/EC2.svg",
-    description: (
-      <div
-        style={{
-          display: "flex",
-          gap: "1rem",
-          justifyContent: "center",
-          fontSize: "1.5rem",
-        }}
-      >
-        <a
-          href="https://linkedin.com/in/yourprofile"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href="https://yourwebsite.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGlobe />
-        </a>
-        <a
-          href="https://github.com/yourusername"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub />
-        </a>
-        <a href="mailto:you@example.com">
-          <FaEnvelope />
-        </a>
-      </div>
-    ),
-  },
-  {
-    title: "Zijin",
-    image: "/img/EC2.svg",
-    description: (
-      <div
-        style={{
-          display: "flex",
-          gap: "1rem",
-          justifyContent: "center",
-          fontSize: "1.5rem",
-        }}
-      >
-        <a
-          href="https://linkedin.com/in/yourprofile"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href="https://yourwebsite.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGlobe />
-        </a>
-        <a
-          href="https://github.com/yourusername"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub />
-        </a>
-        <a href="mailto:you@example.com">
-          <FaEnvelope />
-        </a>
-      </div>
-    ),
-  },
-];
-
 function Member({ image, title, description }) {
   return (
     <div className="team-item">
@@ -170,12 +11,171 @@ function Member({ image, title, description }) {
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+        {description}
       </div>
     </div>
   );
 }
 const Team = () => {
+  const TeamList = [
+    {
+      title: "Jaqueline",
+      image: "/img/cli-graphic.svg",
+      description: (
+        <div
+          style={{
+            display: "flex",
+            gap: "1rem",
+            justifyContent: "center",
+            fontSize: "1.5rem",
+          }}
+        >
+          <a
+            href="https://linkedin.com/in/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://yourwebsite.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGlobe />
+          </a>
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
+          </a>
+          <a href="mailto:you@example.com">
+            <FaEnvelope />
+          </a>
+        </div>
+      ),
+    },
+    {
+      title: "Mason",
+      image: "/img/rabbitmq-graphic.svg",
+      description: (
+        <div
+          style={{
+            display: "flex",
+            gap: "1rem",
+            justifyContent: "center",
+            fontSize: "1.5rem",
+          }}
+        >
+          <a
+            href="https://linkedin.com/in/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://yourwebsite.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGlobe />
+          </a>
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
+          </a>
+          <a href="mailto:you@example.com">
+            <FaEnvelope />
+          </a>
+        </div>
+      ),
+    },
+    {
+      title: "Laren",
+      image: "/img/EC2.svg",
+      description: (
+        <div
+          style={{
+            display: "flex",
+            gap: "1rem",
+            justifyContent: "center",
+            fontSize: "1.5rem",
+          }}
+        >
+          <a
+            href="https://linkedin.com/in/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://yourwebsite.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGlobe />
+          </a>
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
+          </a>
+          <a href="mailto:you@example.com">
+            <FaEnvelope />
+          </a>
+        </div>
+      ),
+    },
+    {
+      title: "Zijin",
+      image: "/img/EC2.svg",
+      description: (
+        <div
+          style={{
+            display: "flex",
+            gap: "1rem",
+            justifyContent: "center",
+            fontSize: "1.5rem",
+          }}
+        >
+          <a
+            href="https://linkedin.com/in/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://yourwebsite.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGlobe />
+          </a>
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
+          </a>
+          <a href="mailto:you@example.com">
+            <FaEnvelope />
+          </a>
+        </div>
+      ),
+    },
+  ];
+
   return (
     <Layout>
       <div className="features-section">
