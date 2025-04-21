@@ -1,10 +1,15 @@
+import useBaseUrl from "@docusaurus/useBaseUrl"; // Import useBaseUrl
+
 export default function CliPreview() {
+  const videoUrl = useBaseUrl("/img/rabbitory-deploy-timelapse.mp4");
+
   return (
     <div className="container">
       <div className="cli-preview-container">
         <div className="cli-video-box">
-          {/* Replace this div with your <video> when ready */}
-          <div className="video-placeholder">CLI Video Preview Placeholder</div>
+          <video loop autoPlay playsInline muted width={600}>
+            <source src={videoUrl}></source>
+          </video>
         </div>
 
         <div className="cli-text">
