@@ -19,14 +19,22 @@ Rabbitory prioritizes transparency, infrastructure ownership, and simplicity in 
 
 When deploying and interacting with AWS cloud resources, developers have the following options:
 
-![AWS APIs](../static/img/aws-apis.png)
+- AWS Typescript SDK
+- AWS CLI
+- AWS CloudFormation
+- AWS Typescript CDK
+- TerraForm
 
-All of these options can call the AWS API to deploy resources, while the CLI and SDK can be used for AWS resource interactions. Because we wanted to automate AWS provisioning, our team considered the following two paths:
+All of these options can call the AWS API to deploy resources, but only some provide the ability to also interact with resources and be used in code programmatically. Because Rabbitory needed automate AWS provisioning for our users, our team considered the two options with a programmatic interface:
 
-(1) AWS Typescript SDK for both deployment and resource interactions
-(2) AWS Typescript CDK for deployment + SDK for resource interactions
+1. AWS Typescript SDK for both deployment and resource interactions
+2. AWS Typescript CDK for deployment + SDK for resource interactions
 
-Our team ended up choosing the first option, exclusively using the AWS SDK in our project, for infrastructure flexibility and quicker development. This approach removed the overhead of CloudFormation stacks and CDK bootstrapping, allowing Rabbitory to be both lightweight and customizable. The tradeoffs are that Rabbitory takes on more responsibility for infrastructure modeling, permission management, and avoiding configuration drift.
+![AWS APIs](../static/img/aws-apis.svg)
+
+Our team ended up choosing to build with the AWS Typescript SDK, as it provided the most infrastructure flexibility and a quicker development process. This approach removed the overhead of <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloudformation-overview.html#cfn-concepts-stacks" target="_blank">CloudFormation stacks</a> and <a href="https://docs.aws.amazon.com/cdk/v2/guide/bootstrapping.html" target="_blank">CDK bootstrapping</a>, allowing Rabbitory to be both lightweight and customizable.
+
+The tradeoffs are that Rabbitory takes on more responsibility for infrastructure modeling, permission management, and avoiding configuration drift. As Rabbitory expands its feature set, a transition to CDK for resources deployment may valuable. Terraform may also be considered instead of the CDK if Rabbitory seeks to offer more cloud platforms besides AWS.
 
 ---
 
@@ -34,11 +42,11 @@ Our team ended up choosing the first option, exclusively using the AWS SDK in ou
 
 RabbitMQ comes with a large set of utility features that allow users to customize their queues. Allowing users to access and enable these specialized features from a centralized place, like our Control Panel, is essential. To enable these features, users often need to interact with the RabbitMQ server directly. Since the Rabbitory Control Panel runs on a separate EC2 instance than the RabbitMQ EC2 instances, we needed a method for remotely controlling and configuring the RabbitMQ EC2.
 
-One straightforward solution would be to create a custom API on each RabbitMQ instance that would accept requests and execute corresponding actions. However, running a persistent API on each RabbitMQ instance would force the instance to share system resources with other processes. According to RabbitMQ documentation, this is considered poor practice. We quickly recognized the need for an alternative approach that would avoid additional server load on the broker instance.
+One straightforward solution would be to create a custom API on each RabbitMQ instance that would accept requests and execute corresponding actions. However, running a persistent API on each RabbitMQ instance would force the instance to share system resources with other processes. According to RabbitMQ documentation, this is considered <a href="https://www.rabbitmq.com/docs/production-checklist#storage-isolation" target="_blank">poor practice</a>.
 
-Another possible solution was to download RabbitMQ’s CLI tools onto the Control Panel EC2 instance to communicate with the RabbitMQ instances. This would allow the Control Panel to perform remote operations on each RabbitMQ instance without compromising the RabbitMQ instances’ system performance. However, this solution would shift the system resource burden onto the Control Panel EC2 and introduce additional dependencies. This method also creates redundancy, as the CLI tools already exist on each RabbitMQ broker instance.
+Another possible solution was to download RabbitMQ’s CLI tools onto the Control Panel EC2 instance to communicate with the RabbitMQ instances. This would allow the Control Panel to perform remote operations on each RabbitMQ instance without compromising the RabbitMQ instances’ system performance. However, this solution would shift the system resource burden onto the Control Panel EC2.
 
-Instead, we wanted a solution that enables remote access to these tools without duplicating infrastructure. AWS SSM Session Manager addressed this need by allowing users to initiate secure, remote shell sessions directly to EC2 instances. Using IAM permissions, users can safely run bash commands on remote instances without the need for persistent APIs or additional dependencies, preserving both performance and system simplicity. In Rabbitory, we utilize AWS SSM to change RabbitMQ configurations, enable plugins, and open protocol ports for individual RabbitMQ instances.
+Instead, we wanted a solution that enables remote access to these tools without duplicating infrastructure. <a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html" target="_blank">AWS SSM Session Manager</a> addressed this need by allowing users to initiate secure, remote shell sessions directly to EC2 instances. Using IAM permissions, users can safely run bash commands on remote instances without the need for persistent APIs or additional dependencies, preserving both performance and system simplicity. In Rabbitory, we utilize AWS SSM to change RabbitMQ configurations, enable plugins, and open protocol ports for individual RabbitMQ instances.
 
 ![SSM Communication](../static/img/ssm-communication.png)
 
