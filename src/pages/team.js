@@ -9,7 +9,7 @@ function Member({ image, title, description }) {
       <div className="text--center">
         <img className="feature-svg" src={useBaseUrl(image)} alt={title} />
       </div>
-      <div className="text--center padding-horiz--md">
+      <div className="text--center padding-horiz--sm">
         <Heading as="h3">{title}</Heading>
         {description}
       </div>
@@ -19,7 +19,7 @@ function Member({ image, title, description }) {
 const Team = () => {
   const TeamList = [
     {
-      title: "Jaqueline",
+      title: "Jaqueline Amherst",
       image: "/img/cli-graphic.svg",
       description: (
         <div
@@ -58,7 +58,7 @@ const Team = () => {
       ),
     },
     {
-      title: "Mason",
+      title: "Mason Abruzzesse",
       image: "/img/rabbitmq-graphic.svg",
       description: (
         <div
@@ -97,8 +97,8 @@ const Team = () => {
       ),
     },
     {
-      title: "Laren",
-      image: "/img/EC2.svg",
+      title: "Laren Cozart",
+      image: "/img/team/larencozart.svg",
       description: (
         <div
           style={{
@@ -136,7 +136,7 @@ const Team = () => {
       ),
     },
     {
-      title: "Zijin",
+      title: "Zijin (Jim) Gong",
       image: "/img/EC2.svg",
       description: (
         <div
@@ -180,12 +180,24 @@ const Team = () => {
     <Layout>
       <div className="features-section">
         <div className="container">
-          <div className="text--center padding-horiz--md">
+          <div className="text--center padding-horiz--md padding-top--xl">
             <Heading as="h1">Meet the Team</Heading>
-            <p>We are a group of passionate developers and engineers.</p>
+            <p>
+              Rabbitory is built and maintained by group of passionate
+              developers and engineers.
+            </p>
+            <p>
+              Have questions or want to know more? Reach out to us anytime on
+              our socials.
+            </p>
           </div>
           <div className="features-row">
-            {TeamList.map((props, idx) => (
+            {TeamList.slice(0, 2).map((props, idx) => (
+              <Member key={idx} {...props} />
+            ))}
+          </div>
+          <div className="features-row">
+            {TeamList.slice(2).map((props, idx) => (
               <Member key={idx} {...props} />
             ))}
           </div>
