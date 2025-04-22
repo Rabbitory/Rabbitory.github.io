@@ -44,15 +44,15 @@ export default [
   },
   {
     path: '/rabbitory_webpage/docs',
-    component: ComponentCreator('/rabbitory_webpage/docs', '406'),
+    component: ComponentCreator('/rabbitory_webpage/docs', 'f33'),
     routes: [
       {
         path: '/rabbitory_webpage/docs',
-        component: ComponentCreator('/rabbitory_webpage/docs', 'daa'),
+        component: ComponentCreator('/rabbitory_webpage/docs', '61e'),
         routes: [
           {
             path: '/rabbitory_webpage/docs',
-            component: ComponentCreator('/rabbitory_webpage/docs', '96b'),
+            component: ComponentCreator('/rabbitory_webpage/docs', '3aa'),
             routes: [
               {
                 path: '/rabbitory_webpage/docs/ArchitectureOverview',
@@ -81,6 +81,12 @@ export default [
               {
                 path: '/rabbitory_webpage/docs/MeetRabbitory',
                 component: ComponentCreator('/rabbitory_webpage/docs/MeetRabbitory', '367'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/rabbitory_webpage/docs/RabbitMQEcosystem',
+                component: ComponentCreator('/rabbitory_webpage/docs/RabbitMQEcosystem', 'be5'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

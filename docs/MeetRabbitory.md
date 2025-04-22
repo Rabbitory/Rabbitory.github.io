@@ -1,6 +1,6 @@
 ---
 sidebar_label: "Meet Rabbitory"
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Meet Rabbitory
