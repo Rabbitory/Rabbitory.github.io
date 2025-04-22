@@ -35,8 +35,10 @@ The two most notable solutions in this space are <a href="https://www.cloudamqp.
 
 ## Limitations of Existing Solutions
 
-While these platforms solve common RabbitMQ challenges, they come with drawbacks. The most glaring issue with using these existing services is their opaque and high pricing.
+While DIY solutions and commercially managed message queues both can solve common RabbitMQ challenges, they each come with a unique set of drawbacks. As mentioned previously, DIY solutions offer full control but require significant time and expertise to maintain and scale.
 
-For example, CloudAMQP’s pricing scales based on several factors: instance size, number of connections, messages per second, and included features. Similarly, AmazonMQ offers less price transparency than other AWS resources, making cost forecasting more difficult. AmazonMQ charges per broker instance-hour, per gigabyte of storage, and per data transfer, meaning costs can spike alongside usage. With both of these dominant managed message broker services, teams often pay for much more than they use.
+For the commercial RabbitMQ-as-a-Service solutions, a major drawback for developers is the limited transparency and control over the message queue infrastructure. Platforms like CloudAMQP and Amazon MQ wrap RabbitMQ in a black-box, which limits access to deeper system-level details, customization, and troubleshooting.
 
-Another drawback for developers is the limited transparency and control of their message queue infrastructure. These platforms create a black-box wrapper around RabbitMQ instances, limiting granular debugging and configuration when needed. This black-box approach comes with its own price tag, as platforms often charge for customer support to debug issues that developers can’t access or fully observe.
+For example, if a queue starts backing up due to an unacknowledged message or a misconfigured consumer, developers may have little visibility into the cause. It can be much harder to adjust prefetch settings, inspect messages in the queue, or modify retry policies. In many cases, resolving these issues requires reaching out to customer support, which often comes at an extra cost. This lack of full control makes troubleshooting and optimization harder for developers.
+
+Additionally, many managed service providers obscure the details of the infrastructure and hardware they offer. Commercial services often obscure the pricing of their plans by charging flat rates based on abstracted performance tiers. This means that with CloudAMQP and AmazonMQ, teams can often pay for much more than they use.
