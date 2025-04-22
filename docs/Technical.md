@@ -19,12 +19,6 @@ Rabbitory prioritizes transparency, infrastructure ownership, and simplicity in 
 
 When deploying and interacting with AWS cloud resources, developers have the following options:
 
-- AWS Command-Line Interface
-- AWS SDK - Software Development Kits
-- AWS CloudFormation
-- AWS CDK- Cloud Development Kit
-- Terraform
-
 ![AWS APIs](../static/img/aws-apis.png)
 
 All of these options can call the AWS API to deploy resources, while the CLI and SDK can be used for AWS resource interactions. Because we wanted to automate AWS provisioning, our team considered the following two paths:
