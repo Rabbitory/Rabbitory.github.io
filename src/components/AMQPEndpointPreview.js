@@ -1,4 +1,8 @@
+import useBaseUrl from "@docusaurus/useBaseUrl";
+
 export default function AMPQEndpointPreview() {
+  const videoUrl = useBaseUrl("/img/amqp-code-demo.mp4");
+
   return (
     <div className="container">
       <div className="amqp-endpoint-preview">
@@ -11,9 +15,12 @@ export default function AMPQEndpointPreview() {
             <li>AWS DynamoDB Metadata Store</li>
           </ul>
         </div>
-        <div className="amqp-video-box">
-          {/* Replace this div with your <video> when ready */}
-          <div className="video-placeholder">CLI Video Preview Placeholder</div>
+        <div clasName="cli-preview-container">
+          <div className="cli-video-box">
+            <video loop autoPlay playsInline muted width={600}>
+              <source src={videoUrl} type="video/mp4" />
+            </video>
+          </div>
         </div>
       </div>
     </div>
