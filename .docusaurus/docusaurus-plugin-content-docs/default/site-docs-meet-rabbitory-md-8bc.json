@@ -1,7 +1,7 @@
 {
   "id": "MeetRabbitory",
   "title": "Meet Rabbitory",
-  "description": "Concerns around cost inflation and limited transparency are common in the managed message broker space. This is where Rabbitory steps in.",
+  "description": "Most teams face a tradeoff when managing RabbitMQ: DIY setups demand too much time and expertise, while commercial platforms offer too little control over infrastructure.",
   "source": "@site/docs/MeetRabbitory.md",
   "sourceDirName": ".",
   "slug": "/MeetRabbitory",

@@ -5,32 +5,31 @@ sidebar_position: 3
 
 # Meet Rabbitory
 
-Concerns around cost inflation and limited transparency are common in the managed message broker space. This is where Rabbitory steps in.
+Most teams face a tradeoff when managing RabbitMQ: DIY setups demand too much time and expertise, while commercial platforms offer too little control over infrastructure.
 
-Rabbitory is a self-hosted RabbitMQ-as-a-Service platform that offers the streamlined experience of a managed message broker without the cost or complexity of existing services. Rabbitory is built for developers on small to mid-sized teams who want the convenience of a managed RabbitMQ without giving up cost control or infrastructure ownership.
+This is where Rabbitory steps in.
 
-## Comparing Existing Solutions with Rabbitory
+Rabbitory is a self-hosted, RabbitMQ-as-a-Service platform that offers the simplicity of a managed message broker solution with the control and flexibility of a DIY setup.
+
+## Rabbitory vs. Existing Solutions
 
 ![Competition Comparison](../static/img/comparison.svg)
 
 ## Infrastructure Ownership
 
-The Rabbitory Control Panel is a self-hosted platform for provisioning and managing RabbitMQ instances. Self-hosting allows Rabbitory users to have two features that existing solutions can’t offer: transparent pricing and infrastructure ownership.
+Rabbitory is built for developers on small to mid-sized teams who want the convenience of a managed RabbitMQ without giving up control of their infrastructure.
+The Rabbitory Control Panel is self-hosted, which gives users full ownership of the RabbitMQ instances they deploy. Unlike with CloudAMQP or AmazonMQ, where the provider controls the infrastructure, Rabbitory provisions everything in the user's own AWS account. Users have root access to their EC2 instances, direct control over their environment, and full visibility into their system.
 
-Many managed service providers obscure the details of the hardware they offer. Instead of showing what kind of machine you're getting, they charge based on abstract performance tiers, like handling a fixed number of requests per second. This approach also obscures pricing, since the flat rate often exceeds the actual cost of the underlying hardware. In contrast, Rabbitory’s cost is always transparent, as it reflects AWS’s EC2 and DynamoDB pricing models. Additionally, when creating a RabbitMQ instance, users choose exactly what EC2 instance type and storage size fit their use case. We provide helpful hardware recommendations based on throughput and expected message size, but users remain in control of their hardware.
+Additionally, when creating a new instance, users choose the EC2 type and storage size that best match their needs. The Control Panel provides helpful hardware recommendations based on throughput and expected message size, but users ultimately remain in control of their hardware.
 
-Another major benefit of self-hosting Rabbitory is that users own their infrastructure and data. With CloudAMQP, you don’t own the infrastructure you use. Instead, you pay CloudAMQP a flat rate to manage RabbitMQ for you on infrastructure that they provision and control. You can pick a region and hardware plan, but you don’t have root access to the server, full environment control, or ownership of the underlying cloud resources. Similarly, with AmazonMQ —a larger competitor — you can choose regions, instance types, and virtual private networks, but you do not get direct access to the EC2 instances. Rather, it’s as if you are renting a RabbitMQ EC2 instance within a sandbox that AWS controls.
+One key benefit of Rabbitory’s self-hosted model is transparent pricing. Rabbitory costs reflect standard AWS <a href="https://aws.amazon.com/ec2/pricing/on-demand/" target="_blank">EC2</a> and <a href="https://aws.amazon.com/dynamodb/pricing/?utm_source=chatgpt.com" target="_blank">DynamoDB</a> pricing models, so users can accurately predict their platform costs.
 
-Rabbitory, by contrast, allows developers to run RabbitMQ on EC2 instances they own, provisioned within their AWS account. With this ownership, they retain full access to the instance. Infrastructure ownership matters because it allows for transparent pricing, customizability, and the ability to integrate directly with your existing AWS environment.
-
-Transparent pricing and infrastructure ownership are unique in RabbitMQ management. Rabbitory users know what hardware they are running, where their instances are running, and can accurately predict platform costs.
-
-In contrast, Rabbitory’s cost is always transparent, as it reflects AWS’s <a href="https://aws.amazon.com/ec2/pricing/on-demand/" target="_blank">EC2</a> and <a href="https://aws.amazon.com/dynamodb/pricing/?utm_source=chatgpt.com" target="_blank">DynamoDB</a> on-demand pricing. By adopting these established AWS pricing models, Rabbitory ensures that users can easily understand and predict their costs, avoiding the complexities often associated with proprietary pricing structures.​
+Overall, this emphasis on owning your managed message broker infrastructure provides users with greater control, smoother integration with existing AWS setups, and transparent operational costs.
 
 ## Custom Command-Line Interface
 
-To simplify self-hosting, Rabbitory offers a custom CLI tool to deploy the base infrastructure of the managed RabbitMQ platform. The Rabbitory CLI is an npm package that interacts with the configurations preset in each user’s AWS CLI environment. Further, it automates the provisioning of all necessary AWS resources, including IAM roles, security groups, and policy permissions, so that the Rabbitory infrastructure works seamlessly after deployment.
+To simplify self-hosting, Rabbitory offers a custom CLI tool to deploy the base infrastructure of the managed RabbitMQ platform. The Rabbitory CLI is an <a href="https://www.npmjs.com/package/rabbitory_cli" target="_blank">npm package</a> that interacts with the configurations preset in each user’s AWS CLI environment. Further, it automates the provisioning of all necessary AWS resources, including IAM roles, policy permissions, security groups, and the primary EC2 and DynamoDB servers so that the Rabbitory infrastructure works seamlessly after deployment.
 
-## RabbitMQ-as-a-Service
+## Managing RabbitMQ – So You Don’t Have To
 
-Like other managed message broker services, Rabbitory’s core feature is letting users easily create and manage their RabbitMQ instances. Users do this through a web-based Control Panel hosted on its own EC2 instance. The Rabbitory Control Panel lets developers quickly create preset instances of RabbitMQ, complete with the most important plugins and features. Once created, developers can view instance information, access the RabbitMQ Management UI, configure settings, and monitor with logs and alarms.
+Like other managed message broker services, Rabbitory’s core purpose is to help users easily create and manage their RabbitMQ instances. This is done through a web-based Control Panel, which is hosted on its own EC2 instance. The Rabbitory Control Panel lets developers quickly create preset instances of RabbitMQ, complete with the most important plugins and features. Once created, developers can view instance information, access the RabbitMQ management plugin, configure settings, and monitor their instance with logs and alarms.
