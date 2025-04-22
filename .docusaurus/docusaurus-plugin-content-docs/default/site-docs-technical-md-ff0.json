@@ -10,10 +10,10 @@
   "unlisted": false,
   "tags": [],
   "version": "current",
-  "sidebarPosition": 5,
+  "sidebarPosition": 6,
   "frontMatter": {
     "sidebar_label": "Technical Decisions & Challenges",
-    "sidebar_position": 5
+    "sidebar_position": 6
   },
   "sidebar": "tutorialSidebar",
   "previous": {
@@ -21,7 +21,7 @@
     "permalink": "/rabbitory_webpage/docs/ArchitectureOverview"
   },
   "next": {
-    "title": "Conclusion",
-    "permalink": "/rabbitory_webpage/docs/Conclusion"
+    "title": "Future Work",
+    "permalink": "/rabbitory_webpage/docs/FutureWork"
   }
 }

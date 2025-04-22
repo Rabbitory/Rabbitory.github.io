@@ -44,15 +44,15 @@ export default [
   },
   {
     path: '/rabbitory_webpage/docs',
-    component: ComponentCreator('/rabbitory_webpage/docs', '499'),
+    component: ComponentCreator('/rabbitory_webpage/docs', 'f33'),
     routes: [
       {
         path: '/rabbitory_webpage/docs',
-        component: ComponentCreator('/rabbitory_webpage/docs', 'b7e'),
+        component: ComponentCreator('/rabbitory_webpage/docs', '61e'),
         routes: [
           {
             path: '/rabbitory_webpage/docs',
-            component: ComponentCreator('/rabbitory_webpage/docs', '52e'),
+            component: ComponentCreator('/rabbitory_webpage/docs', '3aa'),
             routes: [
               {
                 path: '/rabbitory_webpage/docs/ArchitectureOverview',
@@ -61,8 +61,8 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/rabbitory_webpage/docs/Conclusion',
-                component: ComponentCreator('/rabbitory_webpage/docs/Conclusion', 'f66'),
+                path: '/rabbitory_webpage/docs/Background',
+                component: ComponentCreator('/rabbitory_webpage/docs/Background', 'e0d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -73,14 +73,20 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/rabbitory_webpage/docs/Introduction',
-                component: ComponentCreator('/rabbitory_webpage/docs/Introduction', '0da'),
+                path: '/rabbitory_webpage/docs/FutureWork',
+                component: ComponentCreator('/rabbitory_webpage/docs/FutureWork', '15c'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/rabbitory_webpage/docs/MeetRabbitory',
                 component: ComponentCreator('/rabbitory_webpage/docs/MeetRabbitory', '367'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/rabbitory_webpage/docs/RabbitMQEcosystem',
+                component: ComponentCreator('/rabbitory_webpage/docs/RabbitMQEcosystem', 'be5'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

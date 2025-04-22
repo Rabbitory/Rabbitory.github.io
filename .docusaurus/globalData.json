@@ -8,7 +8,7 @@
           "label": "Next",
           "isLast": true,
           "path": "/rabbitory_webpage/docs",
-          "mainDocId": "Introduction",
+          "mainDocId": "Background",
           "docs": [
             {
               "id": "ArchitectureOverview",
@@ -16,8 +16,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Conclusion",
-              "path": "/rabbitory_webpage/docs/Conclusion",
+              "id": "Background",
+              "path": "/rabbitory_webpage/docs/Background",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -26,13 +26,18 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Introduction",
-              "path": "/rabbitory_webpage/docs/Introduction",
+              "id": "FutureWork",
+              "path": "/rabbitory_webpage/docs/FutureWork",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "MeetRabbitory",
               "path": "/rabbitory_webpage/docs/MeetRabbitory",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "RabbitMQEcosystem",
+              "path": "/rabbitory_webpage/docs/RabbitMQEcosystem",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -45,8 +50,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/rabbitory_webpage/docs/Introduction",
-                "label": "Introduction"
+                "path": "/rabbitory_webpage/docs/Background",
+                "label": "Background"
               }
             }
           }

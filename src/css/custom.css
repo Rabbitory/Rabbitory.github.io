@@ -16,6 +16,7 @@ h6 {
   height: 75px;
   display: flex;
   align-items: center;
+  /* background-color: #191919; */
 }
 .navbar__brand {
   padding-left: 1rem;
@@ -32,9 +33,6 @@ h6 {
   display: block;
   object-fit: contain;
 }
-/* .navbar__inner {
-  height: 100%;
-} */
 
 .navbar__items a b {
   font-size: 20px;
@@ -223,8 +221,9 @@ main {
 }
 
 .menu__link {
-  line-height: 3rem;
-  font-size: 18px;
+  line-height: 2rem;
+  font-size: 14px;
+  color:#9ca3af
 }
 
 .menu__link--active {
@@ -232,8 +231,8 @@ main {
 }
 
 .team-item {
-  flex: 1 1 250px;
-  max-width: 250px;
+  flex: 1 1 300px;
+  max-width: 300px;
   padding: 1rem;
   justify-content: center;
 }
@@ -249,10 +248,36 @@ main {
   color: #2af7ac;
 }
 
+.markdown h1 {
+  font-size: 40px;
+}
+
+.markdown h2 {
+  font-size: 24px;
+}
+
 .markdown p {
   font-family: "Manrope", sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   color: #cdd3d9;
+}
+
+.markdown em, .markdown strong {
+  color:#63eef0;
+}
+
+.markdown a {
+  color: #2af7ac;
+  text-decoration: underline;
+}
+
+/* .docMainContainer_TBSr {
+  background-color: #232526;
+} */
+
+.rabbitory-animation {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 :root {

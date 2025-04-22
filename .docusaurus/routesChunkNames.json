@@ -49,38 +49,42 @@
     },
     "config": "config---rabbitory-webpage-team-5-e-9-5fb"
   },
-  "/rabbitory_webpage/docs-499": {
+  "/rabbitory_webpage/docs-f33": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---rabbitory-webpage-docsaba-e61"
     }
   },
-  "/rabbitory_webpage/docs-b7e": {
+  "/rabbitory_webpage/docs-61e": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---rabbitory-webpage-docs-8-c-4-b8c"
   },
-  "/rabbitory_webpage/docs-52e": {
+  "/rabbitory_webpage/docs-3aa": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/rabbitory_webpage/docs/ArchitectureOverview-2dd": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---rabbitory-webpage-docs-architecture-overviewcf-7-17a"
   },
-  "/rabbitory_webpage/docs/Conclusion-f66": {
+  "/rabbitory_webpage/docs/Background-e0d": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---rabbitory-webpage-docs-conclusion-302-907"
+    "content": "content---rabbitory-webpage-docs-background-066-795"
   },
   "/rabbitory_webpage/docs/ControlPanel-037": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---rabbitory-webpage-docs-control-paneldcf-98b"
   },
-  "/rabbitory_webpage/docs/Introduction-0da": {
+  "/rabbitory_webpage/docs/FutureWork-15c": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---rabbitory-webpage-docs-introductione-0-a-c0d"
+    "content": "content---rabbitory-webpage-docs-future-work-75-f-c71"
   },
   "/rabbitory_webpage/docs/MeetRabbitory-367": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---rabbitory-webpage-docs-meet-rabbitory-8-bc-c26"
+  },
+  "/rabbitory_webpage/docs/RabbitMQEcosystem-be5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---rabbitory-webpage-docs-rabbit-mq-ecosystem-65-f-e8e"
   },
   "/rabbitory_webpage/docs/Technical-1d1": {
     "__comp": "__comp---theme-doc-item-178-a40",
