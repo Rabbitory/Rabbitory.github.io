@@ -1,7 +1,7 @@
 {
   "id": "MeetRabbitory",
   "title": "Meet Rabbitory",
-  "description": "Concerns around cost inflation and limited transparency are common in the managed message broker space. This is where Rabbitory steps in. Rabbitory is a self-hosted RabbitMQ-as-a-Service platform that offers the streamlined experience of a managed message broker without the cost or complexity of existing services. Rabbitory is built for developers on small to mid-sized teams who want the convenience of a managed RabbitMQ without giving up cost control or infrastructure ownership.",
+  "description": "Most teams face a tradeoff when managing RabbitMQ: DIY setups demand too much time and expertise, while commercial platforms offer too little control over infrastructure.",
   "source": "@site/docs/MeetRabbitory.md",
   "sourceDirName": ".",
   "slug": "/MeetRabbitory",
@@ -10,15 +10,15 @@
   "unlisted": false,
   "tags": [],
   "version": "current",
-  "sidebarPosition": 2,
+  "sidebarPosition": 3,
   "frontMatter": {
     "sidebar_label": "Meet Rabbitory",
-    "sidebar_position": 2
+    "sidebar_position": 3
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Introduction",
-    "permalink": "/rabbitory_webpage/docs/Introduction"
+    "title": "The RabbitMQ Ecosystem",
+    "permalink": "/rabbitory_webpage/docs/RabbitMQEcosystem"
   },
   "next": {
     "title": "The Control Panel",

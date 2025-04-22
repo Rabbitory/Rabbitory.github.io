@@ -14,7 +14,7 @@ export default function HomepageHeader() {
         <div className="header-button-wrapper">
           <Link
             className="button button--secondary button--lg"
-            to="/docs/Introduction"
+            to="/docs/Background"
           >
             Case Study
           </Link>
