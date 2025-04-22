@@ -98,7 +98,7 @@ const Team = () => {
     },
     {
       title: "Laren Cozart",
-      image: "/img/EC2.svg",
+      image: "/img/team/larencozart.svg",
       description: (
         <div
           style={{
