@@ -8,11 +8,16 @@
           "label": "Next",
           "isLast": true,
           "path": "/rabbitory_webpage/docs",
-          "mainDocId": "Introduction",
+          "mainDocId": "Background",
           "docs": [
             {
               "id": "ArchitectureOverview",
               "path": "/rabbitory_webpage/docs/ArchitectureOverview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Background",
+              "path": "/rabbitory_webpage/docs/Background",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -23,11 +28,6 @@
             {
               "id": "FutureWork",
               "path": "/rabbitory_webpage/docs/FutureWork",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "Introduction",
-              "path": "/rabbitory_webpage/docs/Introduction",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -45,8 +45,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/rabbitory_webpage/docs/Introduction",
-                "label": "Introduction"
+                "path": "/rabbitory_webpage/docs/Background",
+                "label": "Background"
               }
             }
           }

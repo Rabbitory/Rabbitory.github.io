@@ -1,6 +1,6 @@
 {
   "id": "Introduction",
-  "title": "Introduction",
+  "title": "Background",
   "description": "Rabbitory is an open-source, self-hosted message queue management tool built specifically for RabbitMQ, one of the most widely used message brokers in modern software systems. Rabbitory simplifies the deployment and configuration of RabbitMQ instances on AWS while maintaining visibility into cost and infrastructure setup.",
   "source": "@site/docs/Introduction.md",
   "sourceDirName": ".",
@@ -12,7 +12,7 @@
   "version": "current",
   "sidebarPosition": 1,
   "frontMatter": {
-    "sidebar_label": "Introduction",
+    "sidebar_label": "Background",
     "sidebar_position": 1
   },
   "sidebar": "tutorialSidebar",

@@ -44,19 +44,25 @@ export default [
   },
   {
     path: '/rabbitory_webpage/docs',
-    component: ComponentCreator('/rabbitory_webpage/docs', '740'),
+    component: ComponentCreator('/rabbitory_webpage/docs', '406'),
     routes: [
       {
         path: '/rabbitory_webpage/docs',
-        component: ComponentCreator('/rabbitory_webpage/docs', '42c'),
+        component: ComponentCreator('/rabbitory_webpage/docs', 'daa'),
         routes: [
           {
             path: '/rabbitory_webpage/docs',
-            component: ComponentCreator('/rabbitory_webpage/docs', '74d'),
+            component: ComponentCreator('/rabbitory_webpage/docs', '96b'),
             routes: [
               {
                 path: '/rabbitory_webpage/docs/ArchitectureOverview',
                 component: ComponentCreator('/rabbitory_webpage/docs/ArchitectureOverview', '2dd'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/rabbitory_webpage/docs/Background',
+                component: ComponentCreator('/rabbitory_webpage/docs/Background', 'e0d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -69,12 +75,6 @@ export default [
               {
                 path: '/rabbitory_webpage/docs/FutureWork',
                 component: ComponentCreator('/rabbitory_webpage/docs/FutureWork', '15c'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/rabbitory_webpage/docs/Introduction',
-                component: ComponentCreator('/rabbitory_webpage/docs/Introduction', '0da'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

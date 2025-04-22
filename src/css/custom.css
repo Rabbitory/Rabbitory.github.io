@@ -16,6 +16,7 @@ h6 {
   height: 75px;
   display: flex;
   align-items: center;
+  /* background-color: #191919; */
 }
 .navbar__brand {
   padding-left: 1rem;
@@ -32,9 +33,6 @@ h6 {
   display: block;
   object-fit: contain;
 }
-/* .navbar__inner {
-  height: 100%;
-} */
 
 .navbar__items a b {
   font-size: 20px;
@@ -260,8 +258,26 @@ main {
 
 .markdown p {
   font-family: "Manrope", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   color: #cdd3d9;
+}
+
+.markdown em, .markdown strong {
+  color:#63eef0;
+}
+
+.markdown a {
+  color: #2af7ac;
+  text-decoration: underline;
+}
+
+/* .docMainContainer_TBSr {
+  background-color: #232526;
+} */
+
+.rabbitory-animation {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 :root {
