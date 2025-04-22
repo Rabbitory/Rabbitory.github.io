@@ -16,13 +16,13 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Conclusion",
-              "path": "/rabbitory_webpage/docs/Conclusion",
+              "id": "ControlPanel",
+              "path": "/rabbitory_webpage/docs/ControlPanel",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "ControlPanel",
-              "path": "/rabbitory_webpage/docs/ControlPanel",
+              "id": "FutureWork",
+              "path": "/rabbitory_webpage/docs/FutureWork",
               "sidebar": "tutorialSidebar"
             },
             {

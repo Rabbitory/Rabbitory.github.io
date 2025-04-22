@@ -3,21 +3,56 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/rabbitory_webpage/__docusaurus/debug',
+    component: ComponentCreator('/rabbitory_webpage/__docusaurus/debug', '083'),
+    exact: true
+  },
+  {
+    path: '/rabbitory_webpage/__docusaurus/debug/config',
+    component: ComponentCreator('/rabbitory_webpage/__docusaurus/debug/config', 'd6f'),
+    exact: true
+  },
+  {
+    path: '/rabbitory_webpage/__docusaurus/debug/content',
+    component: ComponentCreator('/rabbitory_webpage/__docusaurus/debug/content', '46a'),
+    exact: true
+  },
+  {
+    path: '/rabbitory_webpage/__docusaurus/debug/globalData',
+    component: ComponentCreator('/rabbitory_webpage/__docusaurus/debug/globalData', '090'),
+    exact: true
+  },
+  {
+    path: '/rabbitory_webpage/__docusaurus/debug/metadata',
+    component: ComponentCreator('/rabbitory_webpage/__docusaurus/debug/metadata', 'ca6'),
+    exact: true
+  },
+  {
+    path: '/rabbitory_webpage/__docusaurus/debug/registry',
+    component: ComponentCreator('/rabbitory_webpage/__docusaurus/debug/registry', '6cd'),
+    exact: true
+  },
+  {
+    path: '/rabbitory_webpage/__docusaurus/debug/routes',
+    component: ComponentCreator('/rabbitory_webpage/__docusaurus/debug/routes', '1b4'),
+    exact: true
+  },
+  {
     path: '/rabbitory_webpage/team',
     component: ComponentCreator('/rabbitory_webpage/team', 'd05'),
     exact: true
   },
   {
     path: '/rabbitory_webpage/docs',
-    component: ComponentCreator('/rabbitory_webpage/docs', '499'),
+    component: ComponentCreator('/rabbitory_webpage/docs', '740'),
     routes: [
       {
         path: '/rabbitory_webpage/docs',
-        component: ComponentCreator('/rabbitory_webpage/docs', 'b7e'),
+        component: ComponentCreator('/rabbitory_webpage/docs', '42c'),
         routes: [
           {
             path: '/rabbitory_webpage/docs',
-            component: ComponentCreator('/rabbitory_webpage/docs', '52e'),
+            component: ComponentCreator('/rabbitory_webpage/docs', '74d'),
             routes: [
               {
                 path: '/rabbitory_webpage/docs/ArchitectureOverview',
@@ -26,14 +61,14 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/rabbitory_webpage/docs/Conclusion',
-                component: ComponentCreator('/rabbitory_webpage/docs/Conclusion', 'f66'),
+                path: '/rabbitory_webpage/docs/ControlPanel',
+                component: ComponentCreator('/rabbitory_webpage/docs/ControlPanel', '037'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/rabbitory_webpage/docs/ControlPanel',
-                component: ComponentCreator('/rabbitory_webpage/docs/ControlPanel', '037'),
+                path: '/rabbitory_webpage/docs/FutureWork',
+                component: ComponentCreator('/rabbitory_webpage/docs/FutureWork', '15c'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

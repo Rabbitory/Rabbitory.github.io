@@ -1,53 +1,96 @@
 {
-  "/rabbitory_webpage/team-d05": {
-    "__comp": "859cc09f",
+  "/rabbitory_webpage/__docusaurus/debug-083": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "a7456010"
-    },
-    "config": "5e9f5e1a"
-  },
-  "/rabbitory_webpage/docs-499": {
-    "__comp": "5e95c892",
-    "__context": {
-      "plugin": "aba21aa0"
+      "plugin": "plugin---rabbitory-webpage-docusaurus-debugb-38-328"
     }
   },
-  "/rabbitory_webpage/docs-b7e": {
-    "__comp": "a7bd4aaa",
-    "__props": "8c4164a1"
+  "/rabbitory_webpage/__docusaurus/debug/config-d6f": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---rabbitory-webpage-docusaurus-debugb-38-328"
+    }
   },
-  "/rabbitory_webpage/docs-52e": {
-    "__comp": "a94703ab"
+  "/rabbitory_webpage/__docusaurus/debug/content-46a": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---rabbitory-webpage-docusaurus-debugb-38-328"
+    },
+    "__props": "__props---rabbitory-webpage-docusaurus-debug-content-3-d-8-539"
+  },
+  "/rabbitory_webpage/__docusaurus/debug/globalData-090": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---rabbitory-webpage-docusaurus-debugb-38-328"
+    }
+  },
+  "/rabbitory_webpage/__docusaurus/debug/metadata-ca6": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---rabbitory-webpage-docusaurus-debugb-38-328"
+    }
+  },
+  "/rabbitory_webpage/__docusaurus/debug/registry-6cd": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---rabbitory-webpage-docusaurus-debugb-38-328"
+    }
+  },
+  "/rabbitory_webpage/__docusaurus/debug/routes-1b4": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---rabbitory-webpage-docusaurus-debugb-38-328"
+    }
+  },
+  "/rabbitory_webpage/team-d05": {
+    "__comp": "__comp---site-src-pages-team-js-859-9b3",
+    "__context": {
+      "plugin": "plugin---rabbitory-webpage-teama-74-8d1"
+    },
+    "config": "config---rabbitory-webpage-team-5-e-9-5fb"
+  },
+  "/rabbitory_webpage/docs-740": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---rabbitory-webpage-docsaba-e61"
+    }
+  },
+  "/rabbitory_webpage/docs-42c": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---rabbitory-webpage-docs-8-c-4-b8c"
+  },
+  "/rabbitory_webpage/docs-74d": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/rabbitory_webpage/docs/ArchitectureOverview-2dd": {
-    "__comp": "17896441",
-    "content": "cf7a622d"
-  },
-  "/rabbitory_webpage/docs/Conclusion-f66": {
-    "__comp": "17896441",
-    "content": "3023d28d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---rabbitory-webpage-docs-architecture-overviewcf-7-17a"
   },
   "/rabbitory_webpage/docs/ControlPanel-037": {
-    "__comp": "17896441",
-    "content": "dcfea3b4"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---rabbitory-webpage-docs-control-paneldcf-98b"
+  },
+  "/rabbitory_webpage/docs/FutureWork-15c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---rabbitory-webpage-docs-future-work-75-f-c71"
   },
   "/rabbitory_webpage/docs/Introduction-0da": {
-    "__comp": "17896441",
-    "content": "e0a19902"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---rabbitory-webpage-docs-introductione-0-a-c0d"
   },
   "/rabbitory_webpage/docs/MeetRabbitory-367": {
-    "__comp": "17896441",
-    "content": "8bc6fff5"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---rabbitory-webpage-docs-meet-rabbitory-8-bc-c26"
   },
   "/rabbitory_webpage/docs/Technical-1d1": {
-    "__comp": "17896441",
-    "content": "ff0ada2f"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---rabbitory-webpage-docs-technicalff-0-be8"
   },
   "/rabbitory_webpage/-85d": {
-    "__comp": "c4f5d8e4",
+    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---rabbitory-webpage-teama-74-8d1"
     },
-    "config": "5e9f5e1a"
+    "config": "config---rabbitory-webpage-team-5-e-9-5fb"
   }
 }

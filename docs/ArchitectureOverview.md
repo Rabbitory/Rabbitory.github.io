@@ -12,7 +12,7 @@ Rabbitory follows a modular, self-hosted architecture deployed entirely within t
 
 2. Control Panel (EC2 Instance)
 
-3. RabbitMQ Nodes (EC2 Instances)
+3. RabbitMQ Instances (EC2 Instances)
 
 4. Metadata Store (DynamoDB)
 
@@ -20,7 +20,7 @@ Rabbitory follows a modular, self-hosted architecture deployed entirely within t
 
 Below, we’ll explore each of these architectural components in depth to showcase how Rabbitory is structured and how each part contributes to its overall functionality.
 
-## Command-Line Tool
+## Rabbitory Command-Line Interface (CLI)
 
 The Rabbitory command-line interface (CLI) is a globally installed npm package that serves as the entry point to the entire Rabbitory system. After installation, users can run a single command to deploy or destroy all the AWS infrastructure needed to run the Control Panel and manage RabbitMQ instances. Deployment requires only an AWS region and, optionally, a custom domain for HTTPS. If a custom domain is provided, the CLI also configures DNS and automatically sets up an SSL certificate using Let's Encrypt, enabling secure HTTPS access.
 
@@ -40,18 +40,75 @@ While users can choose instance size and storage for RabbitMQ brokers, the Contr
 
 The Rabbitory Control Panel communicates directly with all RabbitMQ instances to handle creating new instances, making configuration changes, and performing deletions. Rabbitory is hosted on a t3.small EC2 instance, chosen to give developers more control over their infrastructure at a lower price point. Hosting the Control Panel on an EC2 allows for custom IAM roles, security groups, and cohesive communication with other RabbitMQ EC2s in the Rabbitory environment.
 
-The Control Panel is built entirely with Next.js, which powers both the backend server and the frontend UI, while Tailwind CSS is used for styling. Using Next.js allowed the entire app to run on a single EC2 instance, instead of relying on separate static file hosting services like AWS S3 Bucket. Static file hosting refers to the practice of serving pre-built, unchanging content such as HTML, CSS, JavaScript, and images directly from a storage service. S3 is a popular choice for static hosting because it stores and makes these files accessible over the web. However, with Next.js, we can serve dynamic content, handle server-side rendering, and manage API requests all from a single EC2 instance. This simplifies deployment and enables the Control Panel to be more integrated and responsive.
+The Control Panel is built entirely with Next.js, which powers both the backend server and the frontend UI, while Tailwind CSS is used for styling. Using Next.js allowed the entire app to run on a single EC2 instance, instead of relying on separate static file hosting services like AWS S3 Bucket. With Next.js, we can serve dynamic content, handle server-side rendering, and manage API requests all from a single EC2 instance. This simplifies deployment and enables the Control Panel to be more integrated and responsive.
 
-## RabbitMQ Nodes
+## RabbitMQ Instances
 
 Once the Control Panel is deployed, users can create individual RabbitMQ instances, each running on its own dedicated EC2 instance. During creation, users choose the instance type and storage size, allowing them to scale each broker according to its expected workload. Each instance is provisioned with an IAM role for permissions and a dedicated security group to control its network access.
 
-After deployment, the Control Panel displays the instance’s AMQP endpoint under General > Instance Info. This endpoint is what users plug into their producer or consumer code when building queue logic. Each instance can also be configured independently, with support for custom plugins, configuration files, and firewall settings tailored to its specific use case.
-For JavaScript applications, a typical connection might look like this:
+After deployment, the Control Panel displays the instance’s AMQP endpoint under <strong> General > Instance Info</strong>. This endpoint is what users plug into their producer or consumer code when building queue logic. Each instance can also be configured independently, with support for custom plugins, configuration files, and firewall settings tailored to its specific use case.
+
+To illustrate, here's how you might use this endpoint in a producer application written in TypeScript:
 
 ```javascript
-amqp.connect(`amqp://${username}:${password}@${endpoint}`, ...)
+// producer.ts
+import amqp from "amqplib";
+
+const amqpUrl = "amqp://username:password@your-endpoint";
+const queue = "my-queue";
+
+async function sendMessage() {
+  let connection, channel;
+  try {
+    connection = await amqp.connect(amqpUrl);
+    channel = await connection.createChannel();
+    await channel.assertQueue(queue, { durable: true });
+
+    const message = "Hello from producer!";
+    channel.sendToQueue(queue, Buffer.from(message));
+    console.log(`Sent: ${message}`);
+  } catch (error) {
+    console.error("Error sending message:", error);
+  } finally {
+    if (channel) await channel.close();
+    if (connection) await connection.close();
+  }
+}
+
+sendMessage();
 ```
+
+And here's how a corresponding consumer might look:
+
+```javascript
+// consumer.ts
+import amqp from "amqplib";
+
+const amqpUrl = "amqp://username:password@your-endpoint";
+const queue = "my-queue";
+
+async function receiveMessages() {
+  try {
+    const connection = await amqp.connect(amqpUrl);
+    const channel = await connection.createChannel();
+    await channel.assertQueue(queue, { durable: true });
+
+    console.log(`Waiting for messages in ${queue}...`);
+    channel.consume(queue, (msg) => {
+      if (msg !== null) {
+        console.log(`Received: ${msg.content.toString()}`);
+        channel.ack(msg);
+      }
+    });
+  } catch (error) {
+    console.error("Error receiving messages:", error);
+  }
+}
+
+receiveMessages();
+```
+
+These examples demonstrate how to connect to your RabbitMQ instance using the provided AMQP endpoint, send messages to a queue, and consume them. Remember to replace `username`, `password`, and `your-endpoint` with your actual credentials and endpoint information.
 
 ## Metadata Store
 

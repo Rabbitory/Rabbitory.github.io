@@ -7,7 +7,9 @@ import AnimatedSvgEmbed from '@site/src/components/AnimatedSvgEmbed';
 
 # Introduction
 
-Rabbitory is an open-source, self-hosted message queue management tool built specifically for RabbitMQ, one of the most widely used message brokers in modern software systems. Rabbitory simplifies the deployment and configuration of RabbitMQ instances on AWS while maintaining visibility into cost and infrastructure setup. To understand why a tool like Rabbitory matters, let’s first explore what message queues are, how RabbitMQ fits into that domain, and why these tools are so valuable in modern distributed systems.
+Rabbitory is an open-source, self-hosted message queue management tool built specifically for RabbitMQ, one of the most widely used message brokers in modern software systems. Rabbitory simplifies the deployment and configuration of RabbitMQ instances on AWS while maintaining visibility into cost and infrastructure setup.
+
+To understand why a tool like Rabbitory matters, let’s first explore what message queues are, how RabbitMQ fits into that domain, and why these tools are so valuable in modern distributed systems.
 
 ## Message Queues
 
