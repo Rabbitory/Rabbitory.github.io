@@ -70,21 +70,8 @@ export default {
     },
     "footer": {
       "style": "dark",
-      "links": [
-        {
-          "title": "Docs",
-          "items": []
-        },
-        {
-          "title": "Community",
-          "items": []
-        },
-        {
-          "title": "More",
-          "items": []
-        }
-      ],
-      "copyright": "Copyright © 2025 Rabbitory"
+      "copyright": "Copyright © 2025 Rabbitory",
+      "links": []
     },
     "prism": {
       "theme": {
