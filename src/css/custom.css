@@ -89,12 +89,11 @@ main {
 }
 
 .header-content {
-  max-width: 800px;
   margin: 0 auto;
 }
 
 .header-title {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
   color: var(--ifm-heading-color);
 }
