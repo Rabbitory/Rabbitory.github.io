@@ -193,7 +193,8 @@ export default function CliPreview() {
   return (
     <div className="cli-preview">
       <h2>
-        Your Rabbitory stack. Automagically provisioned
+        Your Rabbitory stack.{" "}
+        <span className="gradient-text">Automagically</span> provisioned
         <Sparkles size={24} color="#63eef0" style={{ marginLeft: "0.5rem" }} />
       </h2>
 
@@ -205,7 +206,7 @@ export default function CliPreview() {
         </div>
 
         <div className="cli-text">
-          <h3>The Rabbitory CLI deploys everything you'll need</h3>
+          <h3>The Rabbitory CLI provisions everything you'll need</h3>
           <ResourceList />
         </div>
       </div>
