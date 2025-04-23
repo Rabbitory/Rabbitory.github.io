@@ -19,8 +19,8 @@ function Member({ image, title, description }) {
 const Team = () => {
   const TeamList = [
     {
-      title: "Jaqueline Amherst",
-      image: "/img/cli-graphic.svg",
+      title: "Jacqueline Amherst",
+      image: "/img/team/jacquelineamherst.svg",
       description: (
         <div
           style={{
@@ -58,8 +58,8 @@ const Team = () => {
       ),
     },
     {
-      title: "Mason Abruzzesse",
-      image: "/img/rabbitmq-graphic.svg",
+      title: "Mason Abbruzzese",
+      image: "/img/team/masonabbruzzese.svg",
       description: (
         <div
           style={{

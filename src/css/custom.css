@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Metrophobic&display=swap");
 
 html,
 body,
@@ -54,6 +55,10 @@ h6 {
 
 main {
   background-color: #191919;
+}
+
+.homepage {
+  background: linear-gradient(to bottom, #17181c, #202124 60%, #0f0f11);
 }
 
 .breadcrumbs__item--active .breadcrumbs__link {
@@ -141,6 +146,20 @@ main {
   padding: 8rem 0;
 }
 
+.cli-video-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  min-width: 300px;
+  max-width: 640px;
+  padding: 10px;
+  border: 2px solid #63eef0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px #63eef0;
+  /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); */
+}
+
 .amqp-endpoint-preview {
   display: flex;
   flex-wrap: wrap;
@@ -150,16 +169,17 @@ main {
   padding: 8rem 0;
 }
 
-.cli-video-box {
-  flex: 2;
-  min-width: 300px;
-  max-width: 640px;
-}
-
 .amqp-video-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 2;
   min-width: 300px;
   max-width: 640px;
+  padding: 10px;
+  border: 4px solid #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 .video-placeholder {
@@ -271,10 +291,6 @@ main {
   text-decoration: underline;
 }
 
-/* .docMainContainer_TBSr {
-  background-color: #232526;
-} */
-
 .rabbitory-animation {
   margin-top: 8px;
   margin-bottom: 8px;
@@ -336,3 +352,4 @@ main {
   --ifm-link-hover-color: #2af7ac; /* green */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+

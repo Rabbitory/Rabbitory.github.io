@@ -8,7 +8,7 @@ export default function HomepageHeader() {
     <header className="header-section">
       <div className="header-content">
         <Heading as="h1" className="header-title">
-          RABBITORY
+          Slogan here.
         </Heading>
         <p className="header-subtitle">{siteConfig.tagline}</p>
         <div className="header-button-wrapper">

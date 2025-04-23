@@ -15,8 +15,8 @@ export default function AMPQEndpointPreview() {
             <li>AWS DynamoDB Metadata Store</li>
           </ul>
         </div>
-        <div className="cli-preview-container">
-          <div className="cli-video-box">
+        <div className="ampq-preview-container">
+          <div className="amqp-video-box">
             <video loop autoPlay playsInline muted width={600}>
               <source src={videoUrl} type="video/mp4" />
             </video>

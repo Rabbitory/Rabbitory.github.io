@@ -82,6 +82,7 @@ const config = {
       // image: "img/docusaurus-social-card.jpg",
       navbar: {
         style: "dark",
+        title: "RABBITORY", // This adds the label next to the logo
         logo: {
           alt: "Rabbitory Logo",
           src: "img/rabbitory-logo.png",
