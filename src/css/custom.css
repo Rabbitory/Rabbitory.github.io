@@ -57,9 +57,18 @@ main {
   background-color: #191919;
 }
 
-.homepage {
-  background: linear-gradient(to bottom, #17181c, #202124 60%, #0f0f11);
-}
+/* .homepage {
+  background: linear-gradient(
+    to bottom,
+    #191919,
+    #131315 50%,
+    #191919 100%
+  );
+  background-size: 100% 1000px;
+  background-repeat: repeat-y;
+} */
+/* 4651b8 202124*/
+
 
 .breadcrumbs__item--active .breadcrumbs__link {
   color: #2af7ac;
