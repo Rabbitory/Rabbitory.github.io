@@ -4,6 +4,7 @@ sidebar_position: 5
 description: "Architecture Overview"
 ---
 
+import AnimatedSvgEmbed from '@site/src/components/AnimatedSvgEmbed';
 import CreatedResources from '@site/src/components/CreatedResources';
 
 # Architecture Overview
@@ -18,7 +19,7 @@ Rabbitory follows a modular, self-hosted architecture deployed entirely within t
 
 4. A Metadata Store (DynamoDB)
 
-![Architecture Diagram](../static/img/rabbitory-overall.png)
+<AnimatedSvgEmbed className="rabbitory-animation" svgName="rabbitory-overall.svg" altText="Architecture Animation" />
 
 Below, we’ll explore each of these architectural components in depth to showcase how Rabbitory is structured and how each part contributes to its overall functionality.
 
@@ -29,7 +30,7 @@ Running `rabbitory deploy` provisions the following core infrastructure:
 
 <CreatedResources />
 
-![CLI Deployment](../static/img/cli-deployment.png)
+<AnimatedSvgEmbed className="rabbitory-animation" svgName="cli-deployment.svg" altText="Command Line Deployment" />
 
 When users no longer need the infrastructure, running `rabbitory destroy` cleanly tears down all resources provisioned during deployment, including the DynamoDB table, the Control Panel instance, all managed RabbitMQ broker instances, and supporting AWS resources.
 

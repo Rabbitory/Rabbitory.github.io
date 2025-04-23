@@ -3,6 +3,7 @@ sidebar_label: "The RabbitMQ Ecosystem"
 sidebar_position: 2
 ---
 
+import AnimatedSvgEmbed from '@site/src/components/AnimatedSvgEmbed';
 import ManagedBrokerFeatures from '@site/src/components/ManagedBrokerFeatures';
 
 # The RabbitMQ Ecosystem
@@ -15,7 +16,7 @@ Most accurately, RabbitMQ is considered a message broker. This means it can act 
 
 Just as a post office routes letters to mailboxes, RabbitMQ uses <a href="https://www.rabbitmq.com/docs/exchanges" target="_blank">exchanges</a> to route messages to the appropriate queues for consumption. Managing the logic and transport of messages, RabbitMQ uses message queues to reliably route messages between producers and consumers. While RabbitMQ is feature-rich, it is also a lightweight option that can be self-hosted via containers or virtual machines.
 
-[ Post Office / RabbitMQ Diagram ? ]
+<AnimatedSvgEmbed className="rabbitory-animation" svgName="exchanges-animation.svg" altText="Exchange Animation" />
 
 For these reasons, RabbitMQ is beloved by the developer community. It’s used by companies ranging from small startups to large enterprises like Reddit, Shopify, and Mozilla to power their asynchronous workflows.
 
