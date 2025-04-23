@@ -1,25 +1,18 @@
 import Heading from "@theme/Heading";
 import useBaseUrl from "@docusaurus/useBaseUrl";
+
 const FeatureList = [
   {
-    title: "Automated Deployment",
+    title: "Automated Deployment via the Rabbitory CLI",
     image: "/img/cli-graphic.svg",
-    description: <>via the Rabbitroy CLI</>,
   },
   {
-    title: "RabbitMQ-as-a-Service",
+    title: "First-class support for RabbitMQ",
     image: "/img/rabbitmq-graphic.svg",
-    description: (
-      <>
-        First-class support for RabbitMQ, one of the most widely used message
-        brokers.
-      </>
-    ),
   },
   {
-    title: "Powered by Amazon EC2",
+    title: "Powered by Amazon EC2.\nSimple, Powerful, Fast",
     image: "/img/EC2.svg",
-    description: <>Something here</>,
   },
 ];
 
@@ -43,13 +36,9 @@ export default function HomepageFeatures() {
       <div className="container">
         <div className="features-row">
           <Feature {...FeatureList[0]} />
-
           <Feature {...FeatureList[1]} />
           <Feature {...FeatureList[2]} />
         </div>
-        {/* <div className="features-row center-single">
-          
-        </div> */}
       </div>
     </section>
   );

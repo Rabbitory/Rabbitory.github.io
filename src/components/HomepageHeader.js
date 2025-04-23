@@ -1,9 +1,7 @@
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Link from "@docusaurus/Link";
 import Heading from "@theme/Heading";
 
 export default function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <header className="header-section">
       <div className="header-content">
@@ -11,7 +9,7 @@ export default function HomepageHeader() {
           Managing RabbitMQ, Made Easy.
         </Heading>
         <p className="header-subtitle">
-          The self-hosted RabbitMQ-as-a-Service solution for your message queue
+          The self-hosted, RabbitMQ-as-a-Service solution for all your messaging
           needs.
         </p>
         <div className="header-button-wrapper">
