@@ -67,6 +67,7 @@ main {
   background-size: 100% 1000px;
   background-repeat: repeat-y;
 } */
+
 /* 4651b8 202124*/
 
 
@@ -122,18 +123,40 @@ main {
   color: #2af7ac;
 }
 
+.features-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .features-row {
   display: flex;
   justify-content: center;
-  gap: 3rem; /* Increased spacing between items */
+  gap: 4rem; /* Increased spacing between items */
   flex-wrap: wrap;
   margin-bottom: 2rem;
 }
 
 .feature-item {
   flex: 1 1 300px;
+  width: 220px;
   max-width: 400px;
-  padding: 1rem; /* Optional internal spacing */
+  padding: 3rem; /* Optional internal spacing */
+  background: linear-gradient(160deg, #1a1a1d, #202124);
+  border-radius: 12px;
+
+  height: 420px;
+  box-shadow: 0 4px 8px #00000040;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 2px 8px #63eef0;
+
 }
 
 .center-single {
@@ -141,32 +164,63 @@ main {
 }
 
 .feature-svg {
-  width: 250px;
+  width: 200px;
   height: auto;
   margin-bottom: 1rem;
 }
 
+.cli-preview {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 2rem;
+}
+
+.cli-preview h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: var(--ifm-heading-color);
+}
+
 .cli-preview-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* <- prevent wrapping unless really necessary */
   justify-content: space-between;
-  align-items: center;
-  gap: rem;
-  padding: 8rem 0;
+  align-items: flex-start;
+  gap: 3rem;
 }
 
 .cli-video-box {
+  flex: 0 1 60%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 2;
-  min-width: 300px;
-  max-width: 640px;
   padding: 10px;
   border: 2px solid #63eef0;
   border-radius: 8px;
   box-shadow: 0 4px 12px #63eef0;
-  /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); */
+}
+
+.cli-video-box video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cli-text {
+  flex: 0 1 40%;
+  color: var(--ifm-font-color-base);
+}
+
+
+.cli-text h3 {
+  color: var(--ifm-heading-color);
+  margin-bottom: 1rem;
+}
+
+.cli-text ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  line-height: 1.6;
 }
 
 .amqp-endpoint-preview {
@@ -204,23 +258,7 @@ main {
   font-family: monospace;
 }
 
-.cli-text {
-  flex: 1;
-  min-width: 280px;
-  max-width: 400px;
-  color: var(--ifm-font-color-base);
-}
 
-.cli-text h3 {
-  color: var(--ifm-heading-color);
-  margin-bottom: 1rem;
-}
-
-.cli-text ul {
-  padding-left: 1.5rem;
-  list-style-type: disc;
-  line-height: 1.6;
-}
 
 .amqp-text {
   flex: 1;

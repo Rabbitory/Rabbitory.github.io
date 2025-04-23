@@ -45,10 +45,11 @@ export default function HomepageFeatures() {
           <Feature {...FeatureList[0]} />
 
           <Feature {...FeatureList[1]} />
-        </div>
-        <div className="features-row center-single">
           <Feature {...FeatureList[2]} />
         </div>
+        {/* <div className="features-row center-single">
+          
+        </div> */}
       </div>
     </section>
   );
