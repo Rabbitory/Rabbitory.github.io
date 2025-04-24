@@ -1,49 +1,26 @@
-import clsx from "clsx";
 import Heading from "@theme/Heading";
-import styles from "./styles.module.css";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
 const FeatureList = [
   {
-    title: "Easy to Use",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
-    description: (
-      <>
-        Rabbitory is a simple and easy-to-use self hosted RabbitMQ management
-        tool. It is designed to be user-friendly and intuitive, making it easy
-        for anyone to deploy and manage their RabbitMQ servers on AWS.
-      </>
-    ),
+    title: "Automated Deployment via the Rabbitory CLI",
+    image: "/img/cli-graphic.svg",
   },
   {
-    title: "Focus on What Matters",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
-    description: (
-      <>
-        Features a easy to use dashboard that allows you to monitor and manage
-        your RabbitMQ servers with ease.
-      </>
-    ),
+    title: "First-class support for RabbitMQ",
+    image: "/img/rabbitmq-graphic.svg",
   },
   {
-    title: "Automated Deployment",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-    description: (
-      <>
-        Rabbitory comes with a CLI tool that allows you to deploy RabbitMQ
-        servers on AWS with just a few simple commands. This makes it easy to
-        get started and deploy your RabbitMQ servers quickly and efficiently. It
-        also automate setting up https, simply provide a domain, we handle the
-        rest.
-      </>
-    ),
+    title: "Powered by Amazon EC2.\nSimple, Powerful, Fast",
+    image: "/img/EC2.svg",
   },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({ image, title, description }) {
   return (
-    <div className={clsx("col col--4")}>
+    <div className="feature-item">
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img className="feature-svg" src={useBaseUrl(image)} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -55,12 +32,12 @@ function Feature({ Svg, title, description }) {
 
 export default function HomepageFeatures() {
   return (
-    <section className={styles.features}>
+    <section className="features-section">
       <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
+        <div className="features-row">
+          <Feature {...FeatureList[0]} />
+          <Feature {...FeatureList[1]} />
+          <Feature {...FeatureList[2]} />
         </div>
       </div>
     </section>

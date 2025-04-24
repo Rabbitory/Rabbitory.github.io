@@ -10,8 +10,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Rabbitory",
-  tagline: "little demo site",
+  title: "RABBITORY",
+  tagline: "A self-hosted, open-source RabbitMQ-as-a-Service platform",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -74,14 +74,19 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: true,
+      },
       // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      // image: "img/docusaurus-social-card.jpg",
       navbar: {
-        // title: "Case Study",
-        // logo: {
-        //   alt: "My Site Logo",
-        //   src: "img/logo.svg",
-        // },
+        style: "dark",
+        title: "RABBITORY", // This adds the label next to the logo
+        logo: {
+          alt: "Rabbitory Logo",
+          src: "img/rabbitory-logo.png",
+        },
         items: [
           {
             type: "docSidebar",
@@ -89,58 +94,28 @@ const config = {
             position: "right",
             label: "Case Study",
           },
-          // { to: "/casestudy", label: "Case Study", position: "right" },
+          {
+            label: "Team",
+            position: "right",
+            to: "/team",
+          },
           {
             href: "https://github.com/Rabbitory",
-            label: "GitHub",
             position: "right",
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
+          },
+          {
+            href: "https://www.linkedin.com/company/rabbitory", // your org's LinkedIn URL
+            position: "right",
+            className: "header-linkedin-link",
+            "aria-label": "LinkedIn organization page",
           },
         ],
       },
       footer: {
         style: "dark",
-        links: [
-          {
-            title: "Docs",
-            // items: [
-            //   {
-            //     label: "Tutorial",
-            //     to: "/docs/intro",
-            //   },
-            // ],
-          },
-          {
-            title: "Community",
-            // items: [
-            //   {
-            //     label: "Stack Overflow",
-            //     href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            //   },
-            //   {
-            //     label: "Discord",
-            //     href: "https://discordapp.com/invite/docusaurus",
-            //   },
-            //   {
-            //     label: "X",
-            //     href: "https://x.com/docusaurus",
-            //   },
-            // ],
-          },
-          {
-            title: "More",
-            // items: [
-            //   {
-            //     label: "Blog",
-            //     to: "/blog",
-            //   },
-            //   {
-            //     label: "GitHub",
-            //     href: "https://github.com/facebook/docusaurus",
-            //   },
-            // ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Rabbitory.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Rabbitory`,
       },
       prism: {
         theme: prismThemes.github,
