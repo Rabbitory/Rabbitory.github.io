@@ -137,7 +137,7 @@ const Team = () => {
     },
     {
       title: "Zijin (Jim) Gong",
-      image: "/img/EC2.svg",
+      image: "/img/team/zijingong.svg",
       description: (
         <div
           style={{

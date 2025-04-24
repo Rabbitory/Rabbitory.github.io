@@ -32,13 +32,13 @@ export default function ControlPanelPreview() {
       }
     });
   };
+
   return (
     <section className="control-panel-preview">
       <div className="container text--center">
-        <h2 className="text--center">The Rabbitory Control Panel</h2>
-        <p>
-          A streamlined interface for managing your instances - all in one place
-        </p>
+        <h2 className="text--center">
+          The Rabbitory Control Panel manages your instance creation
+        </h2>
         <Carousel
           showArrows
           infiniteLoop
