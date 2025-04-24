@@ -3,6 +3,8 @@ sidebar_label: "Technical Decisions & Challenges"
 sidebar_position: 6
 ---
 
+import AnimatedSvgEmbed from '@site/src/components/AnimatedSvgEmbed';
+
 # Technical Decisions & Challenges
 
 Automating the AWS Cloud infrastructure and designing the Control Panel for Rabbitory came with its own set of unique considerations and challenges. Below is a summary of the most salient decisions we made as a team and what challenges we encountered in building this tool.
@@ -48,7 +50,7 @@ Another possible solution was to download RabbitMQ’s CLI tools onto the Contro
 
 Instead, we wanted a solution that enables remote access to these tools without duplicating infrastructure. <a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html" target="_blank">AWS SSM Session Manager</a> addressed this need by allowing users to initiate secure, remote shell sessions directly to EC2 instances. Using IAM permissions, users can safely run bash commands on remote instances without the need for persistent APIs or additional dependencies, preserving both performance and system simplicity. In Rabbitory, we utilize AWS SSM to change RabbitMQ configurations, enable plugins, and open protocol ports for individual RabbitMQ instances.
 
-![SSM Communication](../static/img/ssm-communication.png)
+<AnimatedSvgEmbed className="rabbitory-animation" svgName="ssm-communication.svg" altText="SSM Communication Animation" />
 
 ---
 

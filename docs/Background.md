@@ -17,7 +17,7 @@ In many applications, communication between internal services relies on the requ
 
 Yet, there are scenarios where synchronous communication can fall short. Imagine you're signing up for a new service online. As part of the sign-up process, the system sends you a welcome email to confirm your account and introduce you to the platform. After creating your account, you ideally expect to see a confirmation message on the page right away. But with a synchronous request-response cycle, your sign-up confirmation could be delayed until that email is composed and successfully handed off or delivered. In system design, this kind of direct dependency, where one service waits on another to succeed, is known as <strong>tight coupling</strong>, and it can lead to delays and unexpected failures if something goes wrong.
 
-[ Diagram of request-response issue for email ex ]
+<AnimatedSvgEmbed className="rabbitory-animation" svgName="email-no-queue.svg" altText="Email Without Queue Animation" />
 
 Instead of using the synchronous request-response cycle, in this scenario, we can leverage a pattern of <strong>asynchronous communication</strong>. With an asynchronous pattern, you, as the customer, receive a quick confirmation that your account sign-up has been processed while the rest of the work of sending the email can happen quietly in the background. In this pattern, the sign-up confirmation becomes decoupled from the email task. This pattern is specifically used to make the response quicker.
 
@@ -29,6 +29,6 @@ A widely used tool for implementing an asynchronous communication pattern is a <
 
 In our email example, the sign-up system would simply drop a message into a connected message queue to request that a welcome email be sent. Then, a separate email service would pick up the request later to handle the actual delivery of the email without slowing down the sign-up process. Notably, this allows the user signing up on our platform to receive a much quicker sign-up confirmation, not stuck waiting for an email to be processed and sent.
 
-[ Diagram of message queue solution for email ex ]
+<AnimatedSvgEmbed className="rabbitory-animation" svgName="email-with-queue.svg" altText="Email Without Queue Animation" />
 
 The service that sends a message is often called a <strong>producer</strong>, and the service that receives the message is called a <strong>consumer</strong>. In essence, a message queue allows software systems to decouple the actions of the producer from those of the consumer. This results in a snappier user experience. Additionally, if either the producer or consumer application goes down temporarily, any messages sent in the meantime are safely stored in the queue until they can be processed. This is one of the key ways message queues help make systems more resilient and fault-tolerant.
