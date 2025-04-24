@@ -11,7 +11,7 @@ export default function Home() {
       title={"Home"}
       description="Description will go into a meta tag in <head />"
     >
-      <main>
+      <main className="homepage">
         <HomepageHeader />
         <HomepageFeatures />
         <CliPreview />

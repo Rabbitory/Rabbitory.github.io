@@ -19,8 +19,8 @@ function Member({ image, title, description }) {
 const Team = () => {
   const TeamList = [
     {
-      title: "Jaqueline Amherst",
-      image: "/img/cli-graphic.svg",
+      title: "Jacqueline Amherst",
+      image: "/img/team/jacquelineamherst.svg",
       description: (
         <div
           style={{
@@ -58,8 +58,8 @@ const Team = () => {
       ),
     },
     {
-      title: "Mason Abruzzesse",
-      image: "/img/rabbitmq-graphic.svg",
+      title: "Mason Abbruzzese",
+      image: "/img/team/masonabbruzzese.svg",
       description: (
         <div
           style={{
@@ -137,7 +137,7 @@ const Team = () => {
     },
     {
       title: "Zijin (Jim) Gong",
-      image: "/img/EC2.svg",
+      image: "/img/team/zijingong.svg",
       description: (
         <div
           style={{
@@ -180,27 +180,29 @@ const Team = () => {
     <Layout>
       <div className="features-section">
         <div className="container">
-          <div className="text--center padding-horiz--md padding-top--xl">
-            <Heading as="h1">Meet the Team</Heading>
+          <div className="team text--center padding-horiz--md padding-top--sm">
+            <Heading as="h1">
+              Meet the <span className="gradient-text">Team</span>
+            </Heading>
             <p>
-              Rabbitory is built and maintained by group of passionate
-              developers and engineers.
+              Rabbitory is developed and maintained by a dedicated team of
+              engineers committed to building reliable, open-source tools.
             </p>
             <p>
-              Have questions or want to know more? Reach out to us anytime on
-              our socials.
+              We’re always open to questions, feedback, or collaboration —
+              connect with us on our socials.
             </p>
           </div>
           <div className="features-row">
-            {TeamList.slice(0, 2).map((props, idx) => (
+            {TeamList.map((props, idx) => (
               <Member key={idx} {...props} />
             ))}
           </div>
-          <div className="features-row">
+          {/* <div className="features-row">
             {TeamList.slice(2).map((props, idx) => (
               <Member key={idx} {...props} />
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </Layout>

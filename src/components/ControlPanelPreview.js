@@ -5,15 +5,27 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // default style
 
 const videos = [
   "Create-Instance.mp4",
-  "Notification.mp4",
-  "Management-Ui.mp4",
   "Configuration.mp4",
   "Plugins.mp4",
   "Backups.mp4",
   "Firewall.mp4",
   "Logs.mp4",
   "Alarms.mp4",
+  "Notification.mp4",
+  "Management-Ui.mp4",
 ];
+
+const videoLabels = {
+  "Create-Instance.mp4": "instance provisioning",
+  "Configuration.mp4": "configurations",
+  "Plugins.mp4": "plugins",
+  "Backups.mp4": "backups",
+  "Firewall.mp4": "firewall rules",
+  "Logs.mp4": "logs",
+  "Alarms.mp4": "alarms",
+  "Notification.mp4": "in-app events",
+  "Management-Ui.mp4": "RabbitMQ Management UI",
+};
 
 export default function ControlPanelPreview() {
   const [current, setCurrent] = useState(0);
@@ -32,13 +44,24 @@ export default function ControlPanelPreview() {
       }
     });
   };
+
   return (
     <section className="control-panel-preview">
       <div className="container text--center">
-        <h2 className="text--center">The Rabbitory Control Panel</h2>
-        <p>
-          A streamlined interface for managing your instances - all in one place
-        </p>
+        <h2 className="text--center control-panel-heading">
+          Confidently manage your{" "}
+          <span
+            key={videoLabels[videos[current]]}
+            className="animated-word gradient-text"
+          >
+            {videoLabels[videos[current]]}
+          </span>
+        </h2>
+        {/* <p>
+          With the Rabbitory Control Panel, there's no need to become a RabbitMQ
+          sys admin. We got you covered with automated support for your RabbitMQ
+          in the cloud.
+        </p> */}
         <Carousel
           showArrows
           infiniteLoop
