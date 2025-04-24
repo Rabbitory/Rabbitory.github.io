@@ -9,8 +9,8 @@ export default function HomepageHeader() {
           Managing RabbitMQ, Made Easy.
         </Heading>
         <p className="header-subtitle">
-          The self-hosted, RabbitMQ-as-a-Service solution for all your messaging
-          needs.
+          The self-hosted, RabbitMQ-as-a-Service solution for all your message
+          queue needs
         </p>
         <div className="header-button-wrapper">
           <Link
@@ -24,20 +24,3 @@ export default function HomepageHeader() {
     </header>
   );
 }
-
-/*
-Manage Your RabbitMQ. Simple, Powerful, Self-Hosted
-
-"Self-Hosted RabbitMQ, Simplified.
-Managing RabbitMQ, Made Easy.
-RabbitMQ-as-a-Service, Fully Managed.
-Managed Message Queue. Managed 
-
-
-
-A self-hosted platform for easy deployment and management of RabbitMQ, with seamless integration into your AWS environment."
-Easily deploy, manage, and scale your RabbitMQ instances on AWS, with full control over your infrastructure."
-
-The self-hosted RabbitMQ-as-a-Service solution for your message queue needs. 
-Own your infrastructure. Own your queue.
-*/

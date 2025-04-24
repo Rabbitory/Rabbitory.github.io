@@ -180,7 +180,7 @@ const Team = () => {
     <Layout>
       <div className="features-section">
         <div className="container">
-          <div className="text--center padding-horiz--md padding-top--xl">
+          <div className="team text--center padding-horiz--md padding-top--sm">
             <Heading as="h1">Meet the Team</Heading>
             <p>
               Rabbitory is built and maintained by group of passionate
