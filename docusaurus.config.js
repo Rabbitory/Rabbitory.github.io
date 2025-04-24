@@ -101,24 +101,20 @@ const config = {
           },
           {
             href: "https://github.com/Rabbitory",
-            label: "GitHub",
             position: "right",
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
+          },
+          {
+            href: "https://www.linkedin.com/company/rabbitory", // your org's LinkedIn URL
+            position: "right",
+            className: "header-linkedin-link",
+            "aria-label": "LinkedIn organization page",
           },
         ],
       },
       footer: {
         style: "dark",
-        // links: [
-        //   {
-        //     title: "Docs",
-        //   },
-        //   {
-        //     title: "Community",
-        //   },
-        //   {
-        //     title: "More",
-        //   },
-        // ],
         copyright: `Copyright © ${new Date().getFullYear()} Rabbitory`,
       },
       prism: {

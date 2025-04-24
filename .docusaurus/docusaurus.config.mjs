@@ -63,8 +63,15 @@ export default {
         },
         {
           "href": "https://github.com/Rabbitory",
-          "label": "GitHub",
-          "position": "right"
+          "position": "right",
+          "className": "header-github-link",
+          "aria-label": "GitHub repository"
+        },
+        {
+          "href": "https://www.linkedin.com/company/rabbitory",
+          "position": "right",
+          "className": "header-linkedin-link",
+          "aria-label": "LinkedIn organization page"
         }
       ],
       "hideOnScroll": false
