@@ -355,7 +355,7 @@ main {
   font-size: 30px;
   /* max-width: 500px; */
   text-align: left;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   margin-left: -15px;
   color: var(--ifm-heading-color);
 }
@@ -366,11 +366,12 @@ main {
 }
 
 .control-panel-preview p {
+  font-size: 18px;
   text-align: left;
-  margin-left: 250px;
-  margin-right: 250px;
+  max-width: 60ch;
+  line-height: 1.5;
+  margin: 0 160px 2rem;
 }
-
 .control-panel-carousel {
   max-width: 800px;
   margin: 0 auto;

@@ -57,11 +57,11 @@ export default function ControlPanelPreview() {
             {videoLabels[videos[current]]}
           </span>
         </h2>
-        {/* <p>
-          With the Rabbitory Control Panel, there's no need to become a RabbitMQ
-          sys admin. We got you covered with automated support for your RabbitMQ
-          in the cloud.
-        </p> */}
+        <p>
+          With the Rabbitory Control Panel, you don’t need to be a RabbitMQ
+          expert. We’ve got you covered with automated management for your
+          cloud-hosted RabbitMQ.
+        </p>
         <Carousel
           showArrows
           infiniteLoop
