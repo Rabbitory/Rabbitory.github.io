@@ -1,7 +1,7 @@
 ---
-sidebar_label: "Architecture Overview"
-sidebar_position: 5
-description: "Architecture Overview"
+sidebar_label: "Architecture"
+sidebar_position: 6
+description: "Architecture"
 ---
 
 import AnimatedSvgEmbed from '@site/src/components/AnimatedSvgEmbed';

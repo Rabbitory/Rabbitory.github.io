@@ -1,6 +1,6 @@
 ---
 sidebar_label: "The Control Panel"
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 import AnimatedSvgEmbed from '@site/src/components/AnimatedSvgEmbed';
@@ -12,6 +12,8 @@ The Rabbitory Control Panel enables Rabbitory to function as a RabbitMQ-as-a-Ser
 ## One-Click Provisioning
 
 Setting up a RabbitMQ server on EC2 usually takes time and experience. Developers need to choose the right AMI, configure IAM roles, set up security groups, write a startup script, install RabbitMQ, enable plugins, and handle configuration manually. Even with solid AWS knowledge, provisioning an EC2 instance with RabbitMQ is a multi-step process that’s prone to errors.
+
+![One-click Provisioning](../static/img/one-click-provisioning.png)
 
 Rabbitory simplifies this process by doing all the manual work for its users. With one-click provisioning, users can spin up a new RabbitMQ instance in seconds. After entering a few details, the system launches an EC2 instance with RabbitMQ already installed and configured. Rabbitory fetches a region-specific Ubuntu AMI, assigns an IAM role, and sets up security groups. Then, a custom startup script handles the rest by installing RabbitMQ, enabling plugins, writing the config file, and creating a management user.
 
@@ -29,11 +31,13 @@ Rabbitory allows users to configure the hardware of the RabbitMQ instances, incl
 
 ## Firewall Settings
 
-To protect RabbitMQ instances from unwanted network access, each one is secured behind a dedicated firewall. In AWS, this is implemented using security groups, which act as virtual firewalls. Rabbitory creates a unique security group for each RabbitMQ instance with a name that corresponds to the instance’s name. This provides users with precise control over the inbound and outbound traffic of each RabbitMQ broker instance.
-
-Alongside a robust set of features, RabbitMQ offers the following message queuing protocols: AMQP, MQTT, STOMP, and STREAM. By default, RabbitMQ uses plugins to enable these protocols. Since these protocols require dedicated ports, it’s crucial to not only enable the corresponding protocol plugin but to also open up the corresponding port on the instance’s security group when enabling any of these protocols. Rabbitory’s Firewall page, available for each instance, allows developers to easily configure both AWS security group rules and RabbitMQ ports in one place.
+To protect RabbitMQ instances from unwanted network access, each one is secured behind a dedicated firewall.
 
 <AnimatedSvgEmbed svgName="firewall.svg" altText="Firewall Demonstration" />
+
+In AWS, firewalls are implemented using security groups, which act as virtual firewalls. Rabbitory creates a unique security group for each RabbitMQ instance with a name that corresponds to the instance’s name. This provides users with precise control over the inbound and outbound traffic of each RabbitMQ broker instance.
+
+Alongside a robust set of features, RabbitMQ offers the following message queuing protocols: AMQP, MQTT, STOMP, and STREAM. By default, RabbitMQ uses plugins to enable these protocols. Since these protocols require dedicated ports, it’s crucial to not only enable the corresponding protocol plugin but to also open up the corresponding port on the instance’s security group when enabling any of these protocols. Rabbitory’s Firewall page, available for each instance, allows developers to easily configure both AWS security group rules and RabbitMQ ports in one place.
 
 ## Monitoring with Alarms and Logs
 
