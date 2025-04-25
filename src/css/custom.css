@@ -495,6 +495,10 @@ main {
 
 .team p {
   font-size: 18px;
+  line-height: 1.4;
+  max-width: 50ch;
+  margin: 0 auto 1rem;
+  text-align: center;
 }
 
 footer {
