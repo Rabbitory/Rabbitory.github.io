@@ -76,6 +76,8 @@ Unlike Rabbitory, many self-hosted SaaS tools don’t enable HTTPS by default, p
 
 For example, Grafana, an open-source tool for monitoring and visualizing time-series data, ships with HTTP by default and leaves <a href="https://grafana.com/docs/grafana/latest/setup-grafana/set-up-https/" target="_blank">HTTPS setup</a> to the user. This usually means configuring DNS, installing SSL certificates, and setting up a reverse proxy like NGINX. Each step depends on the one before it, and DNS propagation can be slow or inconsistent depending on the domain provider.
 
-Rabbitory takes a different approach. Our team automated HTTPS setup to cut down on deployment overhead. When users choose to deploy the Control Panel with HTTPS, the CLI asks for a domain the user owns, then handles the rest. It updates DNS using Route53, whether the domain is registered there or elsewhere. It sets up a hosted zone, adds A-records for the Control Panel, issues certificates with Certbot, and configures NGINX as a reverse proxy. By automating this setup, Rabbitory provides a secure, production-ready environment with minimal manual effort.
+Rabbitory takes a different approach. It provides an automated HTTPS setup option for enhanced security.
 
-[ CLI image of this here ? ]
+![CLI provides HTTPS options](../static/img/cli-https.png)
+
+When users choose to deploy the Control Panel with HTTPS, the CLI asks for a domain the user owns, then handles the rest. It updates DNS using Route53, whether the domain is registered there or elsewhere. It sets up a hosted zone, adds A-records for the Control Panel, issues certificates with Certbot, and configures NGINX as a reverse proxy. By automating this setup, Rabbitory provides a secure, production-ready environment with minimal manual effort.
