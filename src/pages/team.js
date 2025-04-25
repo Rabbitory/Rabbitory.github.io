@@ -31,7 +31,7 @@ const Team = () => {
           }}
         >
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/jacqueline-amherst-kemps-362409336/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -45,13 +45,13 @@ const Team = () => {
             <FaGlobe />
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/jq-ln"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub />
           </a>
-          <a href="mailto:you@example.com">
+          <a href="jacqueline.amherst@icloud.com">
             <FaEnvelope />
           </a>
         </div>
@@ -70,7 +70,7 @@ const Team = () => {
           }}
         >
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/masonabbruzzese/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -84,13 +84,13 @@ const Team = () => {
             <FaGlobe />
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Ovaculos"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub />
           </a>
-          <a href="mailto:you@example.com">
+          <a href="masonderolo@gmail.com">
             <FaEnvelope />
           </a>
         </div>
@@ -123,13 +123,13 @@ const Team = () => {
             <FaGlobe />
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/larencozart"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub />
           </a>
-          <a href="mailto:you@example.com">
+          <a href="larencozart@gmail.com">
             <FaEnvelope />
           </a>
         </div>
@@ -148,7 +148,7 @@ const Team = () => {
           }}
         >
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/zijin-gong-5a8681255/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -162,13 +162,13 @@ const Team = () => {
             <FaGlobe />
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/zijin1994"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub />
           </a>
-          <a href="mailto:you@example.com">
+          <a href="zijin@ualberta.ca">
             <FaEnvelope />
           </a>
         </div>
@@ -185,11 +185,11 @@ const Team = () => {
               Meet the <span className="gradient-text">Team</span>
             </Heading>
             <p>
-              Rabbitory is developed and maintained by a dedicated team of
-              engineers committed to building reliable, open-source tools.
+              Rabbitory is developed by a dedicated team of engineers committed
+              to building reliable, open-source tools.
             </p>
             <p>
-              We’re always open to questions, feedback, or collaboration —
+              We’re always looking for opportunites to build. Feel free to
               connect with us on our socials.
             </p>
           </div>

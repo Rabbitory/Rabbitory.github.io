@@ -1,6 +1,6 @@
 ---
 sidebar_label: "The RabbitMQ Ecosystem"
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 import AnimatedSvgEmbed from '@site/src/components/AnimatedSvgEmbed';
@@ -28,7 +28,11 @@ For teams wanting to abstract away this management overhead, a do-it-yourself so
 
 ## RabbitMQ-as-a-Service
 
-In response to the challenges of managing RabbitMQ instances in production, services began emerging to simplify the experience. These services are known as <strong>managed message brokers</strong>. Managed message broker services allow developers to treat RabbitMQ instances more like a Software-as-a-Service. Effectively, these platforms deliver RabbitMQ-as-a-Service. Managed message broker platforms are popular because they abstract away operational overhead, allowing developers to focus on using the RabbitMQ broker in their applications.
+In response to the challenges of managing RabbitMQ instances in production, services began emerging to simplify the experience. These services are known as <strong>managed message brokers</strong>.
+
+![Competition](../static/img/competitors.png)
+
+Managed message broker services allow developers to treat RabbitMQ instances more like a Software-as-a-Service. Effectively, these platforms deliver RabbitMQ-as-a-Service. Managed message broker platforms are popular because they abstract away operational overhead, allowing developers to focus on using the RabbitMQ broker in their applications.
 
 The two most notable solutions in this space are <a href="https://www.cloudamqp.com/" target="_blank">CloudAMQP</a> and <a href="https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/welcome.html" target="_blank">AmazonMQ</a>. Other popular managed message brokers for RabbitMQ include A2 Hosting, Stackhero, Elestio, ScaleGrid, and Northflank. Managed message broker solutions frequently include the following helpful features:
 

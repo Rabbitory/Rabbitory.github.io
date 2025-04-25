@@ -81,7 +81,8 @@ h6 {
   background-image: url("/img/linkedin-white.svg"); /* Use your preferred icon */
   background-size: contain;
   background-repeat: no-repeat;
-  margin-left: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   opacity: 0.8;
   transition: opacity 0.2s ease-in-out;
 }
@@ -118,17 +119,37 @@ main {
 }
 
 .header-section {
+  background: transparent;
+
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 80vh;
   padding: 4rem 1rem;
   text-align: center;
+  overflow: hidden;
 }
 
-.header-content {
-  margin: 0 auto;
+.header-video {
+  background: transparent;
+
+  position: absolute;
+  bottom: 2rem;
+  right: 6rem;
+  width: 500px; /* adjust size as needed */
+  height: auto;
+  z-index: 0;
+  opacity: 0.5; /* can tweak if you want a subtle look */
+  pointer-events: none; /* makes sure it doesn't interfere with clicks */
 }
+
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
 
 .header-title {
   font-family: "Manrope";
@@ -297,7 +318,7 @@ main {
   font-family: "Manrope";
   font-size: 30px;
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   color: var(--ifm-heading-color);
 }
 
@@ -330,7 +351,6 @@ main {
 .amqp-text {
   flex: 0 1 40%;
   color: var(--ifm-font-color-base);
-  margin-top: 50px;
   text-align: right;
 }
 
@@ -355,7 +375,7 @@ main {
   font-size: 30px;
   /* max-width: 500px; */
   text-align: left;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   margin-left: -15px;
   color: var(--ifm-heading-color);
 }
@@ -366,11 +386,12 @@ main {
 }
 
 .control-panel-preview p {
+  font-size: 18px;
   text-align: left;
-  margin-left: 250px;
-  margin-right: 250px;
+  max-width: 60ch;
+  line-height: 1.5;
+  margin: 0 160px 2rem;
 }
-
 .control-panel-carousel {
   max-width: 800px;
   margin: 0 auto;
@@ -495,6 +516,10 @@ main {
 
 .team p {
   font-size: 18px;
+  line-height: 1.4;
+  max-width: 50ch;
+  margin: 0 auto 1rem;
+  text-align: center;
 }
 
 footer {

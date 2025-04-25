@@ -1,17 +1,15 @@
 ---
 sidebar_label: "Background"
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 import AnimatedSvgEmbed from '@site/src/components/AnimatedSvgEmbed';
 
 # Background
 
-Rabbitory is an open-source, self-hosted message queue management tool built specifically for RabbitMQ, one of the most widely used message brokers in modern software systems. Rabbitory simplifies the deployment and configuration of RabbitMQ instances on AWS while maintaining visibility into cost and infrastructure setup.
-
 To understand why a tool like Rabbitory matters, let’s first explore what message queues are, how RabbitMQ fits into that domain, and why these tools are so valuable in modern distributed systems.
 
-## Synchronous vs. Asynchronous Communication
+## Exploring Two Communication Patterns
 
 In many applications, communication between internal services relies on the request-response cycle. This cycle is a form of <strong>synchronous communication</strong>. In this communication pattern, one service sends a request to another and waits until the other service responds. This pattern is instrumental in many scenarios as it provides immediate feedback on the success or failure of a response.
 
