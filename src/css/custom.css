@@ -81,7 +81,8 @@ h6 {
   background-image: url("/img/linkedin-white.svg"); /* Use your preferred icon */
   background-size: contain;
   background-repeat: no-repeat;
-  margin-left: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   opacity: 0.8;
   transition: opacity 0.2s ease-in-out;
 }
