@@ -49,17 +49,17 @@
     },
     "config": "config---rabbitory-webpage-team-5-e-9-5fb"
   },
-  "/rabbitory_webpage/docs-f33": {
+  "/rabbitory_webpage/docs-5b4": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---rabbitory-webpage-docsaba-e61"
     }
   },
-  "/rabbitory_webpage/docs-61e": {
+  "/rabbitory_webpage/docs-439": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---rabbitory-webpage-docs-8-c-4-b8c"
   },
-  "/rabbitory_webpage/docs-3aa": {
+  "/rabbitory_webpage/docs-64f": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/rabbitory_webpage/docs/ArchitectureOverview-2dd": {
@@ -77,6 +77,10 @@
   "/rabbitory_webpage/docs/FutureWork-15c": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---rabbitory-webpage-docs-future-work-75-f-c71"
+  },
+  "/rabbitory_webpage/docs/Introduction-0da": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---rabbitory-webpage-docs-introductione-0-a-c0d"
   },
   "/rabbitory_webpage/docs/MeetRabbitory-367": {
     "__comp": "__comp---theme-doc-item-178-a40",

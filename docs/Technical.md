@@ -1,6 +1,6 @@
 ---
 sidebar_label: "Technical Decisions & Challenges"
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 import AnimatedSvgEmbed from '@site/src/components/AnimatedSvgEmbed';
@@ -9,13 +9,15 @@ import AnimatedSvgEmbed from '@site/src/components/AnimatedSvgEmbed';
 
 Automating the AWS Cloud infrastructure and designing the Control Panel for Rabbitory came with its own set of unique considerations and challenges. Below is a summary of the most salient decisions we made as a team and what challenges we encountered in building this tool.
 
-## AWS EC2 vs ECS
+## AWS ECS vs EC2
 
-The first technical decision our team needed to make was on whether to host RabbitMQ servers in containers managed by ECS (Elastic Container Service) or on EC2 (Elastic Compute Cloud) instances. Choosing the ECS option would make deployments faster and scaling easier by abstracting infrastructure and managing containers for you. However, it would introduce complexity for stateful apps like RabbitMQ, and give developers less direct access to things like storage, networking, and system-level configurations. On the other hand, the EC2 option provides users full control over their servers, making it ideal for managing RabbitMQ’s configuration, plugins, and storage directly. The tradeoff of using EC2 is more manual setup and maintenance, with slower provisioning and scaling as compared to containers.
+The first technical decision our team needed to make was on whether to host RabbitMQ servers in containers managed by Elastic Container Service or on Elastic Compute Cloud instances.
+
+![ECS vs. EC2](../static/img/ecs-vs-ec2.png)
+
+Choosing the ECS option would make deployments faster and scaling easier by abstracting infrastructure and managing containers for you. However, it would introduce complexity for stateful apps like RabbitMQ, and give developers less direct access to things like storage, networking, and system-level configurations. On the other hand, the EC2 option provides users full control over their servers, making it ideal for managing RabbitMQ’s configuration, plugins, and storage directly. The tradeoff of using EC2 is more manual setup and maintenance, with slower provisioning and scaling as compared to containers.
 
 Rabbitory prioritizes transparency, infrastructure ownership, and simplicity in a single-instance, self-hosted context. EC2 offers the right balance of control and familiarity for users who want to own their setup without diving deep into the complexities of container orchestration. If Rabbitory expands to support RabbitMQ clustering, ECS might become a more compelling option. But for now, the EC2 option best matches Rabbitory’s philosophy and needs.
-
----
 
 ## AWS SDK vs. CDK
 
@@ -38,8 +40,6 @@ Our team ended up choosing to build with the AWS Typescript SDK, as it provided 
 
 The tradeoffs are that Rabbitory takes on more responsibility for infrastructure modeling, permission management, and avoiding configuration drift. As Rabbitory expands its feature set, a transition to CDK for resources deployment may valuable. Terraform may also be considered instead of the CDK if Rabbitory seeks to offer more cloud platforms besides AWS.
 
----
-
 ## RabbitMQ Server Interactions
 
 RabbitMQ comes with a large set of utility features that allow users to customize their queues. Allowing users to access and enable these specialized features from a centralized place, like our Control Panel, is essential. To enable these features, users often need to interact with the RabbitMQ server directly. Since the Rabbitory Control Panel runs on a separate EC2 instance than the RabbitMQ EC2 instances, we needed a method for remotely controlling and configuring the RabbitMQ EC2.
@@ -48,11 +48,9 @@ One straightforward solution would be to create a custom API on each RabbitMQ in
 
 Another possible solution was to download RabbitMQ’s CLI tools onto the Control Panel EC2 instance to communicate with the RabbitMQ instances. This would allow the Control Panel to perform remote operations on each RabbitMQ instance without compromising the RabbitMQ instances’ system performance. However, this solution would shift the system resource burden onto the Control Panel EC2.
 
-Instead, we wanted a solution that enables remote access to these tools without duplicating infrastructure. <a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html" target="_blank">AWS SSM Session Manager</a> addressed this need by allowing users to initiate secure, remote shell sessions directly to EC2 instances. Using IAM permissions, users can safely run bash commands on remote instances without the need for persistent APIs or additional dependencies, preserving both performance and system simplicity. In Rabbitory, we utilize AWS SSM to change RabbitMQ configurations, enable plugins, and open protocol ports for individual RabbitMQ instances.
-
 <AnimatedSvgEmbed className="rabbitory-animation" svgName="ssm-communication.svg" altText="SSM Communication Animation" />
 
----
+Instead, we wanted a solution that enables remote access to these tools without duplicating infrastructure. <a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html" target="_blank">AWS SSM Session Manager</a> addressed this need by allowing users to initiate secure, remote shell sessions directly to EC2 instances. Using IAM permissions, users can safely run bash commands on remote instances without the need for persistent APIs or additional dependencies, preserving both performance and system simplicity. In Rabbitory, we utilize AWS SSM to change RabbitMQ configurations, enable plugins, and open protocol ports for individual RabbitMQ instances.
 
 ## Challenges with the Control Panel
 
@@ -70,11 +68,11 @@ Additionally, creating an Alarms Page for a self-hosted platform came with some 
 
 To solve this problem, we chose to provide users a way to easily create their own Slack bot. On the Alarms Page, a quick tutorial is provided to guide users in creating a Rabbitory Slack bot for their alarms. Although this adds manual work for users, this approach aligns with Rabbitory’s self-hosted model and allows users the convenience of receiving a Slack notification when memory and storage issues arise. Right now, Rabbitory alarms run with <a href="https://www.npmjs.com/package/node-cron" target="_blank">node-cron</a> on the Control Panel’s EC2 instance. In the future, we’re considering <a href="https://aws.amazon.com/eventbridge/" target="_blank">AWS EventBridge</a> to make alarms more reliable and decoupled.
 
----
-
 ## Automating HTTPS
 
 Unlike Rabbitory, many self-hosted SaaS tools don’t enable HTTPS by default, placing the responsibility of enabling HTTPS on the user. While this simplifies initial deployment, it requires users to manually secure their application later.
+
+![HTTPS vs. HTTPS](../static/img/http-vs-https.png)
 
 For example, Grafana, an open-source tool for monitoring and visualizing time-series data, ships with HTTP by default and leaves <a href="https://grafana.com/docs/grafana/latest/setup-grafana/set-up-https/" target="_blank">HTTPS setup</a> to the user. This usually means configuring DNS, installing SSL certificates, and setting up a reverse proxy like NGINX. Each step depends on the one before it, and DNS propagation can be slow or inconsistent depending on the domain provider.
 

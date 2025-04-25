@@ -1,6 +1,6 @@
 ---
 sidebar_label: "The Control Panel"
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 import AnimatedSvgEmbed from '@site/src/components/AnimatedSvgEmbed';

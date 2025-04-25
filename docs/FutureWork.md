@@ -1,12 +1,10 @@
 ---
 sidebar_label: "Future Work"
-sidebar_position: 7
+sidebar_position: 8
 description: "Future Work"
 ---
 
 # Future Work
-
-Rabbitory is a self-hosted managed RabbitMQ solution that puts infrastructure choice and ownership at the center of the platform. In the broader managed message broker ecosystem, Rabbitory fills a critical niche. It's ideal for teams that want the power of RabbitMQ without the headache of managing RabbitMQ alone.
 
 While Rabbitory is already a robust solution, there is always room for growth. Below are some of the features and enhancements we plan to explore in future updates:
 
