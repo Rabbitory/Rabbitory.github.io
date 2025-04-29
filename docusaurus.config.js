@@ -17,14 +17,15 @@ const config = {
   url: "https://Rabbitory.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/rabbitory_webpage/",
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "Rabbitory", // Usually your GitHub org/user name.
-  projectName: "rabbitory_webpage", // Usually your repo name.
+  deploymentBranch: "gh-pages",
+  projectName: "Rabbitory.github.io", // Usually your repo name.
   trailingSlash: false,
-  deploymentBranch: "deploy",
+
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
