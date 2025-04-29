@@ -5,7 +5,7 @@
   "source": "@site/docs/ArchitectureOverview.md",
   "sourceDirName": ".",
   "slug": "/ArchitectureOverview",
-  "permalink": "/rabbitory_webpage/docs/ArchitectureOverview",
+  "permalink": "/docs/ArchitectureOverview",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "The Control Panel",
-    "permalink": "/rabbitory_webpage/docs/ControlPanel"
+    "permalink": "/docs/ControlPanel"
   },
   "next": {
     "title": "Technical Decisions & Challenges",
-    "permalink": "/rabbitory_webpage/docs/Technical"
+    "permalink": "/docs/Technical"
   }
 }

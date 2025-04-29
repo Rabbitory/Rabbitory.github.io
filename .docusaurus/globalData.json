@@ -1,53 +1,53 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/rabbitory_webpage/docs",
+      "path": "/docs",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/rabbitory_webpage/docs",
+          "path": "/docs",
           "mainDocId": "Introduction",
           "docs": [
             {
               "id": "ArchitectureOverview",
-              "path": "/rabbitory_webpage/docs/ArchitectureOverview",
+              "path": "/docs/ArchitectureOverview",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Background",
-              "path": "/rabbitory_webpage/docs/Background",
+              "path": "/docs/Background",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ControlPanel",
-              "path": "/rabbitory_webpage/docs/ControlPanel",
+              "path": "/docs/ControlPanel",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "FutureWork",
-              "path": "/rabbitory_webpage/docs/FutureWork",
+              "path": "/docs/FutureWork",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Introduction",
-              "path": "/rabbitory_webpage/docs/Introduction",
+              "path": "/docs/Introduction",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "MeetRabbitory",
-              "path": "/rabbitory_webpage/docs/MeetRabbitory",
+              "path": "/docs/MeetRabbitory",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "RabbitMQEcosystem",
-              "path": "/rabbitory_webpage/docs/RabbitMQEcosystem",
+              "path": "/docs/RabbitMQEcosystem",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Technical",
-              "path": "/rabbitory_webpage/docs/Technical",
+              "path": "/docs/Technical",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -55,7 +55,7 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/rabbitory_webpage/docs/Introduction",
+                "path": "/docs/Introduction",
                 "label": "Introduction"
               }
             }
