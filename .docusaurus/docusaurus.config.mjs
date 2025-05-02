@@ -8,11 +8,11 @@ export default {
   "tagline": "A self-hosted, open-source RabbitMQ-as-a-Service platform",
   "favicon": "img/favicon.ico",
   "url": "https://Rabbitory.github.io",
-  "baseUrl": "/rabbitory_webpage/",
+  "baseUrl": "/",
   "organizationName": "Rabbitory",
-  "projectName": "rabbitory_webpage",
+  "deploymentBranch": "gh-pages",
+  "projectName": "Rabbitory.github.io",
   "trailingSlash": false,
-  "deploymentBranch": "deploy",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {
@@ -68,7 +68,7 @@ export default {
           "aria-label": "GitHub repository"
         },
         {
-          "href": "https://www.linkedin.com/company/rabbitory",
+          "href": "https://www.linkedin.com/company/rabbitory-platform",
           "position": "right",
           "className": "header-linkedin-link",
           "aria-label": "LinkedIn organization page"
