@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "/__docusaurus/debug-5ff": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
@@ -100,5 +101,65 @@
       "plugin": "plugin---teama-74-e94"
     },
     "config": "config---team-5-e-9-3a3"
+=======
+  "/team-e5a": {
+    "__comp": "859cc09f",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  },
+  "/docs-ab3": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "aba21aa0"
+    }
+  },
+  "/docs-870": {
+    "__comp": "a7bd4aaa",
+    "__props": "0058b4c6"
+  },
+  "/docs-bbd": {
+    "__comp": "a94703ab"
+  },
+  "/docs/ArchitectureOverview-889": {
+    "__comp": "17896441",
+    "content": "cf7a622d"
+  },
+  "/docs/Background-650": {
+    "__comp": "17896441",
+    "content": "066701ab"
+  },
+  "/docs/ControlPanel-a57": {
+    "__comp": "17896441",
+    "content": "dcfea3b4"
+  },
+  "/docs/FutureWork-0e7": {
+    "__comp": "17896441",
+    "content": "75f78974"
+  },
+  "/docs/Introduction-7bf": {
+    "__comp": "17896441",
+    "content": "e0a19902"
+  },
+  "/docs/MeetRabbitory-038": {
+    "__comp": "17896441",
+    "content": "8bc6fff5"
+  },
+  "/docs/RabbitMQEcosystem-6fa": {
+    "__comp": "17896441",
+    "content": "65f35940"
+  },
+  "/docs/Technical-bb4": {
+    "__comp": "17896441",
+    "content": "ff0ada2f"
+  },
+  "/-2e1": {
+    "__comp": "c4f5d8e4",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+>>>>>>> main
   }
 }

@@ -3,6 +3,7 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+<<<<<<< HEAD
     path: '/__docusaurus/debug',
     component: ComponentCreator('/__docusaurus/debug', '5ff'),
     exact: true
@@ -43,6 +44,13 @@ export default [
     exact: true
   },
   {
+=======
+    path: '/team',
+    component: ComponentCreator('/team', 'e5a'),
+    exact: true
+  },
+  {
+>>>>>>> main
     path: '/docs',
     component: ComponentCreator('/docs', 'ab3'),
     routes: [
