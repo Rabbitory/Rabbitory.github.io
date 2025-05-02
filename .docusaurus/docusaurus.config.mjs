@@ -68,7 +68,7 @@ export default {
           "aria-label": "GitHub repository"
         },
         {
-          "href": "https://www.linkedin.com/company/rabbitory",
+          "href": "https://www.linkedin.com/company/rabbitory-platform",
           "position": "right",
           "className": "header-linkedin-link",
           "aria-label": "LinkedIn organization page"

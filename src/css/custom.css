@@ -109,6 +109,15 @@ main {
 
 /* 4651b8 202124*/
 
+.menu__list-item {
+  margin: 1rem;
+}
+.menu__list-item .header-github-link,
+.menu__list-item .header-linkedin-link {
+  margin: 0.5rem;
+}
+
+
 
 .breadcrumbs__item--active .breadcrumbs__link {
   color: #2af7ac;
@@ -376,7 +385,7 @@ main {
   /* max-width: 500px; */
   text-align: left;
   margin-bottom: 2rem;
-  margin-left: -15px;
+  margin-left: 20px;
   color: var(--ifm-heading-color);
 }
 
@@ -387,10 +396,10 @@ main {
 
 .control-panel-preview p {
   font-size: 18px;
-  text-align: left;
-  max-width: 60ch;
+  text-align: center;
+  max-width: 70ch;
   line-height: 1.5;
-  margin: 0 160px 2rem;
+  margin: 40px 250px 2rem;
 }
 .control-panel-carousel {
   max-width: 800px;
@@ -583,3 +592,88 @@ footer {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+@media screen and (max-width: 768px) {
+/* Keep the navbar clean and compact */
+.navbar {
+  padding: 0.5rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Hide right-side nav items on mobile */
+@media screen and (max-width: 996px) {
+  .navbar__items--right {
+    display: none;
+  }
+}
+
+/* Optional: Style sidebar links when hamburger is opened */
+.navbar-sidebar {
+  background-color: var(--ifm-background-color);
+  padding: 1rem;
+}
+
+.navbar-sidebar__items .menu__link {
+  padding: 0.75rem 0;
+  font-size: 1.1rem;
+}
+
+
+  .header-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    min-height: auto;
+  }
+
+  .header-title {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .header-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .header-button-wrapper {
+    margin-top: 2rem;
+  }
+
+  .header-video {
+    position: static;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .features-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item {
+    width: 90%;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .cli-preview-container,
+  .amqp-endpoint-preview-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cli-text,
+  .amqp-text {
+    text-align: left;
+    margin-top: 2rem;
+  }
+
+  .control-panel-preview p {
+    margin: 2rem 1rem 2rem;
+  }
+
+  .animated-word {
+    width: auto;
+    /* font-size: 1.2rem; */
+    text-align: center;
+  }
+}

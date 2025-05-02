@@ -12,26 +12,14 @@ const config = {
   title: "RABBITORY",
   tagline: "A self-hosted, open-source RabbitMQ-as-a-Service platform",
   favicon: "img/favicon.ico",
-
-  // Set the production url of your site here
   url: "https://Rabbitory.github.io",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "Rabbitory", // Usually your GitHub org/user name.
+  organizationName: "Rabbitory",
   deploymentBranch: "gh-pages",
-  projectName: "Rabbitory.github.io", // Usually your repo name.
+  projectName: "Rabbitory.github.io",
   trailingSlash: false,
-
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
@@ -44,26 +32,8 @@ const config = {
       ({
         docs: {
           sidebarPath: "./sidebars.js",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   feedOptions: {
-        //     type: ["rss", "atom"],
-        //     xslt: true,
-        //   },
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        //   // Useful options to enforce blogging best practices
-        //   onInlineTags: "warn",
-        //   onInlineAuthors: "warn",
-        //   onUntruncatedBlogPosts: "warn",
-        // },
+
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -78,11 +48,9 @@ const config = {
         defaultMode: "dark",
         disableSwitch: true,
       },
-      // Replace with your project's social card
-      // image: "img/docusaurus-social-card.jpg",
       navbar: {
         style: "dark",
-        title: "RABBITORY", // This adds the label next to the logo
+        title: "RABBITORY",
         logo: {
           alt: "Rabbitory Logo",
           src: "img/rabbitory-logo.png",
@@ -106,7 +74,7 @@ const config = {
             "aria-label": "GitHub repository",
           },
           {
-            href: "https://www.linkedin.com/company/rabbitory", // your org's LinkedIn URL
+            href: "https://www.linkedin.com/company/rabbitory-platform", // your org's LinkedIn URL
             position: "right",
             className: "header-linkedin-link",
             "aria-label": "LinkedIn organization page",
