@@ -376,7 +376,7 @@ main {
   /* max-width: 500px; */
   text-align: left;
   margin-bottom: 2rem;
-  margin-left: -15px;
+  margin-left: 20px;
   color: var(--ifm-heading-color);
 }
 
@@ -387,10 +387,10 @@ main {
 
 .control-panel-preview p {
   font-size: 18px;
-  text-align: left;
-  max-width: 60ch;
+  text-align: center;
+  max-width: 70ch;
   line-height: 1.5;
-  margin: 0 160px 2rem;
+  margin: 40px 250px 2rem;
 }
 .control-panel-carousel {
   max-width: 800px;
@@ -583,3 +583,82 @@ footer {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navbar__items--right {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    background-color: var(--ifm-background-color);
+    width: 100%;
+  }
+
+  .navbar__items--right a {
+    padding: 0.5rem 0;
+    display: block;
+    width: 100%;
+  }
+
+  .header-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    min-height: auto;
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .header-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .header-button-wrapper {
+    margin-top: 2rem;
+  }
+
+  .header-video {
+    position: static;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .features-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item {
+    width: 90%;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .cli-preview-container,
+  .amqp-endpoint-preview-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cli-text,
+  .amqp-text {
+    text-align: left;
+    margin-top: 2rem;
+  }
+
+  .control-panel-preview p {
+    margin: 0 1rem 2rem;
+  }
+
+  .animated-word {
+    width: auto;
+    /* font-size: 1.2rem; */
+    text-align: center;
+  }
+}
