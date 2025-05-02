@@ -9,6 +9,6 @@ Rabbitory is an open-source, self-hosted message queue management tool built spe
 
 ![Rabbitory Diagram](../static/img/intro-diagram.png)
 
-In the broader managed message broker ecosystem, Rabbitory fills a critical niche. Above all, Rabbitory prioritizes infrastructure ownership and simplicity of use. It's ideal for small to medium-sized teams that want the power of RabbitMQ without the headache of managing it alone.
+In the broader managed message queue ecosystem, Rabbitory fills a critical niche. Above all, Rabbitory prioritizes infrastructure ownership and simplicity of use. It's ideal for small to medium-sized teams that want the power of RabbitMQ without the headache of managing it alone.
 
 The following document dives into how and why Rabbitory was built. It provides context on message queues and RabbitMQ, explains how Rabbitory fits in to the managed message queue space, and outlines the technical decisions that shaped how Rabbitory was designed.

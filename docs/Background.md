@@ -13,7 +13,9 @@ To understand why a tool like Rabbitory matters, let’s first explore what mess
 
 In many applications, communication between internal services relies on the request-response cycle. This cycle is a form of <strong>synchronous communication</strong>. In this communication pattern, one service sends a request to another and waits until the other service responds. This pattern is instrumental in many scenarios as it provides immediate feedback on the success or failure of a response.
 
-Yet, there are scenarios where synchronous communication can fall short. Imagine you're signing up for a new service online. As part of the sign-up process, the system sends you a welcome email to confirm your account and introduce you to the platform. After creating your account, you ideally expect to see a confirmation message on the page right away. But with a synchronous request-response cycle, your sign-up confirmation could be delayed until that email is composed and successfully handed off or delivered. In system design, this kind of direct dependency, where one service waits on another to succeed, is known as <strong>tight coupling</strong>, and it can lead to delays and unexpected failures if something goes wrong.
+Yet, there are scenarios where synchronous communication can fall short. Imagine you're signing up for a new service online.
+
+As part of the sign-up process, the system sends you a welcome email to confirm your account and introduce you to the platform. After creating your account, you ideally expect to see a confirmation message on the page right away. But with a synchronous request-response cycle, your sign-up confirmation could be delayed until that email is composed and successfully handed off or delivered. In system design, this kind of direct dependency, where one service waits on another to succeed, is known as <strong>tight coupling</strong>, and it can lead to delays and unexpected failures if something goes wrong.
 
 <AnimatedSvgEmbed className="rabbitory-animation" svgName="email-no-queue.svg" altText="Email Without Queue Animation" />
 
