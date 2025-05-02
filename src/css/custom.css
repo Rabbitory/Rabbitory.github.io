@@ -584,26 +584,31 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    height: auto;
-    align-items: flex-start;
-    padding: 1rem;
-  }
+/* Keep the navbar clean and compact */
+.navbar {
+  padding: 0.5rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
 
+/* Hide right-side nav items on mobile */
+@media screen and (max-width: 996px) {
   .navbar__items--right {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-    background-color: var(--ifm-background-color);
-    width: 100%;
+    display: none;
   }
+}
 
-  .navbar__items--right a {
-    padding: 0.5rem 0;
-    display: block;
-    width: 100%;
-  }
+/* Optional: Style sidebar links when hamburger is opened */
+.navbar-sidebar {
+  background-color: var(--ifm-background-color);
+  padding: 1rem;
+}
+
+.navbar-sidebar__items .menu__link {
+  padding: 0.75rem 0;
+  font-size: 1.1rem;
+}
+
 
   .header-section {
     flex-direction: column;
