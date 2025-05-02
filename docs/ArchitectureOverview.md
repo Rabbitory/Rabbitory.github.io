@@ -38,8 +38,6 @@ When users no longer need the infrastructure, running `rabbitory destroy` cleanl
 
 The Rabbitory Control Panel communicates directly with all RabbitMQ instances to handle creating new instances, making configuration changes, and performing deletions. Rabbitory is hosted on a t3.small EC2 instance. Hosting the Control Panel on an EC2 allows for custom IAM roles, security groups, and cohesive communication with other RabbitMQ EC2s in the Rabbitory environment.
 
-[ Diagram of EC2 with NextJS + Browser ? ]
-
 The Control Panel is built entirely with Next.js, which powers both the backend server and the frontend UI, while Tailwind CSS is used for styling. Using Next.js allowed the entire app to run on a single EC2 instance, instead of relying on separate static file hosting services like AWS S3 Bucket. With Next.js, we can serve dynamic content, handle server-side rendering, and manage API requests all from a single EC2 instance. This simplifies deployment and enables the Control Panel to be more integrated and responsive.
 
 ## (3) RabbitMQ Instances
