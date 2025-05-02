@@ -37,13 +37,13 @@ const Team = () => {
           >
             <FaLinkedin />
           </a>
-          <a
+          {/* <a
             href="https://yourwebsite.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGlobe />
-          </a>
+          </a> */}
           <a
             href="https://github.com/jq-ln"
             target="_blank"
@@ -51,7 +51,7 @@ const Team = () => {
           >
             <FaGithub />
           </a>
-          <a href="jacqueline.amherst@icloud.com">
+          <a href="mailto:jacqueline.amherst@icloud.com">
             <FaEnvelope />
           </a>
         </div>
@@ -76,13 +76,13 @@ const Team = () => {
           >
             <FaLinkedin />
           </a>
-          <a
+          {/* <a
             href="https://yourwebsite.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGlobe />
-          </a>
+          </a> */}
           <a
             href="https://github.com/Ovaculos"
             target="_blank"
@@ -90,7 +90,7 @@ const Team = () => {
           >
             <FaGithub />
           </a>
-          <a href="masonderolo@gmail.com">
+          <a href="mailto:masonderolo@gmail.com">
             <FaEnvelope />
           </a>
         </div>
@@ -115,13 +115,13 @@ const Team = () => {
           >
             <FaLinkedin />
           </a>
-          <a
+          {/* <a
             href="https://yourwebsite.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGlobe />
-          </a>
+          </a> */}
           <a
             href="https://github.com/larencozart"
             target="_blank"
@@ -129,7 +129,7 @@ const Team = () => {
           >
             <FaGithub />
           </a>
-          <a href="larencozart@gmail.com">
+          <a href="mailto:larencozart@gmail.com">
             <FaEnvelope />
           </a>
         </div>
@@ -154,13 +154,13 @@ const Team = () => {
           >
             <FaLinkedin />
           </a>
-          <a
+          {/* <a
             href="https://yourwebsite.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGlobe />
-          </a>
+          </a> */}
           <a
             href="https://github.com/zijin1994"
             target="_blank"
@@ -168,7 +168,7 @@ const Team = () => {
           >
             <FaGithub />
           </a>
-          <a href="zijin@ualberta.ca">
+          <a href="mailto:zijin@ualberta.ca">
             <FaEnvelope />
           </a>
         </div>
